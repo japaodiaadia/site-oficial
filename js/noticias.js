@@ -1,6 +1,7 @@
 const apiKey = "80427bda8f1d41be9f3350b1fd826d4e";
 
-const url = `https://newsapi.org/v2/everything?q=Japão&language=pt&apiKey=${apiKey}`;
+const url = `https://lucky-poetry-9ba1.japaodiaadia.workers.dev/`;
+
 
 async function carregarNoticias() {
   const container = document.getElementById("news-container");
