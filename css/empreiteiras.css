@@ -1,69 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-html,body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;    
-    font-family:"Montserrat",sans-serif;
-    margin:0;
-    color:#333;
-    background:#fff;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #333;
+  background: #fff;
 }
+
 body::-webkit-scrollbar {
-    display: none;             
+  display: none;
 }
 
-.clear{
-    clear: both;
+.clear {
+  clear: both;
 }
 
-.logo{
-    padding: 0 2%;   
+.logo {
+  padding: 0 2%;
 }
 
-header .logo img{
-    float: left;
-    width: 310px;  
-    height: 160px;
+header .logo img {
+  float: left;
+  width: 310px;
+  height: 160px;
 }
 
-header{
-    height: 100px;
-    padding:0 2%;
-    border-bottom:1px solid #eee;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    background:#fff;
-    position:sticky;
-    top:0;
-    z-index:30;
+header {
+  height: 100px;
+  padding: 0 2%;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 30;
 }
 
-header .logo img{
-      margin-top: 10px;
+header .logo img {
+  margin-top: 10px;
 }
+
 /* =========================
    MENU MOBILE
 ========================= */
 nav.menu-mobile {
-  
-  display: none; /* aparece só no mobile */
+
+  display: none;
+  /* aparece só no mobile */
   width: 100%;
   padding: 0 2%;
   text-align: center;
@@ -76,7 +80,8 @@ nav.menu-mobile button {
   background: none;
   border: none;
   padding: 10px;
-  margin-left: auto; /* joga o botão para a direita */
+  margin-left: auto;
+  /* joga o botão para a direita */
   display: block;
   cursor: pointer;
 }
@@ -105,7 +110,8 @@ nav.menu-mobile ul {
   z-index: 999;
   border-radius: 10px;
   border: 1px solid color #ebeaea;
-  overflow: hidden; /* MUITO IMPORTANTE */
+  overflow: hidden;
+  /* MUITO IMPORTANTE */
 }
 
 /* =========================
@@ -125,7 +131,7 @@ nav.menu-mobile ul li {
 /* LINKS */
 nav.menu-mobile ul li a {
   display: block;
-   white-space: normal;
+  white-space: normal;
   word-break: break-word;
   padding: 14px 0;
   text-decoration: none;
@@ -167,74 +173,78 @@ nav.menu-mobile ul li a:hover::after {
 ========================= */
 
 
-header nav.menu-desktop{
-    float: right;
+header nav.menu-desktop {
+  float: right;
 }
 
-header nav.menu-desktop ul{
-    padding: 45px 0;
-    list-style-type: none;
+header nav.menu-desktop ul {
+  padding: 45px 0;
+  list-style-type: none;
 }
 
-header nav.menu-desktop ul li{
-    float: left;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 0 20px;
+header nav.menu-desktop ul li {
+  float: left;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 0 20px;
 }
 
-header nav ul li a{
-    text-decoration: none;
-    color: rgb(124, 124, 124);
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(124, 124, 124);
 }
 
 
 /*  ========== fim do padrao header ========  */
 
 .video-empreiteira {
-    width: 100%;
+  width: 100%;
 }
 
 .video-container {
-    max-width: 1000px;
-    height: 500px;              /* define a área */
-    overflow: hidden;           /* corta o excesso */
-    border-radius: 12px;        /* se quiser */
-    position: relative;
-    margin: 0 auto;
+  max-width: 1000px;
+  height: 500px;
+  /* define a área */
+  overflow: hidden;
+  /* corta o excesso */
+  border-radius: 12px;
+  /* se quiser */
+  position: relative;
+  margin: 0 auto;
 }
 
 .video-container video {
-    max-width: 1000px;
-    aspect-ratio: 16 / 9;
-    object-fit: contain;          /* A CHAVE */
-    object-position: center;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  /* A CHAVE */
+  object-position: center;
 }
 
 
-section.logo-empreiteira .container{
-    max-width: 900px;
-    padding: 0 2%;
+section.logo-empreiteira .container {
+  max-width: 900px;
+  padding: 0 2%;
 }
 
-section.logo-empreiteira .img-logo-empreiteira{
-    width: 850px;
-    margin: 0 auto;
-   
+section.logo-empreiteira .img-logo-empreiteira {
+  width: 850px;
+  margin: 0 auto;
+
 }
 
-section.logo-empreiteira .container h2{
-    padding: 50px 2%;
-    text-align: center;
-    color: #698293;
-    font-size: 30px;
+section.logo-empreiteira .container h2 {
+  padding: 50px 2%;
+  text-align: center;
+  color: #698293;
+  font-size: 30px;
 }
 
-section.logo-empreiteira .container p{
-     color: #4b4b4b;
-    font-size: 14px;
-    padding-top: 5px;
-    padding: 10px 2%;
+section.logo-empreiteira .container p {
+  color: #4b4b4b;
+  font-size: 14px;
+  padding-top: 5px;
+  padding: 10px 2%;
 }
 
 /*------ nova secao de empreiteiras postando img -------*/
@@ -257,26 +267,29 @@ section.empreiteiras-japao .titulo-secao {
 
 
 
-section.empreiteiras-japao .box-empreiteira{
+section.empreiteiras-japao .box-empreiteira {
   display: flex;
   align-items: center;
   gap: 30px;
-  flex-wrap: wrap; /* Isso faz o conteúdo se adaptar em telas pequenas */
+  flex-wrap: wrap;
+  /* Isso faz o conteúdo se adaptar em telas pequenas */
 }
-section.empreiteiras-japao .box-empreiteira{
+
+section.empreiteiras-japao .box-empreiteira {
   padding: 10px;
   transform: tranform 0.3s ease;
   border-radius: 25px;
 }
 
-section.empreiteiras-japao .box-empreiteira:hover{
+section.empreiteiras-japao .box-empreiteira:hover {
   transform: scale(1.01);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
 
 section.empreiteiras-japao .img-empreiteira {
-  flex: 1 1 300px; /* flexível, com base mínima */
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/sion.jpg");
   background-position: center;
@@ -286,7 +299,8 @@ section.empreiteiras-japao .img-empreiteira {
 }
 
 section.empreiteiras-japao .img-empreiteira1 {
-  flex: 1 1 300px; /* flexível, com base mínima */
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/fujiarte.webp");
   background-position: center;
@@ -296,7 +310,8 @@ section.empreiteiras-japao .img-empreiteira1 {
 }
 
 section.empreiteiras-japao .img-empreiteira2 {
-  flex: 1 1 300px; /* flexível, com base mínima */
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/suriemu.webp");
   background-position: center;
@@ -306,7 +321,8 @@ section.empreiteiras-japao .img-empreiteira2 {
 }
 
 section.empreiteiras-japao .img-empreiteira3 {
-  flex: 1 1 300px; /* flexível, com base mínima */
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/human.webp");
   background-position: center;
@@ -314,8 +330,10 @@ section.empreiteiras-japao .img-empreiteira3 {
   background-repeat: no-repeat;
   border-radius: 8px;
 }
+
 section.empreiteiras-japao .img-empreiteira4 {
-  flex: 1 1 300px; /* flexível, com base mínima */
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/kowa.webp");
   background-position: center;
@@ -325,7 +343,8 @@ section.empreiteiras-japao .img-empreiteira4 {
 }
 
 section.empreiteiras-japao .img-empreiteira5 {
-  flex: 1 1 300px; /* flexível, com base mínima */
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/Akastuki.webp");
   background-position: center;
@@ -335,7 +354,8 @@ section.empreiteiras-japao .img-empreiteira5 {
 }
 
 section.empreiteiras-japao .img-empreiteira6 {
-  flex: 1 1 300px; /* flexível, com base mínima */
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/Konishi.webp");
   background-position: center;
@@ -345,7 +365,8 @@ section.empreiteiras-japao .img-empreiteira6 {
 }
 
 section.empreiteiras-japao .img-empreiteira7 {
-  flex: 1 1 300px; /* flexível, com base mínima */
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/marusan.webp");
   background-position: center;
@@ -354,8 +375,9 @@ section.empreiteiras-japao .img-empreiteira7 {
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira8{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira8 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/nichirin.webp");
   background-position: center;
@@ -364,8 +386,9 @@ section.empreiteiras-japao .img-empreiteira8{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira9{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira9 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/nichirin1.webp");
   background-position: center;
@@ -374,8 +397,9 @@ section.empreiteiras-japao .img-empreiteira9{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira10{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira10 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/sun-family.webp");
   background-position: center;
@@ -384,8 +408,9 @@ section.empreiteiras-japao .img-empreiteira10{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira11{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira11 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/daikei.webp");
   background-position: center;
@@ -394,8 +419,9 @@ section.empreiteiras-japao .img-empreiteira11{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira12{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira12 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/ikai.webp");
   background-position: center;
@@ -404,8 +430,9 @@ section.empreiteiras-japao .img-empreiteira12{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira13{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira13 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/isa.webp");
   background-position: center;
@@ -414,8 +441,9 @@ section.empreiteiras-japao .img-empreiteira13{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira14{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira14 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/jfmhr.jpg");
   background-position: center;
@@ -424,8 +452,9 @@ section.empreiteiras-japao .img-empreiteira14{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira15{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira15 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/joy.png");
   background-position: center;
@@ -434,8 +463,9 @@ section.empreiteiras-japao .img-empreiteira15{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira16{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira16 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/jto.webp");
   background-position: center;
@@ -444,8 +474,9 @@ section.empreiteiras-japao .img-empreiteira16{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira17{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira17 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/k-line.webp");
   background-position: center;
@@ -454,8 +485,9 @@ section.empreiteiras-japao .img-empreiteira17{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira18{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira18 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/necros.png");
   background-position: center;
@@ -464,8 +496,9 @@ section.empreiteiras-japao .img-empreiteira18{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira19{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira19 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/ys1.webp");
   background-position: center;
@@ -474,8 +507,9 @@ section.empreiteiras-japao .img-empreiteira19{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira20{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira20 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/daiei.webp");
   background-position: center;
@@ -484,8 +518,9 @@ section.empreiteiras-japao .img-empreiteira20{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira21{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira21 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/ICHIE.webp");
   background-position: center;
@@ -494,8 +529,9 @@ section.empreiteiras-japao .img-empreiteira21{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira22{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira22 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/kawaden.webp");
   background-position: center;
@@ -504,8 +540,9 @@ section.empreiteiras-japao .img-empreiteira22{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira23{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira23 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/kemikku.webp");
   background-position: center;
@@ -514,8 +551,9 @@ section.empreiteiras-japao .img-empreiteira23{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira24{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira24 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/nissei.webp");
   background-position: center;
@@ -524,8 +562,9 @@ section.empreiteiras-japao .img-empreiteira24{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira25{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira25 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/pal.webp");
   background-position: center;
@@ -534,8 +573,9 @@ section.empreiteiras-japao .img-empreiteira25{
   border-radius: 8px;
 }
 
-section.empreiteiras-japao .img-empreiteira26{
-  flex: 1 1 300px; /* flexível, com base mínima */
+section.empreiteiras-japao .img-empreiteira26 {
+  flex: 1 1 300px;
+  /* flexível, com base mínima */
   height: 250px;
   background-image: url("../images/sankyo2.webp");
   background-position: center;
@@ -545,7 +585,8 @@ section.empreiteiras-japao .img-empreiteira26{
 }
 
 section.empreiteiras-japao .texto-empreiteira {
-  flex: 2 1 400px; /* texto ocupa mais espaço */
+  flex: 2 1 400px;
+  /* texto ocupa mais espaço */
   color: #4b4b4b;
   /*background-color: #4b4b4b;*/
 }
@@ -555,403 +596,410 @@ section.empreiteiras-japao .texto-empreiteira h2 {
   margin-bottom: 10px;
 }
 
-section.empreiteiras-japao .texto-empreiteira1{
-     color: #4b4b4b;   
+section.empreiteiras-japao .texto-empreiteira1 {
+  color: #4b4b4b;
 }
 
-section.empreiteiras-japao .texto-empreiteira p{
-padding: 3px;
+section.empreiteiras-japao .texto-empreiteira p {
+  padding: 3px;
 
 }
 
-section.empreiteiras-japao a{
-    text-decoration: none;
-    color: #4b4b4b;
+section.empreiteiras-japao a {
+  text-decoration: none;
+  color: #4b4b4b;
 }
 
 
-section.social{
-    padding: 70px 0;
+section.social {
+  padding: 70px 0;
 }
 
-.instagram-chamada{
-	float: left;
-	width: 100%;
-	text-align: center;
-	padding:40px 0;
-	background: #98a5ae;
-  
+.instagram-chamada {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background: #98a5ae;
+
 }
 
-.instagram-chamada p{
-	line-height: 23px;
-	color: white;
-	padding:10px 0;
-	font-size: 13px;
+.instagram-chamada p {
+  line-height: 23px;
+  color: white;
+  padding: 10px 0;
+  font-size: 13px;
 }
 
-.mosaico-social{
-	float: left;
-	width: 100%;
+.mosaico-social {
+  float: left;
+  width: 100%;
 }
 
-.img-mosaico-single-social{
-	float: left;
-	width: calc(100% / 9);
-	padding-top: calc(100% / 9);
-	background-color: rgb(210,210,210);
-	border:3px solid white;
+.img-mosaico-single-social {
+  float: left;
+  width: calc(100% / 9);
+  padding-top: calc(100% / 9);
+  background-color: rgb(210, 210, 210);
+  border: 3px solid white;
 }
 
-.img-mosaico-single-social{
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
+.img-mosaico-single-social {
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
-.facebook-chamada{
-	float: left;
-	width: 100%;
-	text-align: center;
-	padding:40px 0;
-	background:  #688293;
+.facebook-chamada {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background: #688293;
 }
 
-.facebook-chamada a img{
-    background-size: 25px;
+.facebook-chamada a img {
+  background-size: 25px;
 }
 
-.facebook-chamada p{
-	line-height: 23px;
-	color: white;
-	padding:10px 0;
-	font-size: 13px;
+.facebook-chamada p {
+  line-height: 23px;
+  color: white;
+  padding: 10px 0;
+  font-size: 13px;
 }
 
 
 footer {
-    padding: 60px 2%;
-    background-color: #688293;
-    text-align: center; /* Centraliza o conteúdo de texto */
+  padding: 60px 2%;
+  background-color: #688293;
+  text-align: center;
+  /* Centraliza o conteúdo de texto */
 }
 
 footer .container {
-    max-width: 1100px;
-    margin: 0 auto; /* Garante centralização do container */
+  max-width: 1100px;
+  margin: 0 auto;
+  /* Garante centralização do container */
 }
 
 footer .footer-block {
-    float: left;
-    width: 33.3%; /* Corrigido com % */
+  float: left;
+  width: 33.3%;
+  /* Corrigido com % */
 }
 
-.footer-block a{
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
-    font-size: 14px;
+.footer-block a {
+  text-decoration: none;
+  font-weight: normal;
+  color: white;
+  font-size: 14px;
 }
 
 .footer-block h2 {
-    color: white;
-    font-weight: normal;
-    font-size: 18px;
-    margin: 0; /* Opcional: melhora controle do layout */
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+  /* Opcional: melhora controle do layout */
 }
 
 .footer-block p {
-    margin-top: 8px;
-    color: white;
-    font-size: 14px;
+  margin-top: 8px;
+  color: white;
+  font-size: 14px;
 }
 
 
 
-@media screen and (max-width:855px){
-     nav.menu-desktop{
-        display: none;
-    }
+@media screen and (max-width:855px) {
+  nav.menu-desktop {
+    display: none;
+  }
 
-    nav.menu-mobile{
-        display: block;
-    }
+  nav.menu-mobile {
+    display: block;
+  }
 }
 
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
 
   section.curso .container .img-curso6,
   section.curso .container .img-curso7,
   section.curso .container .img-curso8,
-   section.curso .container .img-curso9,
-   section.curso .container .img-curso10,
-   section.curso .container .img-curso11,
-   section.curso .container .img-curso12,
-   section.curso .container .img-curso13{
-        flex: none; 
-        display: block;
-        width: 70%;
-        height: 200px;
-        margin: 0 auto 10px auto;
-        background-size: contain;
-}
+  section.curso .container .img-curso9,
+  section.curso .container .img-curso10,
+  section.curso .container .img-curso11,
+  section.curso .container .img-curso12,
+  section.curso .container .img-curso13 {
+    flex: none;
+    display: block;
+    width: 70%;
+    height: 200px;
+    margin: 0 auto 10px auto;
+    background-size: contain;
+  }
 
-    section.curso .texto-curso {
-        flex: 2 1 500px; /* texto ocupa mais espaço */
-        color: #4b4b4b;
-        
-        /*background-color: #4b4b4b;*/
-}
+  section.curso .texto-curso {
+    flex: 2 1 500px;
+    /* texto ocupa mais espaço */
+    color: #4b4b4b;
 
-/*  curiozidades de japao engajamento */
+    /*background-color: #4b4b4b;*/
+  }
 
-section.oferta-trabalho{
+  /*  curiozidades de japao engajamento */
+
+  section.oferta-trabalho {
     max-width: 800px;
     margin: 0 auto;
-}
+  }
 
-section.oferta-trabalho .container{
+  section.oferta-trabalho .container {
     padding-top: 50px;
-}
+  }
 
-/*section.oferta-trabalho .oferta-container{
+  /*section.oferta-trabalho .oferta-container{
     float: left;
     width: 33.3%;
     border: 5px solid white;
 }
 */
 
-section.oferta-trabalho .comum{
+  section.oferta-trabalho .comum {
     float: left;
     width: 33.3%;
     border: 5px solid white;
     overflow: hidden;
-}
+  }
 
-section.oferta-trabalho .img-oferta{
-   aspect-ratio: 1 / 1;
-   /* background-color: #ccc;*/
-   background-image: url('../images/yakisoba.jpg');
-   background-position: center;
+  section.oferta-trabalho .img-oferta {
+    aspect-ratio: 1 / 1;
+    /* background-color: #ccc;*/
+    background-image: url('../images/yakisoba.jpg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
-}
+  }
 
-/*-----      secao engajamento    -----*/
+  /*-----      secao engajamento    -----*/
 
-section.oferta-trabalho .container{
+  section.oferta-trabalho .container {
     padding-top: 50px;
-}
+  }
 
-section.oferta-trabalho .comum{
+  section.oferta-trabalho .comum {
     float: left;
     width: 48%;
     border: 5px solid white;
     overflow: hidden;
-}
+  }
 
-section.oferta-trabalho .img-oferta{
-   aspect-ratio: 1 / 1;
-   /* background-color: #ccc;*/
-   background-image: url('../images/yakisoba.jpg');
-   background-position: center;
+  section.oferta-trabalho .img-oferta {
+    aspect-ratio: 1 / 1;
+    /* background-color: #ccc;*/
+    background-image: url('../images/yakisoba.jpg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
-}
+  }
 
 }
 
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
-    nav.menu-desktop{
-        display: none;
-    }
+  nav.menu-desktop {
+    display: none;
+  }
 
-    nav.menu-mobile{
-        display: block;
-    }
-    
-    section.servicos > .container{
-        flex-direction: column;
-    }
+  nav.menu-mobile {
+    display: block;
+  }
 
-    section.servicos > .container .box-servicos:nth-of-type(1){
-        width: 90%;
-        max-width: 350px;
-        padding: 30px 2%;
-      
-    }
-    
-    section.servicos > .container .box-servicos:nth-of-type(2){
-        width: 95%;
-        max-width: 380px;
-        padding: 50px 2%;
-        
-    }
-    
-    section.servicos > .container .box-servicos:nth-of-type(3){
-        width: 90%;
-        max-width: 350px;
-        padding: 30px 2%;
-       
-    }
+  section.servicos>.container {
+    flex-direction: column;
+  }
 
-    section.servicos > .container .box-servicos{
-        background-image: none;
-        
-    }
+  section.servicos>.container .box-servicos:nth-of-type(1) {
+    width: 90%;
+    max-width: 350px;
+    padding: 30px 2%;
 
-    section.perfil-container .perfil-wraper2 {
-        display: inline-block;
-        text-align: center;
+  }
+
+  section.servicos>.container .box-servicos:nth-of-type(2) {
+    width: 95%;
+    max-width: 380px;
+    padding: 50px 2%;
+
+  }
+
+  section.servicos>.container .box-servicos:nth-of-type(3) {
+    width: 90%;
+    max-width: 350px;
+    padding: 30px 2%;
+
+  }
+
+  section.servicos>.container .box-servicos {
+    background-image: none;
+
+  }
+
+  section.perfil-container .perfil-wraper2 {
+    display: inline-block;
+    text-align: center;
     /*  display: flex;
         align-items: center;
         width: 100%;*/
-    }
+  }
 
-    section.perfil-container img {
-        width: 50%;
-        display: inline-block;
-    }
-    
-    section.perfil-container .texto-perfil {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 25px; }
+  section.perfil-container img {
+    width: 50%;
+    display: inline-block;
+  }
 
-   /* section.videos .box-videos{
+  section.perfil-container .texto-perfil {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  /* section.videos .box-videos{
         display: inline-block;
     }*/
 
-  
 
-    section.videos .box-videos{
-        float: none;
-         width: 90%;
-        margin: 0 auto;
-        padding-top: calc(90% * 0.6);
-        border: 3px solid white;
-        }
 
-        
+  section.videos .box-videos {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: calc(90% * 0.6);
+    border: 3px solid white;
+  }
 
-        /*---curiosidade japao---*/
 
-    section.sobre-japao .container .texto-curiosidade{
-            width: 80%;
-            margin: 0 auto;
-        }
 
-    section.sobre-japao .japao-wraper .japao-texto{
-        margin: 0 auto;
-        margin-top: 20px;
-    }
-        
-    section.sobre-japao .container .texto-curiosidade h2{
-            color: #698293;
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-        
-    section.sobre-japao .container .texto-curiosidade p{
-            color: #4b4b4b;
-            font-size: 14px;
-            margin-top: 8px;
-        }    
-        
-    section.sobre-japao .japao-wraper2 {
-        display: inline-block;
-        text-align: center;
+  /*---curiosidade japao---*/
+
+  section.sobre-japao .container .texto-curiosidade {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  section.sobre-japao .japao-wraper .japao-texto {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  section.sobre-japao .container .texto-curiosidade h2 {
+    color: #698293;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  section.sobre-japao .container .texto-curiosidade p {
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  section.sobre-japao .japao-wraper2 {
+    display: inline-block;
+    text-align: center;
     /*  display: flex;
         align-items: center;
         width: 100%;*/
-    }
+  }
 
-    section.sobre-japao .img-sobrejapao,
-    section.sobre-japao .img-sobrejapao1,
-    section.sobre-japao .img-sobrejapao2,
-    section.sobre-japao .img-sobrejapao3{
-        width: 50%;
-        display: inline-block;
-    }
-
-   
-    
-    section.sobre-japao .japao-texto {
-        width: 80%;
-        margin: 0 20px;
-        margin-top: 25px; 
-    }
-
-    .img-mosaico-single-social{
-			width: calc(100% / 6);
-			padding-top: calc(100% / 6);
-		}
-
-		.mosaico-social > div:nth-of-type(1n+7){
-			display: none;
-		}
-
-   
- 
- 
+  section.sobre-japao .img-sobrejapao,
+  section.sobre-japao .img-sobrejapao1,
+  section.sobre-japao .img-sobrejapao2,
+  section.sobre-japao .img-sobrejapao3 {
+    width: 50%;
+    display: inline-block;
+  }
 
 
 
-    footer{
-		text-align: center;
-	}
+  section.sobre-japao .japao-texto {
+    width: 80%;
+    margin: 0 20px;
+    margin-top: 25px;
+  }
 
-	footer .footer-block{
-	float: none;
-	width: 100%;
-	margin:30px 0;
-	}
+  .img-mosaico-single-social {
+    width: calc(100% / 6);
+    padding-top: calc(100% / 6);
+  }
 
-	nav.menu-desktop{
-		display: none;
-	}
+  .mosaico-social>div:nth-of-type(1n+7) {
+    display: none;
+  }
 
-	nav.menu-mobile{
-		display: block;
-	}
 
-    
-    section.br-container .br-wraper2 {
-        display: inline-block;
-        text-align: center;
+
+
+
+
+
+  footer {
+    text-align: center;
+  }
+
+  footer .footer-block {
+    float: none;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  nav.menu-desktop {
+    display: none;
+  }
+
+  nav.menu-mobile {
+    display: block;
+  }
+
+
+  section.br-container .br-wraper2 {
+    display: inline-block;
+    text-align: center;
     /*  display: flex;
         align-items: center;
         width: 100%;*/
-    }
+  }
 
-    section.br-container .img-perfil {
-        width: 50%;
-        display: inline-block;
-        
-       /* aspect-ratio: 1 / 1.2;
+  section.br-container .img-perfil {
+    width: 50%;
+    display: inline-block;
+
+    /* aspect-ratio: 1 / 1.2;
         background-image: url('../images/foto-perfil.png');
         background-size: cover;
         background-position: center;
         border-radius: 3%;*/
-    }
-    
-    section.br-container .texto-perfil-br {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 25px; }
-       
+  }
+
+  section.br-container .texto-perfil-br {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
 }
 
 
@@ -963,13 +1011,13 @@ section.oferta-trabalho .img-oferta{
 @media (max-width: 600px) {
 
   section.perfil-container img {
-        width: 65%;
-        display: inline-block;
-    }
+    width: 65%;
+    display: inline-block;
+  }
 
   section.empreiteiras-japao .box-empreiteira {
     flex-direction: column;
-    
+
   }
 
   section.empreiteiras-japao .img-empreiteira {
@@ -992,84 +1040,85 @@ section.oferta-trabalho .img-oferta{
   section.empreiteiras-japao .img-empreiteira10,
   section.empreiteiras-japao .img-empreiteira11{
     width: 100%;
-  }*/ /* essa forma tem que escrever todas as tags que quer atacar, porem separadas por virgulas*/
+  }*/
+  /* essa forma tem que escrever todas as tags que quer atacar, porem separadas por virgulas*/
 
-[class^="img-empreiteira"]{ /* dessa forma é melhor pq já pego todas as class que começa com o nome da mesma*/
-  width: 100%;
-}
+  [class^="img-empreiteira"] {
+    /* dessa forma é melhor pq já pego todas as class que começa com o nome da mesma*/
+    width: 100%;
+  }
 
 
   section.empreiteiras-japao .texto-empreiteira {
-    flex: 2 1 200px; /* texto ocupa mais espaço */
+    flex: 2 1 200px;
+    /* texto ocupa mais espaço */
     color: #4b4b4b;
-  /*background-color: #4b4b4b;*/
-    
+    /*background-color: #4b4b4b;*/
+
   }
 
   section.sobre-japao .img-sobrejapao,
-    section.sobre-japao .img-sobrejapao1,
-    section.sobre-japao .img-sobrejapao2,
-    section.sobre-japao .img-sobrejapao3{
-        width: 60%;
-        display: inline-block;
-    }
+  section.sobre-japao .img-sobrejapao1,
+  section.sobre-japao .img-sobrejapao2,
+  section.sobre-japao .img-sobrejapao3 {
+    width: 60%;
+    display: inline-block;
+  }
 
 
-  
+
 }
 
-@media screen and (max-width:580px){
-    section.perfil-container .img-perfil{
-        width: 80%;
-    }
-    
-     
+@media screen and (max-width:580px) {
+  section.perfil-container .img-perfil {
+    width: 80%;
+  }
 
-    section.br-container .img-perfil{
-        width: 80%;
-    }
 
-    section.sobre-mim img{ 
+
+  section.br-container .img-perfil {
+    width: 80%;
+  }
+
+  section.sobre-mim img {
     max-width: 300px;
-   
-    }
+
+  }
 
 
-} 
+}
 
-@media screen and (max-width:480px){
-    section.perfil-container .img-perfil{
-        width: 80%;
-    }
+@media screen and (max-width:480px) {
+  section.perfil-container .img-perfil {
+    width: 80%;
+  }
 
-    section.br-container .img-perfil{
-        width: 80%;
-    }
-     
+  section.br-container .img-perfil {
+    width: 80%;
+  }
 
-   
 
-    section.videos .box-videos{
-         width: 100%;
-        padding-top: calc(100% * 0.6);
-        }
 
-    section.sobre-mim img{ 
+
+  section.videos .box-videos {
+    width: 100%;
+    padding-top: calc(100% * 0.6);
+  }
+
+  section.sobre-mim img {
     max-width: 500px;
     padding: 15px 0;
-    
+
+  }
+
+  .img-mosaico-single-social {
+    width: calc(100% / 4);
+    padding-top: calc(100% / 4);
+  }
+
+  .mosaico-social>div:nth-of-type(1n+5) {
+    display: none;
+  }
+
+
 }
-
-.img-mosaico-single-social{
-			width: calc(100% / 4);
-			padding-top: calc(100% / 4);
-		}
-
-		.mosaico-social > div:nth-of-type(1n+5){
-			display: none;
-		}
-
-
-} 
-   
-    

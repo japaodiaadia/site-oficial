@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,168 +7,173 @@
 
 
 
-.container{
+.container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
-html,body{
+html,
+body {
     height: 100%;
 }
 
 body {
     overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
 body::-webkit-scrollbar {
-    display: none;             
+    display: none;
 }
 
 
-.clear{
+.clear {
     clear: both;
 }
 
 
-.logo{
+.logo {
     padding: 0 2%;
-    
+
 }
 
 
-header .logo img{
+header .logo img {
     float: left;
-    width: 310px;  
+    width: 310px;
     height: 160px;
 }
 
-body{
-    font-family:"Montserrat",sans-serif;
-    margin:0;
-    color:#333;
-    background:#fff;
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: #333;
+    background: #fff;
 }
 
-header{
+header {
     height: 100px;
-    padding:0 2%;
-    border-bottom:1px solid #eee;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    background:#fff;
-    position:sticky;
-    top:0;
-    z-index:30;
+    padding: 0 2%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 30;
 }
 
-header .logo img{
-      margin-top: 10px;
+header .logo img {
+    margin-top: 10px;
 }
 
 /* =========================
    MENU MOBILE
 ========================= */
 nav.menu-mobile {
-  
-  display: none; /* aparece só no mobile */
-  width: 100%;
-  padding: 0 2%;
-  text-align: center;
+
+    display: none;
+    /* aparece só no mobile */
+    width: 100%;
+    padding: 0 2%;
+    text-align: center;
 }
 
 /* =========================
    BOTÃO DO MENU
 ========================= */
 nav.menu-mobile button {
-  background: none;
-  border: none;
-  padding: 10px;
-  margin-left: auto; /* joga o botão para a direita */
-  display: block;
-  cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    margin-left: auto;
+    /* joga o botão para a direita */
+    display: block;
+    cursor: pointer;
 }
 
 /* ÍCONE */
 nav.menu-mobile button img.icone {
-  width: 28px;
-  height: 28px;
-  display: block;
-  margin-bottom: 15px;
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin-bottom: 15px;
 }
 
 /* =========================
    LISTA DO MENU (FECHADO)
 ========================= */
 nav.menu-mobile ul {
-  display: none;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: #ebeaea;
-  list-style: none;
-  padding: 0 2%;
-  margin: 0;
-  z-index: 999;
-  border-radius: 10px;
-  border: 1px solid color #ebeaea;
-  overflow: hidden; /* MUITO IMPORTANTE */
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ebeaea;
+    list-style: none;
+    padding: 0 2%;
+    margin: 0;
+    z-index: 999;
+    border-radius: 10px;
+    border: 1px solid color #ebeaea;
+    overflow: hidden;
+    /* MUITO IMPORTANTE */
 }
 
 /* =========================
    MENU ABERTO
 ========================= */
 nav.menu-mobile ul.active {
-  display: block;
+    display: block;
 }
 
 /* =========================
    ITENS
 ========================= */
 nav.menu-mobile ul li {
-  width: 100%;
+    width: 100%;
 }
 
 /* LINKS */
 nav.menu-mobile ul li a {
-  display: block;
-   white-space: normal;
-  word-break: break-word;
-  padding: 14px 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #555;
-  text-align: center;
-  position: relative;
-  transition: color 0.3s ease;
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    padding: 14px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    text-align: center;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 /* =========================
    LINHA CONTÍNUA
 ========================= */
 nav.menu-mobile ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #cfcfcf;
-  transition: background-color 0.3s ease;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cfcfcf;
+    transition: background-color 0.3s ease;
 }
 
 /* =========================
    HOVER
 ========================= */
 nav.menu-mobile ul li a:hover {
-  color: #698293;
+    color: #698293;
 }
 
 nav.menu-mobile ul li a:hover::after {
-  background-color: #698293;
+    background-color: #698293;
 }
 
 /* =========================
@@ -177,23 +182,23 @@ nav.menu-mobile ul li a:hover::after {
 
 
 
-header nav.menu-desktop{
+header nav.menu-desktop {
     float: right;
 }
 
-header nav.menu-desktop ul{
+header nav.menu-desktop ul {
     padding: 45px 0;
     list-style-type: none;
 }
 
-header nav.menu-desktop ul li{
+header nav.menu-desktop ul li {
     float: left;
     font-size: 13px;
     text-transform: uppercase;
     padding: 0 20px;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: rgb(124, 124, 124);
 }
@@ -203,7 +208,7 @@ header nav ul li a{
 
 
 
-section.video-curso{
+section.video-curso {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2%;
@@ -212,15 +217,15 @@ section.video-curso{
 
 .video-container {
     width: 100%;
-    height: 100%; 
-    overflow: hidden; 
-    border-radius: 10px; 
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .video-container video {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
     margin-top: 40px;
 }
@@ -228,33 +233,34 @@ section.video-curso{
 
 
 section.curso {
-  padding: 40px 2%;
+    padding: 40px 2%;
 }
 
 section.curso .container {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 0 2%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
 section.curso .titulo-secao {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #698293;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #698293;
 }
 
 
 section.curso .box-curso {
     padding: 10px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap; /* Isso faz o conteúdo se adaptar em telas pequenas */
-  transform: transform 0.3s ease;
-  border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Isso faz o conteúdo se adaptar em telas pequenas */
+    transform: transform 0.3s ease;
+    border-radius: 12px;
 }
 
-section.curso .box-curso:hover{
+section.curso .box-curso:hover {
     transform: scale(1.01);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
@@ -272,217 +278,232 @@ section.curso [class^="img-curso"]{
 }
     outra maneira de fazer mais nem uma dela deu certo
 */
-section.curso .container .img-curso{
-  flex: 1 1 300px; /* flexível, com base mínima */
-  height: 250px;
-  background-image: url("../images/curso1.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 8px;
+section.curso .container .img-curso {
+    flex: 1 1 300px;
+    /* flexível, com base mínima */
+    height: 250px;
+    background-image: url("../images/curso1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
-section.curso .container .img-curso1{
-  flex: 1 1 300px; /* flexível, com base mínima */
-  height: 280px;
-  background-image: url("../images/nihongando1.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 8px;
+section.curso .container .img-curso1 {
+    flex: 1 1 300px;
+    /* flexível, com base mínima */
+    height: 280px;
+    background-image: url("../images/nihongando1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
-section.curso .container .img-curso2{
-  flex: 1 1 300px; /* flexível, com base mínima */
-  height: 280px;
-  background-image: url("../images/jim.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 8px;
+section.curso .container .img-curso2 {
+    flex: 1 1 300px;
+    /* flexível, com base mínima */
+    height: 280px;
+    background-image: url("../images/jim.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
-section.curso .container .img-curso3{
-  flex: 1 1 300px; /* flexível, com base mínima */
-  height: 280px;
-  background-image: url("../images/progamajapones.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 8px;
+section.curso .container .img-curso3 {
+    flex: 1 1 300px;
+    /* flexível, com base mínima */
+    height: 280px;
+    background-image: url("../images/progamajapones.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
-section.curso .container .img-curso4{
-  flex: 1 1 300px; /* flexível, com base mínima */
-  height: 280px;
-  background-image: url("../images/nihongopratica.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 8px;
+section.curso .container .img-curso4 {
+    flex: 1 1 300px;
+    /* flexível, com base mínima */
+    height: 280px;
+    background-image: url("../images/nihongopratica.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
-section.curso .container .img-curso5{
-  flex: 1 1 300px; /* flexível, com base mínima */
-  height: 280px;
-  background-image: url("../images/premium1.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 8px;
+section.curso .container .img-curso5 {
+    flex: 1 1 300px;
+    /* flexível, com base mínima */
+    height: 280px;
+    background-image: url("../images/premium1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
-section.curso .container .img-curso6{
-  flex: 1 1 60px; /* flexível, com base mínima */
-  height: 150px;
-  background-image: url("../images/premium.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 8px;
+section.curso .container .img-curso6 {
+    flex: 1 1 60px;
+    /* flexível, com base mínima */
+    height: 150px;
+    background-image: url("../images/premium.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
-section.curso .container .img-curso7{
-  flex: 1 1 60px; /* flexível, com base mínima */
-  height: 160px;
-  background-image: url("../images/bandeira-japonesa-1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 8px;
+section.curso .container .img-curso7 {
+    flex: 1 1 60px;
+    /* flexível, com base mínima */
+    height: 160px;
+    background-image: url("../images/bandeira-japonesa-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
-section.curso .container .img-curso8{
-  flex: 1 1 60px; /* flexível, com base mínima */
-  height: 150px;
-  background-image: url("../images/nhk.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 8px;
+section.curso .container .img-curso8 {
+    flex: 1 1 60px;
+    /* flexível, com base mínima */
+    height: 150px;
+    background-image: url("../images/nhk.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
-section.curso .container .img-curso9{
-  flex: 1 1 60px; /* flexível, com base mínima */
-  height: 150px;
-  background-image: url("../images/onegiriobenkyo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 30%;
+section.curso .container .img-curso9 {
+    flex: 1 1 60px;
+    /* flexível, com base mínima */
+    height: 150px;
+    background-image: url("../images/onegiriobenkyo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30%;
 }
 
-section.curso .container .img-curso10{
-  flex: 1 1 60px; /* flexível, com base mínima */
-  height: 150px;
-  background-image: url("../images/inovate.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 30%;
+section.curso .container .img-curso10 {
+    flex: 1 1 60px;
+    /* flexível, com base mínima */
+    height: 150px;
+    background-image: url("../images/inovate.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30%;
 }
 
-section.curso .container .img-curso11{
-  flex: 1 1 60px; /* flexível, com base mínima */
-  height: 150px;
-  background-image: url("../images/luv.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 30%;
+section.curso .container .img-curso11 {
+    flex: 1 1 60px;
+    /* flexível, com base mínima */
+    height: 150px;
+    background-image: url("../images/luv.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30%;
 }
 
-section.curso .container .img-curso12{
-  flex: 1 1 60px; /* flexível, com base mínima */
-  height: 150px;
-  background-image: url("../images/bumpo.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 30%;
+section.curso .container .img-curso12 {
+    flex: 1 1 60px;
+    /* flexível, com base mínima */
+    height: 150px;
+    background-image: url("../images/bumpo.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30%;
 }
 
-section.curso .container .img-curso13{
-  flex: 1 1 60px; /* flexível, com base mínima */
-  height: 150px;
-  background-image: url("../images/leanjaponise.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 30%;
+section.curso .container .img-curso13 {
+    flex: 1 1 60px;
+    /* flexível, com base mínima */
+    height: 150px;
+    background-image: url("../images/leanjaponise.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30%;
 }
 
 
 
 section.curso .texto-curso {
-  flex: 2 1 400px; /* texto ocupa mais espaço */
-  color: #4b4b4b;
-  /*background-color: #4b4b4b;*/
+    flex: 2 1 400px;
+    /* texto ocupa mais espaço */
+    color: #4b4b4b;
+    /*background-color: #4b4b4b;*/
 }
 
 section.curso .texto-curso h2 {
-  color: #698293;
-  margin-bottom: 10px;
+    color: #698293;
+    margin-bottom: 10px;
 }
 
-section.curso .texto-curso{
-     color: #4b4b4b;   
+section.curso .texto-curso {
+    color: #4b4b4b;
 }
 
-section.curso .texto-curso p{
-padding: 3px;
+section.curso .texto-curso p {
+    padding: 3px;
 
 }
 
-section.curso a{
+section.curso a {
     text-decoration: none;
     color: #4b4b4b;
 }
 
-section.videos .container{
+section.videos .container {
     max-width: 800px;
     margin: 0 auto;
 }
 
 
 
-section.videos{
+section.videos {
     padding: 50px;
 }
 
-section.videos .texto-videos h2{
-    text-align: center;   
+section.videos .texto-videos h2 {
+    text-align: center;
     color: #698293;
-	font-size: 18px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
-section.videos .container .texto-videos p{
+section.videos .container .texto-videos p {
     max-width: 650px;
     margin: 0 auto;
 }
 
 
-section.videos .texto-videos p{
-   padding-top: 20px;
-   padding-bottom: 20px;
-   color: #4b4b4b;
-	font-size: 14px;
-	margin-top: 8px;
-    text-align: center;  
+section.videos .texto-videos p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: center;
 }
 
 
 
-section.videos .box-videos{
+section.videos .box-videos {
     float: left;
     width: 33.3%;
     position: relative;
     padding-top: calc(33.3% * 0.6);
-   
+
 }
 
-section.videos iframe{
+section.videos iframe {
     position: absolute;
     left: 0;
     top: 0;
@@ -491,70 +512,70 @@ section.videos iframe{
 }
 
 
-section.social{
+section.social {
     padding: 70px 0;
 }
 
-.instagram-chamada{
-	float: left;
-	width: 100%;
-	text-align: center;
-	padding:40px 0;
-	background: #98a5ae;
-  
+.instagram-chamada {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #98a5ae;
+
 }
 
-.instagram-chamada p{
-	line-height: 23px;
-	color: white;
-	padding:10px 0;
-	font-size: 13px;
+.instagram-chamada p {
+    line-height: 23px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
 }
 
-.mosaico-social{
-	float: left;
-	width: 100%;
+.mosaico-social {
+    float: left;
+    width: 100%;
 }
 
-.img-mosaico-single-social{
-	float: left;
-	width: calc(100% / 9);
-	padding-top: calc(100% / 9);
-	background-color: rgb(210,210,210);
-	border:3px solid white;
+.img-mosaico-single-social {
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: rgb(210, 210, 210);
+    border: 3px solid white;
 }
 
-.img-mosaico-single-social{
+.img-mosaico-single-social {
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
-.facebook-chamada{
-	float: left;
-	width: 100%;
-	text-align: center;
-	padding:40px 0;
-	background:  #688293;
+.facebook-chamada {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #688293;
 }
 
-.facebook-chamada a img{
+.facebook-chamada a img {
     background-size: 25px;
 }
 
-.facebook-chamada p{
-	line-height: 23px;
-	color: white;
-	padding:10px 0;
-	font-size: 13px;
+.facebook-chamada p {
+    line-height: 23px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
 }
 
 
 footer {
     padding: 60px 2%;
     background-color: #688293;
-    text-align: center; 
+    text-align: center;
 }
 
 footer .container {
@@ -564,10 +585,10 @@ footer .container {
 
 footer .footer-block {
     float: left;
-    width: 33.3%; 
+    width: 33.3%;
 }
 
-.footer-block a{
+.footer-block a {
     text-decoration: none;
     font-weight: normal;
     color: white;
@@ -578,7 +599,7 @@ footer .footer-block {
     color: white;
     font-weight: normal;
     font-size: 18px;
-    margin: 0; 
+    margin: 0;
 }
 
 .footer-block p {
@@ -589,154 +610,155 @@ footer .footer-block {
 
 
 
-@media screen and (max-width:855px){
-     nav.menu-desktop{
+@media screen and (max-width:855px) {
+    nav.menu-desktop {
         display: none;
     }
 
-    nav.menu-mobile{
+    nav.menu-mobile {
         display: block;
     }
 }
 
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
 
-  section.curso .container .img-curso6,
-  section.curso .container .img-curso7,
-  section.curso .container .img-curso8,
-   section.curso .container .img-curso9,
-   section.curso .container .img-curso10,
-   section.curso .container .img-curso11,
-   section.curso .container .img-curso12,
-   section.curso .container .img-curso13{
-        flex: none; 
+    section.curso .container .img-curso6,
+    section.curso .container .img-curso7,
+    section.curso .container .img-curso8,
+    section.curso .container .img-curso9,
+    section.curso .container .img-curso10,
+    section.curso .container .img-curso11,
+    section.curso .container .img-curso12,
+    section.curso .container .img-curso13 {
+        flex: none;
         display: block;
         width: 70%;
         height: 200px;
         margin: 0 auto 10px auto;
         background-size: contain;
-}
+    }
 
     section.curso .texto-curso {
-        flex: 2 1 500px; /* texto ocupa mais espaço */
+        flex: 2 1 500px;
+        /* texto ocupa mais espaço */
         color: #4b4b4b;
-        
+
         /*background-color: #4b4b4b;*/
-}
+    }
 
-/*  curiozidades de japao engajamento */
+    /*  curiozidades de japao engajamento */
 
-section.oferta-trabalho{
-    max-width: 800px;
-    margin: 0 auto;
-}
+    section.oferta-trabalho {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
-section.oferta-trabalho .container{
-    padding-top: 50px;
-}
+    section.oferta-trabalho .container {
+        padding-top: 50px;
+    }
 
-/*section.oferta-trabalho .oferta-container{
+    /*section.oferta-trabalho .oferta-container{
     float: left;
     width: 33.3%;
     border: 5px solid white;
 }
 */
 
-section.oferta-trabalho .comum{
-    float: left;
-    width: 33.3%;
-    border: 5px solid white;
-    overflow: hidden;
+    section.oferta-trabalho .comum {
+        float: left;
+        width: 33.3%;
+        border: 5px solid white;
+        overflow: hidden;
+    }
+
+    section.oferta-trabalho .img-oferta {
+        aspect-ratio: 1 / 1;
+        /* background-color: #ccc;*/
+        background-image: url('../images/yakisoba.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /*-----      secao engajamento    -----*/
+
+    section.oferta-trabalho .container {
+        padding-top: 50px;
+    }
+
+    section.oferta-trabalho .comum {
+        float: left;
+        width: 48%;
+        border: 5px solid white;
+        overflow: hidden;
+    }
+
+    section.oferta-trabalho .img-oferta {
+        aspect-ratio: 1 / 1;
+        /* background-color: #ccc;*/
+        background-image: url('../images/yakisoba.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+    }
+
 }
 
-section.oferta-trabalho .img-oferta{
-   aspect-ratio: 1 / 1;
-   /* background-color: #ccc;*/
-   background-image: url('../images/yakisoba.jpg');
-   background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-}
-
-/*-----      secao engajamento    -----*/
-
-section.oferta-trabalho .container{
-    padding-top: 50px;
-}
-
-section.oferta-trabalho .comum{
-    float: left;
-    width: 48%;
-    border: 5px solid white;
-    overflow: hidden;
-}
-
-section.oferta-trabalho .img-oferta{
-   aspect-ratio: 1 / 1;
-   /* background-color: #ccc;*/
-   background-image: url('../images/yakisoba.jpg');
-   background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-}
-
-}
 
 
 
+@media screen and (max-width:768px) {
 
-@media screen and (max-width:768px){
-
-    nav.menu-desktop{
+    nav.menu-desktop {
         display: none;
     }
 
-    nav.menu-mobile{
+    nav.menu-mobile {
         display: block;
     }
-    
-    section.servicos > .container{
+
+    section.servicos>.container {
         flex-direction: column;
     }
 
-    section.servicos > .container .box-servicos:nth-of-type(1){
+    section.servicos>.container .box-servicos:nth-of-type(1) {
         width: 90%;
         max-width: 350px;
         padding: 30px 2%;
-      
+
     }
-    
-    section.servicos > .container .box-servicos:nth-of-type(2){
+
+    section.servicos>.container .box-servicos:nth-of-type(2) {
         width: 95%;
         max-width: 380px;
         padding: 50px 2%;
-        
+
     }
-    
-    section.servicos > .container .box-servicos:nth-of-type(3){
+
+    section.servicos>.container .box-servicos:nth-of-type(3) {
         width: 90%;
         max-width: 350px;
         padding: 30px 2%;
-       
+
     }
 
-    section.servicos > .container .box-servicos{
+    section.servicos>.container .box-servicos {
         background-image: none;
-        
+
     }
 
     section.perfil-container .perfil-wraper2 {
         display: inline-block;
         text-align: center;
-    /*  display: flex;
+        /*  display: flex;
         align-items: center;
         width: 100%;*/
     }
@@ -745,56 +767,57 @@ section.oferta-trabalho .img-oferta{
         width: 50%;
         display: inline-block;
     }
-    
+
     section.perfil-container .texto-perfil {
         width: 80%;
         margin: 0 auto;
-        margin-top: 25px; }
+        margin-top: 25px;
+    }
 
-   /* section.videos .box-videos{
+    /* section.videos .box-videos{
         display: inline-block;
     }*/
 
-  
 
-    section.videos .box-videos{
+
+    section.videos .box-videos {
         float: none;
-         width: 90%;
+        width: 90%;
         margin: 0 auto;
         padding-top: calc(90% * 0.6);
         border: 3px solid white;
-        }
+    }
 
-        
 
-        /*---curiosidade japao---*/
 
-    section.sobre-japao .container .texto-curiosidade{
-            width: 80%;
-            margin: 0 auto;
-        }
+    /*---curiosidade japao---*/
 
-    section.sobre-japao .japao-wraper .japao-texto{
+    section.sobre-japao .container .texto-curiosidade {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section.sobre-japao .japao-wraper .japao-texto {
         margin: 0 auto;
         margin-top: 20px;
     }
-        
-    section.sobre-japao .container .texto-curiosidade h2{
-            color: #698293;
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-        
-    section.sobre-japao .container .texto-curiosidade p{
-            color: #4b4b4b;
-            font-size: 14px;
-            margin-top: 8px;
-        }    
-        
+
+    section.sobre-japao .container .texto-curiosidade h2 {
+        color: #698293;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    section.sobre-japao .container .texto-curiosidade p {
+        color: #4b4b4b;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
     section.sobre-japao .japao-wraper2 {
         display: inline-block;
         text-align: center;
-    /*  display: flex;
+        /*  display: flex;
         align-items: center;
         width: 100%;*/
     }
@@ -802,57 +825,57 @@ section.oferta-trabalho .img-oferta{
     section.sobre-japao .img-sobrejapao,
     section.sobre-japao .img-sobrejapao1,
     section.sobre-japao .img-sobrejapao2,
-    section.sobre-japao .img-sobrejapao3{
+    section.sobre-japao .img-sobrejapao3 {
         width: 50%;
         display: inline-block;
     }
 
-   
-    
+
+
     section.sobre-japao .japao-texto {
         width: 80%;
         margin: 0 20px;
-        margin-top: 25px; 
+        margin-top: 25px;
     }
 
-    .img-mosaico-single-social{
-			width: calc(100% / 6);
-			padding-top: calc(100% / 6);
-		}
+    .img-mosaico-single-social {
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
 
-		.mosaico-social > div:nth-of-type(1n+7){
-			display: none;
-		}
-
-   
- 
- 
+    .mosaico-social>div:nth-of-type(1n+7) {
+        display: none;
+    }
 
 
 
-    footer{
-		text-align: center;
-	}
 
-	footer .footer-block{
-	float: none;
-	width: 100%;
-	margin:30px 0;
-	}
 
-	nav.menu-desktop{
-		display: none;
-	}
 
-	nav.menu-mobile{
-		display: block;
-	}
 
-    
+    footer {
+        text-align: center;
+    }
+
+    footer .footer-block {
+        float: none;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+
     section.br-container .br-wraper2 {
         display: inline-block;
         text-align: center;
-    /*  display: flex;
+        /*  display: flex;
         align-items: center;
         width: 100%;*/
     }
@@ -860,19 +883,20 @@ section.oferta-trabalho .img-oferta{
     section.br-container .img-perfil {
         width: 50%;
         display: inline-block;
-        
-       /* aspect-ratio: 1 / 1.2;
+
+        /* aspect-ratio: 1 / 1.2;
         background-image: url('../images/foto-perfil.png');
         background-size: cover;
         background-position: center;
         border-radius: 3%;*/
     }
-    
+
     section.br-container .texto-perfil-br {
         width: 80%;
         margin: 0 auto;
-        margin-top: 25px; }
-       
+        margin-top: 25px;
+    }
+
 }
 
 
@@ -883,25 +907,25 @@ section.oferta-trabalho .img-oferta{
 
 @media (max-width: 600px) {
 
-  section.perfil-container img {
+    section.perfil-container img {
         width: 65%;
         display: inline-block;
     }
 
-  section.empreiteiras-japao .box-empreiteira {
-    flex-direction: column;
-    
-  }
+    section.empreiteiras-japao .box-empreiteira {
+        flex-direction: column;
 
-  section.empreiteiras-japao .img-empreiteira {
-    width: 100%;
-  }
+    }
 
-  section.empreiteiras-japao .img-empreiteira1 {
-    width: 100%;
-  }
+    section.empreiteiras-japao .img-empreiteira {
+        width: 100%;
+    }
 
-  /*section.empreiteiras-japao .img-empreiteira1,
+    section.empreiteiras-japao .img-empreiteira1 {
+        width: 100%;
+    }
+
+    /*section.empreiteiras-japao .img-empreiteira1,
   section.empreiteiras-japao .img-empreiteira2,
   section.empreiteiras-japao .img-empreiteira3,
   section.empreiteiras-japao .img-empreiteira4,
@@ -913,81 +937,82 @@ section.oferta-trabalho .img-oferta{
   section.empreiteiras-japao .img-empreiteira10,
   section.empreiteiras-japao .img-empreiteira11{
     width: 100%;
-  }*/ /* essa forma tem que escrever todas as tags que quer atacar, porem separadas por virgulas*/
+  }*/
+    /* essa forma tem que escrever todas as tags que quer atacar, porem separadas por virgulas*/
 
-[class^="img-empreiteira"]{ /* dessa forma é melhor pq já pego todas as class que começa com o nome da mesma*/
-  width: 100%;
-}
+    [class^="img-empreiteira"] {
+        /* dessa forma é melhor pq já pego todas as class que começa com o nome da mesma*/
+        width: 100%;
+    }
 
 
-  section.empreiteiras-japao .texto-empreiteira {
-    flex: 2 1 200px; /* texto ocupa mais espaço */
-    color: #4b4b4b;
-  /*background-color: #4b4b4b;*/
-    
-  }
+    section.empreiteiras-japao .texto-empreiteira {
+        flex: 2 1 200px;
+        /* texto ocupa mais espaço */
+        color: #4b4b4b;
+        /*background-color: #4b4b4b;*/
 
-  section.sobre-japao .img-sobrejapao,
+    }
+
+    section.sobre-japao .img-sobrejapao,
     section.sobre-japao .img-sobrejapao1,
     section.sobre-japao .img-sobrejapao2,
-    section.sobre-japao .img-sobrejapao3{
+    section.sobre-japao .img-sobrejapao3 {
         width: 60%;
         display: inline-block;
     }
 
 
-  
+
 }
 
-@media screen and (max-width:580px){
-    section.perfil-container .img-perfil{
-        width: 80%;
-    }
-    
-
-    section.br-container .img-perfil{
+@media screen and (max-width:580px) {
+    section.perfil-container .img-perfil {
         width: 80%;
     }
 
-    section.sobre-mim img{ 
-    max-width: 300px;
-   
-    }
 
-
-} 
-
-@media screen and (max-width:480px){
-    section.perfil-container .img-perfil{
+    section.br-container .img-perfil {
         width: 80%;
     }
 
-    section.br-container .img-perfil{
+    section.sobre-mim img {
+        max-width: 300px;
+
+    }
+
+
+}
+
+@media screen and (max-width:480px) {
+    section.perfil-container .img-perfil {
         width: 80%;
     }
-     
 
-    section.videos .box-videos{
-         width: 100%;
+    section.br-container .img-perfil {
+        width: 80%;
+    }
+
+
+    section.videos .box-videos {
+        width: 100%;
         padding-top: calc(100% * 0.6);
-        }
+    }
 
-    section.sobre-mim img{ 
-    max-width: 500px;
-    padding: 15px 0;
-    
+    section.sobre-mim img {
+        max-width: 500px;
+        padding: 15px 0;
+
+    }
+
+    .img-mosaico-single-social {
+        width: calc(100% / 4);
+        padding-top: calc(100% / 4);
+    }
+
+    .mosaico-social>div:nth-of-type(1n+5) {
+        display: none;
+    }
+
+
 }
-
-.img-mosaico-single-social{
-			width: calc(100% / 4);
-			padding-top: calc(100% / 4);
-		}
-
-		.mosaico-social > div:nth-of-type(1n+5){
-			display: none;
-		}
-
-
-} 
-   
-    

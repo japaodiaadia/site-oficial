@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,168 +7,173 @@
 
 
 
-.container{
+.container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
-html,body{
+html,
+body {
     height: 100%;
 }
 
 body {
     overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
 body::-webkit-scrollbar {
-    display: none;             
+    display: none;
 }
 
 
-.clear{
+.clear {
     clear: both;
 }
 
 
-.logo{
+.logo {
     padding: 0 2%;
-    
+
 }
 
 
-header .logo img{
+header .logo img {
     float: left;
-    width: 310px;  
+    width: 310px;
     height: 160px;
 }
 
-body{
-    font-family:"Montserrat",sans-serif;
-    margin:0;
-    color:#333;
-    background:#fff;
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: #333;
+    background: #fff;
 }
 
-header{
+header {
     height: 100px;
-    padding:0 2%;
-    border-bottom:1px solid #eee;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    background:#fff;
-    position:sticky;
-    top:0;
-    z-index:30;
+    padding: 0 2%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 30;
 }
 
-header .logo img{
-      margin-top: 10px;
+header .logo img {
+    margin-top: 10px;
 }
 
 /* =========================
    MENU MOBILE
 ========================= */
 nav.menu-mobile {
-  
-  display: none; /* aparece só no mobile */
-  width: 100%;
-  padding: 0 2%;
-  text-align: center;
+
+    display: none;
+    /* aparece só no mobile */
+    width: 100%;
+    padding: 0 2%;
+    text-align: center;
 }
 
 /* =========================
    BOTÃO DO MENU
 ========================= */
 nav.menu-mobile button {
-  background: none;
-  border: none;
-  padding: 10px;
-  margin-left: auto; /* joga o botão para a direita */
-  display: block;
-  cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    margin-left: auto;
+    /* joga o botão para a direita */
+    display: block;
+    cursor: pointer;
 }
 
 /* ÍCONE */
 nav.menu-mobile button img.icone {
-  width: 28px;
-  height: 28px;
-  display: block;
-  margin-bottom: 15px;
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin-bottom: 15px;
 }
 
 /* =========================
    LISTA DO MENU (FECHADO)
 ========================= */
 nav.menu-mobile ul {
-  display: none;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: #ebeaea;
-  list-style: none;
-  padding: 0 2%;
-  margin: 0;
-  z-index: 999;
-  border-radius: 10px;
-  border: 1px solid color #ebeaea;
-  overflow: hidden; /* MUITO IMPORTANTE */
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ebeaea;
+    list-style: none;
+    padding: 0 2%;
+    margin: 0;
+    z-index: 999;
+    border-radius: 10px;
+    border: 1px solid color #ebeaea;
+    overflow: hidden;
+    /* MUITO IMPORTANTE */
 }
 
 /* =========================
    MENU ABERTO
 ========================= */
 nav.menu-mobile ul.active {
-  display: block;
+    display: block;
 }
 
 /* =========================
    ITENS
 ========================= */
 nav.menu-mobile ul li {
-  width: 100%;
+    width: 100%;
 }
 
 /* LINKS */
 nav.menu-mobile ul li a {
-  display: block;
-   white-space: normal;
-  word-break: break-word;
-  padding: 14px 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #555;
-  text-align: center;
-  position: relative;
-  transition: color 0.3s ease;
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    padding: 14px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    text-align: center;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 /* =========================
    LINHA CONTÍNUA
 ========================= */
 nav.menu-mobile ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #cfcfcf;
-  transition: background-color 0.3s ease;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cfcfcf;
+    transition: background-color 0.3s ease;
 }
 
 /* =========================
    HOVER
 ========================= */
 nav.menu-mobile ul li a:hover {
-  color: #698293;
+    color: #698293;
 }
 
 nav.menu-mobile ul li a:hover::after {
-  background-color: #698293;
+    background-color: #698293;
 }
 
 
@@ -177,23 +182,23 @@ nav.menu-mobile ul li a:hover::after {
 ========================= */
 
 
-header nav.menu-desktop{
+header nav.menu-desktop {
     float: right;
 }
 
-header nav.menu-desktop ul{
+header nav.menu-desktop ul {
     padding: 45px 0;
     list-style-type: none;
 }
 
-header nav.menu-desktop ul li{
+header nav.menu-desktop ul li {
     float: left;
     font-size: 13px;
     text-transform: uppercase;
     padding: 0 20px;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: rgb(124, 124, 124);
 }
@@ -208,24 +213,24 @@ section.logo-trem {
     padding: 0 4%;
 }
 
-section.logo-trem .container{
+section.logo-trem .container {
     width: 100%;
     height: 100%;
     transform: transform 0.3s ease;
     border-radius: 25px;
 }
 
-section.logo-trem .container:hover{
+section.logo-trem .container:hover {
     transform: scale(1.01);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
-section.logo-trem .container .img-trem-logo{
+section.logo-trem .container .img-trem-logo {
     aspect-ratio: 7 / 3;
-    margin: 20px auto ;
-    background-image: url('../images/trem-bala-japao2.webp'); 
+    margin: 20px auto;
+    background-image: url('../images/trem-bala-japao2.webp');
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
     border-radius: 8px;
 }
 
@@ -236,106 +241,108 @@ section.texto-trem .container {
     transform: transform 0.3s ease;
     border-radius: 25px;
 }
-section.texto-trem .container:hover{
+
+section.texto-trem .container:hover {
     transform: scale(1.01);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
-section.texto-trem .container .texto-wraper h2{
+section.texto-trem .container .texto-wraper h2 {
     padding: 25px 2%;
     text-align: center;
     color: #698293;
-    
+
 }
 
-section.texto-trem .container .texto-wraper p{
+section.texto-trem .container .texto-wraper p {
     color: #4b4b4b;
     font-size: 14px;
     padding: 12px 2%;
 }
+
 ul {
-  list-style-position: inside;
-  padding: 0 2%;
+    list-style-position: inside;
+    padding: 0 2%;
 }
 
-ul li{
+ul li {
     color: #4b4b4b;
     font-size: 16px;
     padding: 5px 0;
 }
 
 
-section.videos .container{
-   margin-bottom: 30px;
+section.videos .container {
+    margin-bottom: 30px;
 }
 
 
 /* ----- sessao intagram -------*/
 
-section.social{
+section.social {
     padding: 70px 0;
 }
 
-.instagram-chamada{
-	float: left;
-	width: 100%;
-	text-align: center;
-	padding:40px 0;
-	background: #98a5ae;
-  
+.instagram-chamada {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #98a5ae;
+
 }
 
-.instagram-chamada p{
-	line-height: 23px;
-	color: white;
-	padding:10px 0;
-	font-size: 13px;
+.instagram-chamada p {
+    line-height: 23px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
 }
 
-.mosaico-social{
-	float: left;
-	width: 100%;
+.mosaico-social {
+    float: left;
+    width: 100%;
 }
 
-.img-mosaico-single-social{
-	float: left;
-	width: calc(100% / 9);
-	padding-top: calc(100% / 9);
-	background-color: rgb(210,210,210);
-	border:3px solid white;
+.img-mosaico-single-social {
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: rgb(210, 210, 210);
+    border: 3px solid white;
 }
 
-.img-mosaico-single-social{
+.img-mosaico-single-social {
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
-.facebook-chamada{
-	float: left;
-	width: 100%;
-	text-align: center;
-	padding:40px 0;
-	background:  #688293;
+.facebook-chamada {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #688293;
 }
 
-.facebook-chamada a img{
+.facebook-chamada a img {
     background-size: 25px;
 }
 
-.facebook-chamada p{
-	line-height: 23px;
-	color: white;
-	padding:10px 0;
-	font-size: 13px;
+.facebook-chamada p {
+    line-height: 23px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
 }
 
 
 footer {
     padding: 60px 2%;
     background-color: #688293;
-    text-align: center; 
+    text-align: center;
 }
 
 footer .container {
@@ -345,10 +352,10 @@ footer .container {
 
 footer .footer-block {
     float: left;
-    width: 33.3%; 
+    width: 33.3%;
 }
 
-.footer-block a{
+.footer-block a {
     text-decoration: none;
     font-weight: normal;
     color: white;
@@ -359,7 +366,7 @@ footer .footer-block {
     color: white;
     font-weight: normal;
     font-size: 18px;
-    margin: 0; 
+    margin: 0;
 }
 
 .footer-block p {
@@ -383,57 +390,57 @@ footer .footer-block {
 
 
 
-@media screen and (max-width:855px){
-     nav.menu-desktop{
+@media screen and (max-width:855px) {
+    nav.menu-desktop {
         display: none;
     }
 
-    nav.menu-mobile{
+    nav.menu-mobile {
         display: block;
     }
 }
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
-    section.videos .box-videos{
+    section.videos .box-videos {
         float: none;
-         width: 90%;
+        width: 90%;
         margin: 0 auto;
         padding-top: calc(90% * 0.6);
         border: 3px solid white;
-        }
+    }
 
-    .img-mosaico-single-social{
-			width: calc(100% / 6);
-			padding-top: calc(100% / 6);
-		}
+    .img-mosaico-single-social {
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
 
-		.mosaico-social > div:nth-of-type(1n+7){
-			display: none;
-		}
+    .mosaico-social>div:nth-of-type(1n+7) {
+        display: none;
+    }
 
 
-    footer{
-		text-align: center;
-	}
+    footer {
+        text-align: center;
+    }
 
-	footer .footer-block{
-	float: none;
-	width: 100%;
-	margin:30px 0;
-	}
+    footer .footer-block {
+        float: none;
+        width: 100%;
+        margin: 30px 0;
+    }
 
-	nav.menu-desktop{
-		display: none;
-	}
+    nav.menu-desktop {
+        display: none;
+    }
 
-	nav.menu-mobile{
-		display: block;
-	}
+    nav.menu-mobile {
+        display: block;
+    }
 
-    
+
     section.br-container .br-wraper2 {
         display: inline-block;
         text-align: center;
@@ -442,49 +449,47 @@ footer .footer-block {
     section.br-container .img-perfil {
         width: 50%;
         display: inline-block;
-     
+
     }
-    
+
     section.br-container .texto-perfil-br {
         width: 80%;
         margin: 0 auto;
-        margin-top: 25px; 
-            
+        margin-top: 25px;
 
-            }
-        }
 
-@media screen and (max-width:480px){
-    section.perfil-container .img-perfil{
-        width: 80%;
     }
-
-    section.br-container .img-perfil{
-        width: 80%;
-    }
-     
-
-    section.videos .box-videos{
-         width: 100%;
-        padding-top: calc(100% * 0.6);
-        }
-
-    section.sobre-mim img{ 
-    max-width: 500px;
-    padding: 15px 0;
-    
 }
 
-.img-mosaico-single-social{
-			width: calc(100% / 4);
-			padding-top: calc(100% / 4);
-		}
+@media screen and (max-width:480px) {
+    section.perfil-container .img-perfil {
+        width: 80%;
+    }
 
-		.mosaico-social > div:nth-of-type(1n+5){
-			display: none;
-		}
+    section.br-container .img-perfil {
+        width: 80%;
+    }
 
 
-} 
-   
-    
+    section.videos .box-videos {
+        width: 100%;
+        padding-top: calc(100% * 0.6);
+    }
+
+    section.sobre-mim img {
+        max-width: 500px;
+        padding: 15px 0;
+
+    }
+
+    .img-mosaico-single-social {
+        width: calc(100% / 4);
+        padding-top: calc(100% / 4);
+    }
+
+    .mosaico-social>div:nth-of-type(1n+5) {
+        display: none;
+    }
+
+
+}

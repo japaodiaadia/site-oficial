@@ -1,71 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-html,body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;  
-    scrollbar-width: none; 
-        font-family:"Montserrat",sans-serif;
-    margin:0;
-    color:#333;
-    background:#fff;   
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #333;
+  background: #fff;
 }
+
 body::-webkit-scrollbar {
-    display: none;             
+  display: none;
 }
 
 
-.clear{
-    clear: both;
+.clear {
+  clear: both;
 }
 
-.logo{
-    padding: 0 2%; 
+.logo {
+  padding: 0 2%;
 }
 
-header .logo img{
-    float: left;
-    width: 310px;  
-    height: 160px;
+header .logo img {
+  float: left;
+  width: 310px;
+  height: 160px;
 }
 
-header{
-    height: 100px;
-    padding:0 2%;
-    border-bottom:1px solid #eee;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    background:#fff;
-    position:sticky;
-    top:0;
-    z-index:30;
+header {
+  height: 100px;
+  padding: 0 2%;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 30;
 }
 
-header .logo img{
-      margin-top: 10px;
+header .logo img {
+  margin-top: 10px;
 }
 
 /* =========================
    MENU MOBILE
 ========================= */
 nav.menu-mobile {
-  
-  display: none; /* aparece só no mobile */
+
+  display: none;
+  /* aparece só no mobile */
   width: 100%;
   padding: 0 2%;
   text-align: center;
@@ -78,7 +81,8 @@ nav.menu-mobile button {
   background: none;
   border: none;
   padding: 10px;
-  margin-left: auto; /* joga o botão para a direita */
+  margin-left: auto;
+  /* joga o botão para a direita */
   display: block;
   cursor: pointer;
 }
@@ -107,7 +111,8 @@ nav.menu-mobile ul {
   z-index: 999;
   border-radius: 10px;
   border: 1px solid color #ebeaea;
-  overflow: hidden; /* MUITO IMPORTANTE */
+  overflow: hidden;
+  /* MUITO IMPORTANTE */
 }
 
 /* =========================
@@ -127,7 +132,7 @@ nav.menu-mobile ul li {
 /* LINKS */
 nav.menu-mobile ul li a {
   display: block;
-   white-space: normal;
+  white-space: normal;
   word-break: break-word;
   padding: 14px 0;
   text-decoration: none;
@@ -169,25 +174,25 @@ nav.menu-mobile ul li a:hover::after {
 
 
 
-header nav.menu-desktop{
-    float: right;
+header nav.menu-desktop {
+  float: right;
 }
 
-header nav.menu-desktop ul{
-    padding: 45px 0;
-    list-style-type: none;
+header nav.menu-desktop ul {
+  padding: 45px 0;
+  list-style-type: none;
 }
 
-header nav.menu-desktop ul li{
-    float: left;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 0 20px;
+header nav.menu-desktop ul li {
+  float: left;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 0 20px;
 }
 
-header nav ul li a{
-    text-decoration: none;
-    color: rgb(124, 124, 124);
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(124, 124, 124);
 }
 
 
@@ -237,8 +242,8 @@ ul {
   list-style-position: inside;
 }
 
-ul li{
-    padding: 5px 0;
+ul li {
+  padding: 5px 0;
 }
 
 /* ============================= */
@@ -290,177 +295,177 @@ section.matsuri-logo img {
 
 /*============== videos do youtube =========== */
 
-section.videos{
-    max-width: 900px;
-    margin: 0 auto;
-    transition: transform 0.3s ease; 
-    border-radius: 25px;
+section.videos {
+  max-width: 900px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+  border-radius: 25px;
 }
 
-section.videos:hover{
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
+section.videos:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
 }
 
-section.videos .container{
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-
-
-section.videos{
-    padding: 50px;
-}
-
-section.videos .texto-videos h2{
-    text-align: center;   
-    color: #698293;
-	font-size: 18px;
-    text-transform: uppercase;
-}
-
-section.videos .container .texto-videos p{
-    max-width: 650px;
-    margin: 0 auto;
-}
-
-
-section.videos .texto-videos p{
-   padding-top: 20px;
-   padding-bottom: 20px;
-   color: #4b4b4b;
-	font-size: 14px;
-	margin-top: 8px;
-    text-align: center;  
+section.videos .container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 
 
-section.videos .box-videos{
-    float: left;
-    width: 50%;
-    position: relative;
-    padding-top: calc(48% * 0.6);    
-    border: solid 2px white;
+section.videos {
+  padding: 50px;
 }
 
-section.videos iframe{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+section.videos .texto-videos h2 {
+  text-align: center;
+  color: #698293;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+section.videos .container .texto-videos p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+
+section.videos .texto-videos p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #4b4b4b;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+
+
+section.videos .box-videos {
+  float: left;
+  width: 50%;
+  position: relative;
+  padding-top: calc(48% * 0.6);
+  border: solid 2px white;
+}
+
+section.videos iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ----- sessao intagram -------*/
 
-section.social{
-    padding: 70px 0;
+section.social {
+  padding: 70px 0;
 }
 
-.instagram-chamada{
-	float: left;
-	width: 100%;
-	text-align: center;
-	padding:40px 0;
-	background: #98a5ae;
-  
+.instagram-chamada {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background: #98a5ae;
+
 }
 
-.instagram-chamada p{
-	line-height: 23px;
-	color: white;
-	padding:10px 0;
-	font-size: 13px;
+.instagram-chamada p {
+  line-height: 23px;
+  color: white;
+  padding: 10px 0;
+  font-size: 13px;
 }
 
-.mosaico-social{
-	float: left;
-	width: 100%;
+.mosaico-social {
+  float: left;
+  width: 100%;
 }
 
-.img-mosaico-single-social{
-	float: left;
-	width: calc(100% / 9);
-	padding-top: calc(100% / 9);
-	background-color: rgb(210,210,210);
-	border:3px solid white;
+.img-mosaico-single-social {
+  float: left;
+  width: calc(100% / 9);
+  padding-top: calc(100% / 9);
+  background-color: rgb(210, 210, 210);
+  border: 3px solid white;
 }
 
-.img-mosaico-single-social{
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
+.img-mosaico-single-social {
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
-.facebook-chamada{
-	float: left;
-	width: 100%;
-	text-align: center;
-	padding:40px 0;
-	background:  #688293;
+.facebook-chamada {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background: #688293;
 }
 
-.facebook-chamada a img{
-    background-size: 25px;
+.facebook-chamada a img {
+  background-size: 25px;
 }
 
-.facebook-chamada p{
-	line-height: 23px;
-	color: white;
-	padding:10px 0;
-	font-size: 13px;
+.facebook-chamada p {
+  line-height: 23px;
+  color: white;
+  padding: 10px 0;
+  font-size: 13px;
 }
 
 
 footer {
-    padding: 60px 2%;
-    background-color: #688293;
-    text-align: center; 
+  padding: 60px 2%;
+  background-color: #688293;
+  text-align: center;
 }
 
 footer .container {
-    max-width: 1100px;
-    margin: 0 auto;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 footer .footer-block {
-    float: left;
-    width: 33.3%; 
+  float: left;
+  width: 33.3%;
 }
 
-.footer-block a{
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
-    font-size: 14px;
+.footer-block a {
+  text-decoration: none;
+  font-weight: normal;
+  color: white;
+  font-size: 14px;
 }
 
 .footer-block h2 {
-    color: white;
-    font-weight: normal;
-    font-size: 18px;
-    margin: 0; 
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
 }
 
 .footer-block p {
-    margin-top: 8px;
-    color: white;
-    font-size: 14px;
+  margin-top: 8px;
+  color: white;
+  font-size: 14px;
 }
 
 
-@media screen and (max-width:855px){
-     nav.menu-desktop{
-        display: none;
-    }
+@media screen and (max-width:855px) {
+  nav.menu-desktop {
+    display: none;
+  }
 
-    nav.menu-mobile{
-        display: block;
-    }
-    
+  nav.menu-mobile {
+    display: block;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -471,66 +476,67 @@ footer .footer-block {
   section.cultura-japao p {
     font-size: 16px;
   }
-section.sobre-japao .japao-texto {
-        width: 80%;
-        margin: 0 20px;
-        margin-top: 25px; 
-    }
 
-    section.videos .box-videos{
-        float: none;
-         width: 90%;
-        margin: 0 auto;
-        padding-top: calc(90% * 0.6);
-        border: 3px solid white;
-        }
+  section.sobre-japao .japao-texto {
+    width: 80%;
+    margin: 0 20px;
+    margin-top: 25px;
+  }
+
+  section.videos .box-videos {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: calc(90% * 0.6);
+    border: 3px solid white;
+  }
 
 
-    .img-mosaico-single-social{
-			width: calc(100% / 6);
-			padding-top: calc(100% / 6);
-		}
+  .img-mosaico-single-social {
+    width: calc(100% / 6);
+    padding-top: calc(100% / 6);
+  }
 
-		.mosaico-social > div:nth-of-type(1n+7){
-			display: none;
-		}
+  .mosaico-social>div:nth-of-type(1n+7) {
+    display: none;
+  }
 
-   
 
-    footer{
-		text-align: center;
-	}
 
-	footer .footer-block{
-	float: none;
-	width: 100%;
-	margin:30px 0;
-	}
+  footer {
+    text-align: center;
+  }
+
+  footer .footer-block {
+    float: none;
+    width: 100%;
+    margin: 30px 0;
+  }
 
 }
-@media screen and (max-width:480px){
-     
 
-    section.videos .box-videos{
-         width: 100%;
-        padding-top: calc(100% * 0.6);
-        }
+@media screen and (max-width:480px) {
 
-    section.sobre-mim img{ 
+
+  section.videos .box-videos {
+    width: 100%;
+    padding-top: calc(100% * 0.6);
+  }
+
+  section.sobre-mim img {
     max-width: 500px;
     padding: 15px 0;
-    
+
+  }
+
+  .img-mosaico-single-social {
+    width: calc(100% / 4);
+    padding-top: calc(100% / 4);
+  }
+
+  .mosaico-social>div:nth-of-type(1n+5) {
+    display: none;
+  }
+
+
 }
-
-.img-mosaico-single-social{
-			width: calc(100% / 4);
-			padding-top: calc(100% / 4);
-		}
-
-		.mosaico-social > div:nth-of-type(1n+5){
-			display: none;
-		}
-
-
-} 
-   
