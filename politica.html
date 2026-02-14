@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Política de Privacidade | Ohaio Japão</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de Privacidade do site Ohaio Japão. Saiba como tratamos dados e cookies.">
+   <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="/css/footer.css">
+  
+  <link rel="icon" href="/favicon.ico">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+<script src="/js/menu.js"></script>
+
+<script>
+fetch("/header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+
+    // ✅ AGORA o botão existe
+    iniciarMenuMobile();
+    iniciarHeaderScroll();
+  });
+</script>
+
+
+  <section class="pagina-info">
+    <div class="container">
+      <h1>Política de Privacidade</h1>
+
+      <p>
+        A sua privacidade é importante para nós. Esta Política de Privacidade descreve como o site
+        <strong>Ohaio Japão</strong> (ohaiojp.com) coleta, utiliza e protege as informações dos visitantes.
+      </p>
+
+      <h2>1. Informações que coletamos</h2>
+      <p>
+        O site pode coletar informações de forma automática e limitada, como:
+      </p>
+      <ul>
+        <li>Tipo de navegador e dispositivo utilizado</li>
+        <li>Páginas acessadas e tempo de permanência</li>
+        <li>Endereço IP (de forma anonimizada quando possível)</li>
+      </ul>
+
+      <h2>2. Uso de Cookies</h2>
+      <p>
+        Utilizamos cookies para melhorar sua experiência, analisar tráfego e personalizar conteúdos.
+        Cookies são pequenos arquivos armazenados no seu navegador.
+      </p>
+
+      <h2>3. Google AdSense e publicidade</h2>
+      <p>
+        Este site pode exibir anúncios fornecidos pelo <strong>Google AdSense</strong>.
+        O Google pode usar cookies para exibir anúncios mais relevantes para você.
+      </p>
+      <p>
+        Você pode desativar a personalização de anúncios acessando as configurações do Google:
+        <a href="https://adssettings.google.com" target="_blank">Configurações de anúncios</a>.
+      </p>
+
+      <h2>4. Links para sites externos</h2>
+      <p>
+        Nosso site pode conter links para páginas externas. Não somos responsáveis pelas práticas
+        de privacidade de outros sites. Recomendamos que você leia as políticas desses serviços.
+      </p>
+
+      <h2>5. Proteção das informações</h2>
+      <p>
+        Tomamos medidas para manter seu acesso seguro, mas nenhum sistema é 100% inviolável.
+        Sempre navegue com cuidado e mantenha seu dispositivo protegido.
+      </p>
+
+      <h2>6. Alterações nesta Política</h2>
+      <p>
+        Podemos atualizar esta Política de Privacidade a qualquer momento para manter o site em conformidade.
+        A data da última atualização estará sempre indicada abaixo.
+      </p>
+
+      <h2>7. Contato</h2>
+      <p>
+        Se você tiver dúvidas sobre esta Política, entre em contato conosco pela página
+        <a href="contato.html">Contato</a>.
+      </p>
+
+      <p><em>Última atualização: Fevereiro de 2026</em></p>
+    </div>
+  </section>
+
+<div id="footer"></div>
+
+<script>
+fetch("/footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+    <script>
+        window.addEventListener("error", function (e) {
+            if (e.message.includes("PresentationRequest")) {
+                e.preventDefault(); // impede que ele pare a execução
+            }
+        });
+
+    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/share.js"></script>
+    <script src="js/noticias.js"></script>
+
+
+</body>
+</html>

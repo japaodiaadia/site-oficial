@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+    <title>Japão no meu dia a dia</title>
+    <meta name="description" content="Experiências reais, curiosidades e cultura da vida no Japão.">
+    <meta name="keywords" content="Japão, cultura japonesa, trabalho no Japão, curiosidades, blog Japão">
+    <meta name="author" content="Japão no meu dia a dia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Japão no meu dia a dia">
+    <meta property="og:description" content="Descubra curiosidades e a realidade da vida no Japão.">
+    <meta property="og:image" content="https://ohaiojp.com/imagens/matsuri.jpg"> 
+    <meta property="og:url" content="https://ohaiojp.com"> 
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Japão no meu dia a dia">
+    <meta name="twitter:description" content="Conteúdo sobre o Japão, cultura e vida real.">
+    <meta name="twitter:image" content="https://ohaiojp.com/imagens/capa.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="css/politica.css" type="text/css">
+    <link rel="shortcut icon" type="image/ico" href="icon-1.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="icon" href="/favicon.ico">
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<script src="/js/menu.js"></script>
+
+<script>
+fetch("/header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+
+    // ✅ AGORA o botão existe
+    iniciarMenuMobile();
+    iniciarHeaderScroll();
+  });
+</script>
+
+
+
+  <section class="pagina-info">
+    <div class="container">
+      <h1>Termos de Uso</h1>
+
+      <p>
+        Bem-vindo ao <strong>Ohaio Japão</strong>. Ao acessar este site, você concorda com os termos
+        descritos abaixo. Caso não concorde, recomendamos que não utilize nossos serviços.
+      </p>
+
+      <h2>1. Objetivo do site</h2>
+      <p>
+        O site Ohaio Japão tem como objetivo compartilhar experiências, curiosidades, cultura e informações
+        sobre a vida no Japão, de forma educativa e informativa.
+      </p>
+
+      <h2>2. Conteúdo e responsabilidade</h2>
+      <p>
+        Todo conteúdo publicado é baseado em experiências pessoais e pesquisas. Não garantimos que todas as
+        informações estejam sempre atualizadas ou sejam aplicáveis a todos os casos.
+      </p>
+
+      <h2>3. Uso do conteúdo</h2>
+      <p>
+        Você pode ler, compartilhar e utilizar o conteúdo para fins pessoais. Não é permitido copiar ou
+        reproduzir textos e imagens sem autorização prévia.
+      </p>
+
+      <h2>4. Comentários e interações</h2>
+      <p>
+        Caso o site ofereça áreas de comentários, o visitante se compromete a manter respeito e não publicar
+        conteúdos ofensivos, ilegais ou prejudiciais.
+      </p>
+
+      <h2>5. Publicidade</h2>
+      <p>
+        Este site pode exibir anúncios de terceiros, como o Google AdSense. Esses serviços podem usar cookies
+        e tecnologias semelhantes para fornecer anúncios relevantes.
+      </p>
+
+      <h2>6. Modificações</h2>
+      <p>
+        Os Termos de Uso podem ser alterados a qualquer momento, sem aviso prévio, para manter o site adequado
+        às regras e leis aplicáveis.
+      </p>
+
+      <h2>7. Contato</h2>
+      <p>
+        Se tiver dúvidas sobre estes Termos, entre em contato pela página
+        <a href="contato.html">Contato</a>.
+      </p>
+
+      <p><em>Última atualização: Fevereiro de 2026</em></p>
+    </div>
+  </section>
+
+
+<div id="footer"></div>
+
+<script>
+fetch("/footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+<script src="/js/menu.js"></script>
+<script src="/js/share.js"></script>
+
+
+
+
+</body>
+</html>
