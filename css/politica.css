@@ -1,0 +1,592 @@
+/* padrao pra todos os css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: #333;
+    background: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.logo {
+    padding: 0 2%;
+}
+
+header .logo img {
+    float: left;
+    width: 310px;
+    height: 160px;
+}
+
+header {
+    height: 100px;
+    padding: 0 2%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+
+header .logo img {
+    margin-top: 10px;
+}
+
+/* =========================
+   MENU MOBILE
+========================= */
+nav.menu-mobile {
+
+    display: none;
+    /* aparece só no mobile */
+    width: 100%;
+    padding: 0 2%;
+    text-align: center;
+}
+
+/* =========================
+   BOTÃO DO MENU
+========================= */
+nav.menu-mobile button {
+    background: none;
+    border: none;
+    padding: 10px;
+    margin-left: auto;
+    /* joga o botão para a direita */
+    display: block;
+    cursor: pointer;
+}
+
+/* ÍCONE */
+nav.menu-mobile button img.icone {
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   LISTA DO MENU (FECHADO)
+========================= */
+nav.menu-mobile ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ebeaea;
+    list-style: none;
+    padding: 0 2%;
+    margin: 0;
+    z-index: 999;
+    border-radius: 10px;
+    border: 1px solid color #ebeaea;
+    overflow: hidden;
+    /* MUITO IMPORTANTE */
+}
+
+/* =========================
+   MENU ABERTO
+========================= */
+nav.menu-mobile ul.active {
+    display: block;
+}
+
+/* =========================
+   ITENS
+========================= */
+nav.menu-mobile ul li {
+    width: 100%;
+}
+
+/* LINKS */
+nav.menu-mobile ul li a {
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    padding: 14px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    text-align: center;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* =========================
+   LINHA CONTÍNUA
+========================= */
+nav.menu-mobile ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cfcfcf;
+    transition: background-color 0.3s ease;
+}
+
+/* =========================
+   HOVER
+========================= */
+nav.menu-mobile ul li a:hover {
+    color: #698293;
+}
+
+nav.menu-mobile ul li a:hover::after {
+    background-color: #698293;
+}
+
+/* =========================
+   RESPONSIVO (EXEMPLO)
+========================= */
+
+
+
+header nav.menu-desktop {
+    float: right;
+}
+
+header nav.menu-desktop ul {
+    padding: 45px 0;
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    float: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+
+/* ============================= */
+/* PÁGINAS LEGAIS (POLÍTICA / TERMOS) */
+/* ============================= */
+
+section.pagina-info {
+  padding: 60px 20px;
+}
+
+section.pagina-info .container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+section.pagina-info h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #698293;
+}
+
+section.pagina-info h2 {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: #698293;
+}
+
+section.pagina-info p {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #4b4b4b;
+  margin-bottom: 15px;
+}
+
+section.pagina-info ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+section.pagina-info ul li {
+  margin-bottom: 10px;
+  color: #4b4b4b;
+}
+
+section.pagina-info a {
+  color: #0066cc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+section.pagina-info a:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    section.oferta-trabalho .comum {
+        width: 50%;
+    }
+
+    /* Esconde o último item para ficar par (9 → 8) */
+    section.oferta-trabalho .comum:nth-child(10) {
+        display: none;
+    }
+
+    section.oferta-trabalho .saigo {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:855px) {
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width:800px) {
+
+    section.curso .container .img-curso6,
+    section.curso .container .img-curso7,
+    section.curso .container .img-curso8,
+    section.curso .container .img-curso9,
+    section.curso .container .img-curso10,
+    section.curso .container .img-curso11,
+    section.curso .container .img-curso12,
+    section.curso .container .img-curso13 {
+        flex: none;
+        display: block;
+        width: 70%;
+        height: 200px;
+        margin: 0 auto 10px auto;
+        background-size: contain;
+    }
+
+    section.curso .texto-curso {
+        flex: 2 1 500px;
+        /* texto ocupa mais espaço */
+        color: #4b4b4b;
+
+        /*background-color: #4b4b4b;*/
+    }
+
+    /*-----      secao engajamento    -----*/
+    section.oferta-trabalho .comum {
+        width: 50%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+    section.servicos>.container {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    section.servicos>.container .box-servicos:nth-of-type(1) {
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+
+    }
+
+    section.servicos>.container .box-servicos:nth-of-type(2) {
+        width: 95%;
+        max-width: 380px;
+        padding: 50px 2%;
+
+    }
+
+    section.servicos>.container .box-servicos:nth-of-type(3) {
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+
+    }
+
+    section.servicos>.container .box-servicos {
+        background-image: none;
+
+    }
+
+    section.perfil-container .perfil-wraper2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section.perfil-container img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    section.perfil-container .texto-perfil {
+        width: 90%;
+        margin-top: 25px;
+        padding: 0;
+    }
+
+    section.perfil-container .texto-perfil a {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+    section.videos .box-videos {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: calc(90% * 0.6);
+        border: 3px solid white;
+    }
+
+
+
+    /*---curiosidade japao---*/
+
+    section.sobre-japao .container .texto-curiosidade {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section.sobre-japao .japao-wraper .japao-texto {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+
+    }
+
+    section.sobre-japao .container .texto-curiosidade h2 {
+        color: #698293;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    section.sobre-japao .container .texto-curiosidade p {
+        color: #4b4b4b;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    section.sobre-japao .japao-wraper2 {
+        display: inline-block;
+        text-align: center;
+    }
+
+    section.sobre-japao .img-sobrejapao,
+    section.sobre-japao .img-sobrejapao1,
+    section.sobre-japao .img-sobrejapao2,
+    section.sobre-japao .img-sobrejapao3 {
+        width: 50%;
+        display: inline-block;
+    }
+
+
+
+    section.sobre-japao .japao-texto {
+        width: 80%;
+        margin: 0 20px;
+        margin-top: 25px;
+    }
+
+    .img-mosaico-single-social {
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-social>div:nth-of-type(1n+7) {
+        display: none;
+    }
+
+
+
+    footer {
+        text-align: center;
+    }
+
+    footer .footer-block {
+        float: none;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+
+    section.br-container .br-wraper2 {
+        display: inline-block;
+        text-align: center;
+    }
+
+    section.br-container .img-perfil {
+        width: 50%;
+        display: inline-block;
+    }
+
+    section.br-container .texto-perfil-br {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    section.sobre-japao .japao-wraper .img-sobrejapao,
+    section.sobre-japao .japao-wraper .img-sobrejapao1,
+    section.sobre-japao .japao-wraper .img-sobrejapao2,
+    section.sobre-japao .japao-wraper .img-sobrejapao3 {
+        width: 90%;
+    }
+
+    section.sobre-japao .japao-texto p {
+        width: 100%;
+        font-size: 16px;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+
+
+
+    section.empreiteiras-japao .box-empreiteira {
+        flex-direction: column;
+
+    }
+
+    section.empreiteiras-japao .img-empreiteira {
+        width: 100%;
+    }
+
+    section.empreiteiras-japao .img-empreiteira1 {
+        width: 100%;
+    }
+
+    [class^="img-empreiteira"] {
+        /* dessa forma é melhor pq já pego todas as class que começa com o nome da mesma*/
+        width: 100%;
+    }
+
+
+    section.empreiteiras-japao .texto-empreiteira {
+        flex: 2 1 200px;
+        color: #4b4b4b;
+
+
+    }
+
+    section.sobre-japao .img-sobrejapao,
+    section.sobre-japao .img-sobrejapao1,
+    section.sobre-japao .img-sobrejapao2,
+    section.sobre-japao .img-sobrejapao3 {
+        width: 60%;
+        display: inline-block;
+    }
+
+
+
+}
+
+@media screen and (max-width:580px) {
+    section.sobre-mim img {
+        max-width: 300px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 548px) {
+
+    section.oferta-trabalho .texto-oferta h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+
+    section.videos .box-videos {
+        width: 100%;
+        padding-top: calc(100% * 0.6);
+    }
+
+    section.sobre-mim img {
+        max-width: 500px;
+        padding: 15px 0;
+
+    }
+
+    .img-mosaico-single-social {
+        width: calc(100% / 4);
+        padding-top: calc(100% / 4);
+    }
+
+    .mosaico-social>div:nth-of-type(1n+5) {
+        display: none;
+    }
+
+
+}
