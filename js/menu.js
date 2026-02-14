@@ -19,3 +19,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+
+function iniciarMenuMobile() {
+  const btn = document.querySelector(".menu-btn");
+  const menu = document.querySelector(".menu-list");
+
+  if (!btn || !menu) {
+    console.log("Menu não encontrado ainda");
+    return;
+  }
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+}

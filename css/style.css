@@ -18,7 +18,9 @@ body {
 }
 
 body {
+    text-decoration: none;
     overflow: -moz-scrollbars-none;
+    overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
     font-family: "Montserrat", sans-serif;

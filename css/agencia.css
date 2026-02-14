@@ -19,6 +19,8 @@ body {
 }
 
 body {
+    text-decoration: none;
+    overflow-x: hidden;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
     scrollbar-width: none;

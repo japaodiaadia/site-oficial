@@ -15,15 +15,17 @@
   <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="Contato | Japão no meu dia a dia">
   <meta property="og:description" content="Fale com a nossa equipe e envie sua mensagem diretamente pelo site.">
-  <meta property="og:image" content="https://seusite.com/imagens/contato.jpg"> <!-- Altere se quiser -->
-  <meta property="og:url" content="https://seusite.com/contato.html"> <!-- Ajustar depois com seu domínio -->
+  <meta property="og:image" content="https://ohaiojp.com/imagens/contato.jpg"> <!-- Altere se quiser -->
+  <meta property="og:url" content="https://ohaiojp.com/contato.html"> <!-- Ajustar depois com seu domínio -->
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contato | Japão no meu dia a dia">
   <meta name="twitter:description" content="Envie sua mensagem ou chame no WhatsApp.">
-  <meta name="twitter:image" content="https://seusite.com/imagens/contato.jpg">
-  <link rel="icon" href="https://seusite.com/favicon.png" type="image/png">
+  <meta name="twitter:image" content="https://ohaiojp.com/imagens/contato.jpg">
+  <link rel="icon" href="https://ohaiojp.com/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="css/contato.css" type="text/css">
   <link rel="shortcut icon" type="image/ico" href="icon-1.png">
 
@@ -71,6 +73,8 @@
           <li><a href="trabalho.html">Trabalho no japão</a></li>
           <li><a href="trem.html">trem bala japones</a></li>
           <li><a href="hanabi.html">Hanabi e matsuri</a></li>
+          <li><a href="politica.html" target="_blank">Politica de privacidade</a></li>
+            <li><a href="termos.html" target="_blank">termos de uso</a></li>
         </ul>
       </nav>
     </div><!--containner-->
@@ -129,70 +133,15 @@
 
 
 
+    <div id="footer"></div>
 
-  <section class="social">
-    <div class="instagram-chamada">
-      <a target="_blank" href="https://www.instagram.com/wesley_miyaguchi/"><img src="images/inst.png" /></a>
-      <p>Acesse o Instagram para ver mais fotos<br />
-        @wesley_miyaguchi
-      </p>
-    </div><!--instagram-chamada-->
-
-    <div class="mosaico-social">
-      <div style="background-image: url('images/wes1.jpg');" class="img-mosaico-single-social"></div>
-      <!--img-mosaico-single-social-->
-      <div style="background-image: url('images/wes4.jpg');" class="img-mosaico-single-social"></div>
-      <!--img-mosaico-single-social-->
-      <div style="background-image: url('images/wes3.jpg');" class="img-mosaico-single-social"></div>
-      <!--img-mosaico-single-social-->
-      <div style="background-image: url('images/wes2.jpg');" class="img-mosaico-single-social"></div>
-      <!--img-mosaico-single-social-->
-      <div style="background-image: url('images/wes5.jpg');" class="img-mosaico-single-social"></div>
-      <!--img-mosaico-single-social-->
-      <div style="background-image: url('images/wes6.jpg');" class="img-mosaico-single-social"></div>
-      <!--img-mosaico-single-social-->
-      <div style="background-image: url('images/wes7.jpg');" class="img-mosaico-single-social"></div>
-      <!--img-mosaico-single-social-->
-      <div style="background-image: url('images/wes8.jpg');" class="img-mosaico-single-social"></div>
-      <!--img-mosaico-single-social-->
-      <div style="background-image: url('images/wes9.jpg');" class="img-mosaico-single-social"></div>
-      <!--img-mosaico-single-social-->
-    </div><!--mosaico-social-->
-    <div class="facebook-chamada">
-      <a target="_blank" href="https://www.facebook.com/profile.php?id=100065526377652"><img src="images/fb.png" /></a>
-      <p>Acesse o Facebook para mais<br />
-        @ShirleyeWesley</p>
-    </div><!--fb-chamada-->
-    <div class="clear"></div>
-  </section><!--social-->
-
-
-  <footer style="margin-top: -68px;">
-
-    <div class="container">
-      <div class="footer-block">
-        <h2>Telefone Contato</h2>
-        <p>+81 080-9129-7650<br /> <a
-            href="https://wa.me/8108091297650?text=Olá%2C%20gostaria%20de%20mais%20informações!" target="_blank">
-            Chamar no WhatsApp
-          </a></p>
-      </div><!--footer-block-->
-
-      <div class="footer-block">
-        <h2>E-Mail</h2>
-        <p>japaodiaadia@gmail.com</p>
-        <a href="contato.html">Enviar Mensagem</a>
-
-      </div><!--footer-block-->
-
-      <div class="footer-block">
-        <h2>Autor - Wesley Miyaguchi</h2>
-        <p>Criador de conteúdo<br> Desenvolvedor Web em crescimento</p>
-      </div><!--footer-block-->
-
-      <div class="clear"></div>
-    </div><!--container-->
-  </footer>
+<script>
+fetch("/footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
 
 
   <script>
