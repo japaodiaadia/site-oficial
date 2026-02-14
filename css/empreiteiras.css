@@ -815,6 +815,11 @@ footer .footer-block {
     position: relative;
   }
 
+  body{
+        box-shadow: none;
+    }
+
+
 }
 
 

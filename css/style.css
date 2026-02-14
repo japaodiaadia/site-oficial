@@ -1124,6 +1124,10 @@ footer .footer-block {
         width: 50%;
     }
 
+    body{
+        box-shadow: none;
+    }
+
 }
 
 

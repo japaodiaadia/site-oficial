@@ -550,6 +550,11 @@ footer .footer-block {
     nav.menu-mobile {
         display: block;
     }
+
+    body{
+        box-shadow: none;
+    }
+
 }
 
 @media screen and (max-width:786px) {
