@@ -30,6 +30,9 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+body a{
+    text-decoration: none;
+}
 
 .clear {
     clear: both;

@@ -719,12 +719,11 @@ section.oferta-trabalho .img-oferta {
 }
 
 .img-oferta {
-
-    transition: transform 1.09s ease;
+    transition: transform 1.03s ease;
 }
 
 .img-oferta:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
     border: 1px solid #688293;
 }
 
@@ -941,7 +940,6 @@ section.oferta-trabalho .saigo {
     color: #fff;
 }
 
-/* cores específicas (opcional) */
 .share-btn.fb:hover {
     background: #1877f2;
     border-color: #1877f2;
@@ -1060,6 +1058,7 @@ footer .footer-block {
     margin-top: 8px;
     color: white;
     font-size: 14px;
+    text-decoration: none;
 }
 
 

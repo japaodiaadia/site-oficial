@@ -34,6 +34,9 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+body a{
+    text-decoration: none;
+}
 
 .clear {
     clear: both;
@@ -205,21 +208,6 @@ header nav ul li a {
 
 /*  ========== fim do padrao header ========  */
 
-
-
-/*section.video-agencia{
-    max-width: 600px;
-    padding: 0 2%;
-    margin: 0 auto;
-    margin-top: 40px;
-}
-
-section.video-agencia .video-container{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-}*/
-
 section.video-agencia {
     max-width: 1000px;
     margin: 20px auto 0 auto;
@@ -237,7 +225,6 @@ section.video-agencia video {
     width: 100%;
     height: auto;
     display: block;
-    /* 🔥 evita espaço extra embaixo */
     border-radius: 8px;
 }
 
@@ -264,7 +251,6 @@ section.agencia .box-agencia {
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
-    /* Isso faz o conteúdo se adaptar em telas pequenas */
     transform: tranform 0.3s ease;
     border-radius: 25px;
     padding: 8px;
