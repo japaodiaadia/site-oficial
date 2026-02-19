@@ -39,17 +39,7 @@ body a{
 }
 
 
-.logo {
-    padding: 0 2%;
 
-}
-
-
-header .logo img {
-    float: left;
-    width: 310px;
-    height: 160px;
-}
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -58,9 +48,20 @@ body {
     background: #fff;
 }
 
-header {
-    height: 100px;
+
+.logo-do-site{
+    max-width: 470px;
     padding: 0 2%;
+}
+
+.logo-do-site img.img-site{
+    width: 100%;
+    height: auto;
+}
+
+header {
+    height: auto;
+    padding: 15px 2%;
     border-bottom: 1px solid #eee;
     display: flex;
     align-items: center;
@@ -69,10 +70,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 30;
-}
-
-header .logo img {
-    margin-top: 10px;
 }
 
 /* =========================
@@ -233,23 +230,21 @@ section.comidas {
     max-width: 800px;
     display: flex;
     margin: 025px auto;
-    transform: transform 0.3 ease;
-    border-radius: 25px;
+
     padding: 10px;
 }
-
-section.comidas:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-}
-
 
 section.comidas .container {
     width: 100%;
     margin: 0 auto;
     padding: 0 2%;
+        transform: transform 0.3 ease;
+    border-radius: 25px;
 }
-
+section.comidas .container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
 section.comidas .img-comidas {
     aspect-ratio: 7 / 3;
     background-image: url('../images/yakisoba-jp.jpg');

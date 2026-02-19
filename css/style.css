@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    outline: 2px solid red;
 }
 
 .container {
@@ -38,19 +39,19 @@ body::-webkit-scrollbar {
     clear: both;
 }
 
-.logo {
+.logo-do-site{
+    max-width: 470px;
     padding: 0 2%;
 }
 
-header .logo img {
-    float: left;
-    width: 310px;
-    height: 160px;
+.logo-do-site img.img-site{
+    width: 100%;
+    height: auto;
 }
 
 header {
-    height: 100px;
-    padding: 0 2%;
+    height: auto;
+    padding: 15px 2%;
     border-bottom: 1px solid #eee;
     display: flex;
     align-items: center;
@@ -60,10 +61,10 @@ header {
     top: 0;
     z-index: 30;
 }
-
+/*
 header .logo img {
     margin-top: 10px;
-}
+}*/
 
 /* =========================
    MENU MOBILE
@@ -414,26 +415,28 @@ span.link-geral a {
 section.perfil-container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 0;
-    transition: transform 0.3s ease;
-    border-radius: 25px;
+    padding: 40px 0;  
 }
 
-section.perfil-container:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
-}
 
 /* container central */
 section.perfil-container .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 2%;
+    
 }
 
 /* wrapper */
 section.perfil-container .perfil-wraper {
     width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 25px;
+}
+
+section.perfil-container .perfil-wraper:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
 }
 
 /* FLEX PRINCIPAL */
@@ -490,21 +493,19 @@ section.perfil-container .texto-perfil a {
 section.videos {
     max-width: 900px;
     margin: 0 auto;
-    transition: transform 0.3s ease;
-    border-radius: 25px;
-}
-
-section.videos:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
 }
 
 section.videos .container {
     max-width: 800px;
     margin: 0 auto;
+     transition: transform 0.3s ease;
+    border-radius: 25px;
 }
 
-
+section.videos .container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
+}
 
 section.videos {
     padding: 50px;
@@ -536,10 +537,9 @@ section.videos .texto-videos p {
 
 section.videos .box-videos {
     float: left;
-    width: 33.3%;
+    width: calc(33.2%);
     position: relative;
-    padding-top: calc(33.3% * 0.6);
-
+    padding-top: calc(33.3% * 0.6); 
 }
 
 section.videos iframe {
@@ -556,19 +556,19 @@ section.sobre-japao {
     padding: 40px 0;
     max-width: 900px;
     margin: 0 auto;
-    transition: transform 0.3s ease;
-    border-radius: 25px;
+   
 }
-
-section.sobre-japao:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
-}
-
 
 section.sobre-japao .container {
     max-width: 800px;
     margin: 0 auto;
+    transition: transform 0.3s ease;
+    border-radius: 25px;
+}
+
+section.sobre-japao .container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
 }
 
 section.sobre-japao .container .texto-curiosidade {
@@ -685,18 +685,18 @@ section.oferta-trabalho {
     padding: 25px 2%;
     max-width: 900px;
     margin: 0 auto;
+    
+}
+
+section.oferta-trabalho .container {
+    padding-top: 50px;
     transition: transform 0.3s ease;
     border-radius: 25px;
 }
 
-section.oferta-trabalho:hover {
+section.oferta-trabalho .container:hover {
     transform: scale(1.01);
     box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
-}
-
-
-section.oferta-trabalho .container {
-    padding-top: 50px;
 }
 
 section.oferta-trabalho .comum {
@@ -843,14 +843,7 @@ section.oferta-trabalho .saigo {
     max-width: 900px;
     background-color: white;
     margin: 0 auto;
-    transition: transform 0.3s ease;
-    border-radius: 25px;
     margin-top: 5px;
-}
-
-.noticias:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
 }
 
 .noticias h2 {
@@ -1195,7 +1188,10 @@ footer .footer-block {
         margin: 0 auto;
     }
 
-
+     section.perfil-container:hover {
+    transform: none;
+    box-shadow: none;
+  }
 
     section.videos .box-videos {
         float: none;
@@ -1205,7 +1201,7 @@ footer .footer-block {
         border: 3px solid white;
     }
 
-
+   
 
     /*---curiosidade japao---*/
 
@@ -1321,7 +1317,11 @@ footer .footer-block {
 
 @media (max-width: 600px) {
 
-
+    .logo-do-site{
+    max-width: 310px;
+    
+}
+ 
 
     section.empreiteiras-japao .box-empreiteira {
         flex-direction: column;

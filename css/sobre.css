@@ -36,33 +36,28 @@ body {
   clear: both;
 }
 
-.logo {
-  padding: 0 2%;
 
+.logo-do-site{
+    max-width: 470px;
+    padding: 0 2%;
 }
 
-header .logo img {
-  float: left;
-  width: 330px;
-  height: 180px;
+.logo-do-site img.img-site{
+    width: 100%;
+    height: auto;
 }
 
-/* HEADER */
 header {
-  height: 100px;
-  padding: 0 2%;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 30;
-}
-
-header .logo img {
-  margin-top: 10px;
+    height: auto;
+    padding: 15px 2%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 30;
 }
 
 /* =========================
@@ -331,7 +326,7 @@ section.section-video {
   border-radius: 5px;
   text-decoration: none;
   transition:
-    color 0.3s ease, transform 0.3s ease;
+  color 0.3s ease, transform 0.3s ease;
 }
 
 .section-video .container a:hover {
@@ -443,23 +438,21 @@ section.sobre-mim {
   background: #f7f8f9;
   max-width: 900px;
   margin: 0 auto;
-  transition: transform 0.3s ease;
-  border-radius: 25px;
   margin-top: 12px;
 }
-
-section.sobre-mim:hover {
-  transform: scale(1.01);
-  box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
-}
-
-
-
 
 section.sobre-mim .container {
   width: 100%;
   padding: 0 2%;
+  transition: transform 0.3s ease;
+  border-radius: 25px;
 }
+
+section.sobre-mim .container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
+}
+
 
 section.sobre-mim .img-wrapper {
   padding: 0 2%;
@@ -473,6 +466,7 @@ section.sobre-mim img {
   display: block;
   /* remove espaços estranhos */
   margin-bottom: 20px;
+  margin: 0 auto;
 }
 
 section.sobre-mim .sobre-mim-texto p {
@@ -506,17 +500,7 @@ section.sobre-mim .container a {
   background: #f7f8f9;
   padding: 30px 2%;
   margin: auto;
-  transition: transform 0.3s ease;
-  border-radius: 25px;
   margin-top: 5px;
-}
-
-
-
-
-.custo-japao:hover {
-  transform: scale(1.01);
-  box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
 }
 
 .custo-japao h2 {
@@ -613,13 +597,6 @@ table th {
 section.videos {
   max-width: 900px;
   margin: 0 auto;
-  transition: transform 0.3s ease;
-  border-radius: 25px;
-}
-
-section.videos:hover {
-  transform: scale(1.01);
-  box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
 }
 
 section.videos .container {

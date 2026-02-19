@@ -37,19 +37,20 @@ body::-webkit-scrollbar {
     clear: both;
 }
 
-.logo {
+
+.logo-do-site{
+    max-width: 470px;
     padding: 0 2%;
 }
 
-header .logo img {
-    float: left;
-    width: 310px;
-    height: 160px;
+.logo-do-site img.img-site{
+    width: 100%;
+    height: auto;
 }
 
 header {
-    height: 100px;
-    padding: 0 2%;
+    height: auto;
+    padding: 15px 2%;
     border-bottom: 1px solid #eee;
     display: flex;
     align-items: center;
@@ -59,11 +60,6 @@ header {
     top: 0;
     z-index: 30;
 }
-
-header .logo img {
-    margin-top: 10px;
-}
-
 /* =========================
    MENU MOBILE
 ========================= */
