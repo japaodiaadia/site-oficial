@@ -430,14 +430,8 @@ section.perfil-container .container {
 /* wrapper */
 section.perfil-container .perfil-wraper {
     width: 100%;
-    transition: transform 0.3s ease;
-    border-radius: 25px;
 }
 
-section.perfil-container .perfil-wraper:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
-}
 
 /* FLEX PRINCIPAL */
 section.perfil-container .perfil-wraper2 {
@@ -498,14 +492,8 @@ section.videos {
 section.videos .container {
     max-width: 800px;
     margin: 0 auto;
-     transition: transform 0.3s ease;
-    border-radius: 25px;
 }
 
-section.videos .container:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
-}
 
 section.videos {
     padding: 50px;
@@ -562,14 +550,8 @@ section.sobre-japao {
 section.sobre-japao .container {
     max-width: 800px;
     margin: 0 auto;
-    transition: transform 0.3s ease;
-    border-radius: 25px;
 }
 
-section.sobre-japao .container:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
-}
 
 section.sobre-japao .container .texto-curiosidade {
     max-width: 800px;
@@ -690,14 +672,8 @@ section.oferta-trabalho {
 
 section.oferta-trabalho .container {
     padding-top: 50px;
-    transition: transform 0.3s ease;
-    border-radius: 25px;
 }
 
-section.oferta-trabalho .container:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
-}
 
 section.oferta-trabalho .comum {
     float: left;

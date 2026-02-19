@@ -238,13 +238,8 @@ section.comidas .container {
     width: 100%;
     margin: 0 auto;
     padding: 0 2%;
-        transform: transform 0.3 ease;
-    border-radius: 25px;
 }
-section.comidas .container:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-}
+
 section.comidas .img-comidas {
     aspect-ratio: 7 / 3;
     background-image: url('../images/yakisoba-jp.jpg');
@@ -380,14 +375,8 @@ section.depoimentos .depoimento-single {
 section.videos {
     max-width: 900px;
     margin: 0 auto;
-    transition: transform 0.3s ease;
-    border-radius: 25px;
 }
 
-section.videos:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
-}
 
 section.videos .container {
     max-width: 800px;
