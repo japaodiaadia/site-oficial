@@ -663,154 +663,67 @@ section.sobre-japao .japao-texto p {
 
 /*=================== secao engajamento ====================*/
 
-section.oferta-trabalho {
-    padding: 25px 2%;
-    max-width: 900px;
-    margin: 0 auto;
-    
+section.oferta-trabalho{
+max-width:900px;
+margin:0 auto;
+padding: 40px 2%;
 }
 
-section.oferta-trabalho .container {
-    padding-top: 50px;
+.oferta-container{
+    padding: 5px 2%;
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-bottom:20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    background:white;
+    border-radius: 12px;
 }
 
-
-section.oferta-trabalho .comum {
-    float: left;
-    width: 33.3%;
-    border: 5px solid white;
-    overflow: hidden;
+.img-oferta{
+width:50%;
 }
 
-section.oferta-trabalho .img-oferta {
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/yakisoba.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
+.texto-oferta{
+width:50%;
 }
 
-.img-oferta {
-    transition: transform 1.03s ease;
+.img-oferta{
+    overflow:hidden;
+border-radius:8px;
 }
 
-.img-oferta:hover {
-    transform: scale(1.01);
-    border: 1px solid #688293;
+.img-oferta img{
+width:100%;
+height:auto;
+object-fit:cover;
+border-radius:5px;
+transition: transform 1.03s ease;
 }
 
-section.oferta-trabalho .oferta-container1 .img-oferta {
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/hinamatsuri.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.img-oferta img:hover{
+transform:scale(1.01);
+border:1px solid #688293;
 }
 
-section.oferta-trabalho .oferta-container2 .img-oferta {
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/sion.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+section.oferta-trabalho .texto-oferta h2{
+    margin-bottom: 5px;
 }
 
-section.oferta-trabalho .oferta-container3 .img-oferta {
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/trem-bala.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-section.oferta-trabalho .oferta-container4 .img-oferta {
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/proibidojp.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-section.oferta-trabalho .oferta-container5 .img-oferta {
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/TRABALHO2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-section.oferta-trabalho .oferta-container6 .img-oferta {
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/matsuri-2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-section.oferta-trabalho .oferta-container7 .img-oferta {
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/htour.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-section.oferta-trabalho .oferta-container8 .img-oferta {
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/sgarage.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-section.oferta-trabalho .oferta-container9 .img-oferta {
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/suado.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-section.oferta-trabalho .texto-container h2 {
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 30px;
-    color: #698293;
-
-}
-
-section.oferta-trabalho .oferta-container {
-    text-align: center;
-}
-
-section.oferta-trabalho .texto-oferta h2 {
-    font-size: 18px;
-    color: #737373;
-    margin-top: 30px;
-    text-align: center;
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-section.oferta-trabalho .texto-oferta p.oculto {
-    display: none;
+section.oferta-trabalho .texto-oferta h2 a{
+    font-size: 20px;
+    color: #688293;
+    text-decoration: none;
 }
 
 section.oferta-trabalho .texto-oferta p {
-    max-height: 10px;
-    font-size: 14px;
-    color: #8d8d8d;
-    margin-top: 15px;
-    margin-bottom: 12px;
-    text-align: center;
+    font-size:14px;
+    color:#8d8d8d;
+    line-height:1.6;
 }
 
-section.oferta-trabalho .saigo {
-    display: none;
+.reverse{
+flex-direction:row-reverse;
 }
 
 /*  --------------  comeco noticias   --------------   */
@@ -1033,20 +946,25 @@ footer .footer-block {
 
 @media screen and (max-width: 900px) {
 
-    section.oferta-trabalho .comum {
-        width: 50%;
-    }
+    .oferta-container{
+flex-direction:column;
+gap:20px;
+text-align:center;
+}
 
-    /* Esconde o último item para ficar par (9 → 8) */
-    section.oferta-trabalho .comum:nth-child(10) {
-        display: none;
-    }
+.img-oferta,
+.texto-oferta{
+flex:0 0 70%;
+width:70%;
+}
 
-    section.oferta-trabalho .saigo {
-        display: block;
-    }
+.reverse{
+flex-direction:column;
+}
 
 }
+
+
 
 @media screen and (max-width:855px) {
     nav.menu-desktop {
