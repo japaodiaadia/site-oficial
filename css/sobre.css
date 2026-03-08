@@ -439,20 +439,14 @@ section.sobre-mim {
   max-width: 900px;
   margin: 0 auto;
   margin-top: 12px;
+  border-radius: 12px;
 }
 
 section.sobre-mim .container {
   width: 100%;
   padding: 0 2%;
-  transition: transform 0.3s ease;
   border-radius: 25px;
 }
-
-section.sobre-mim .container:hover {
-  transform: scale(1.01);
-  box-shadow: 0 10px 25px rgb(0, 0, 0, 0.35);
-}
-
 
 section.sobre-mim .img-wrapper {
   padding: 0 2%;
@@ -501,6 +495,7 @@ section.sobre-mim .container a {
   padding: 30px 2%;
   margin: auto;
   margin-top: 5px;
+  border-radius: 12px;
 }
 
 .custo-japao h2 {
@@ -753,17 +748,7 @@ footer .footer-block {
 
 
 
-/* responsivo */
-/*@media (max-width: 768px) {
-  .section-video .video-wraper {
-    flex-direction: column;
-  }
 
-  .section-video .video-wraper2,
-  .section-video .contato-mem {
-    width: 100%;
-  }
-}*/
 
 @media screen and (max-width:855px) {
   nav.menu-desktop {

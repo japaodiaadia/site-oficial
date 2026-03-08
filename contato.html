@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -15,13 +15,13 @@
   <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="Contato | Japão no meu dia a dia">
   <meta property="og:description" content="Fale com a nossa equipe e envie sua mensagem diretamente pelo site.">
-  <meta property="og:image" content="https://ohaiojp.com/imagens/contato.jpg"> <!-- Altere se quiser -->
+  <meta property="og:image" content="https://ohaiojp.com/images/contato.jpg"> <!-- Altere se quiser -->
   <meta property="og:url" content="https://ohaiojp.com/contato.html"> <!-- Ajustar depois com seu domínio -->
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contato | Japão no meu dia a dia">
   <meta name="twitter:description" content="Envie sua mensagem ou chame no WhatsApp.">
-  <meta name="twitter:image" content="https://ohaiojp.com/imagens/contato.jpg">
+  <meta name="twitter:image" content="https://ohaiojp.com/images/contato.jpg">
   <link rel="icon" href="https://ohaiojp.com/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
@@ -123,17 +123,6 @@
     </div>
   </section>
 
-  <section class="noticias" id="noticias-cultura">
-    <h2>Cultura Japonesa</h2>
-    <div class="news-container" id="cultura-container"></div>
-  </section>
-
-  <section class="noticias" id="noticias-tecnologia">
-    <h2>Tecnologia no Japão</h2>
-    <div class="news-container" id="tecnologia-container"></div>
-  </section>
-
-
 
     <div id="footer"></div>
 
@@ -201,76 +190,6 @@ fetch("/footer.html")
 
   </script>
   <!--mensagem fim-->
-  <script>
-    const apiKey = "80427bda8f1d41be9f3350b1fd826d4e"; // Substitua pela sua chave do NewsAPI
-
-    // Função para buscar notícias e adicionar na seção
-    async function carregarNoticias(query, containerId) {
-      const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&pageSize=6&apiKey=${apiKey}`;
-
-      try {
-        const response = await fetch(url);
-        const data = await response.json();
-
-        if (data.status !== "ok") throw new Error(data.message);
-
-        const container = document.getElementById(containerId);
-        container.innerHTML = "";
-
-        data.articles.forEach(article => {
-          const newsItem = document.createElement("article");
-          newsItem.innerHTML = `
-        <img class="news-img" src="${article.urlToImage || 'images/placeholder.png'}" alt="Notícia">
-        <h3>${article.title}</h3>
-        <p>${article.description || ''}</p>
-        <a href="${article.url}" target="_blank">Leia mais</a>
-      `;
-          container.appendChild(newsItem);
-        });
-
-      } catch (err) {
-        console.error("Erro ao carregar notícias:", err);
-        const container = document.getElementById(containerId);
-        container.innerHTML = `<p>Não foi possível carregar as notícias.</p>`;
-      }
-    }
-
-    // Chamando para várias seções
-    carregarNoticias("cultura japonesa", "cultura-container");
-    carregarNoticias("tecnologia Japão", "tecnologia-container");
-  </script>
-
-
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-
-      const menuBtn = document.querySelector(".menu-btn");
-      const menu = document.querySelector(".menu-mobile ul");
-
-      // Abrir / fechar ao clicar no botão
-      menuBtn.addEventListener("click", (e) => {
-        e.stopPropagation(); // impede fechar imediatamente
-        menu.classList.toggle("active");
-      });
-
-      // Impede fechar ao clicar dentro do menu
-      menu.addEventListener("click", (e) => {
-        e.stopPropagation();
-      });
-
-      // Fecha ao clicar fora
-      document.addEventListener("click", () => {
-        menu.classList.remove("active");
-      });
-
-    });
-  </script>
-
-
-
-
-
 
 </body>
 

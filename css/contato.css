@@ -26,6 +26,8 @@ body {
   margin: 0;
   color: #333;
   background: #fff;
+  background-image: url("../images/contato-jp.jpg");
+  
 }
 
 body::-webkit-scrollbar {
@@ -201,11 +203,12 @@ header nav ul li a {
 
 section.contato {
   padding: 60px 2%;
-  background: #f7f8f9;
+  background: #ffffff;
   border-radius: 25px;
   max-width: 800px;
   margin: 0 auto;
   margin-top: 30px;
+  border: 1px solid #4b4b4b;
 }
 
 section.contato .container>h2 {
@@ -304,67 +307,6 @@ textarea:focus {
 }
 
 
-/*contato noticias*/
-/*  ----------------------  */
-.noticias {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 25px;
-}
-
-.noticias h2 {
-  text-align: center;
-  color: #688293;
-  margin-bottom: 20px;
-}
-
-.news-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-
-.news-container article {
-  background: #fff;
-  padding: 12px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
-}
-
-.news-container article:hover {
-  transform: scale(1.02);
-}
-
-.news-img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.news-container h3 {
-  font-size: 16px;
-  margin: 5px 0;
-}
-
-.news-container p {
-  font-size: 14px;
-  color: #444;
-}
-
-.news-container a {
-  display: inline-block;
-  margin-top: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #688293;
-}
-
-/*fim contato noticias*/
 
 
 section.social {
