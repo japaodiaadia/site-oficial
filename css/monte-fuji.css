@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /*outline: 2px solid red;*/
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    text-decoration: none;
+    overflow: -moz-scrollbars-none;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: #333;
+    background: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.logo-do-site{
+    max-width: 470px;
+    padding: 0 2%;
+}
+
+.logo-do-site img.img-site{
+    width: 100%;
+    height: auto;
+}
+
+header {
+    height: auto;
+    padding: 15px 2%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+/*
+header .logo img {
+    margin-top: 10px;
+}*/
+
+/* =========================
+   MENU MOBILE
+========================= */
+nav.menu-mobile {
+
+    display: none;
+    /* aparece só no mobile */
+    width: 100%;
+    padding: 0 2%;
+    text-align: center;
+}
+
+/* =========================
+   BOTÃO DO MENU
+========================= */
+nav.menu-mobile button {
+    background: none;
+    border: none;
+    padding: 10px;
+    margin-left: auto;
+    /* joga o botão para a direita */
+    display: block;
+    cursor: pointer;
+}
+
+/* ÍCONE */
+nav.menu-mobile button img.icone {
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   LISTA DO MENU (FECHADO)
+========================= */
+nav.menu-mobile ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ebeaea;
+    list-style: none;
+    padding: 0 2%;
+    margin: 0;
+    z-index: 999;
+    border-radius: 10px;
+    border: 1px solid color #ebeaea;
+    overflow: hidden;
+    /* MUITO IMPORTANTE */
+}
+
+/* =========================
+   MENU ABERTO
+========================= */
+nav.menu-mobile ul.active {
+    display: block;
+}
+
+/* =========================
+   ITENS
+========================= */
+nav.menu-mobile ul li {
+    width: 100%;
+}
+
+/* LINKS */
+nav.menu-mobile ul li a {
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    padding: 14px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    text-align: center;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* =========================
+   LINHA CONTÍNUA
+========================= */
+nav.menu-mobile ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cfcfcf;
+    transition: background-color 0.3s ease;
+}
+
+/* =========================
+   HOVER
+========================= */
+nav.menu-mobile ul li a:hover {
+    color: #698293;
+}
+
+nav.menu-mobile ul li a:hover::after {
+    background-color: #698293;
+}
+
+/* =========================
+   RESPONSIVO (EXEMPLO)
+========================= */
+
+
+
+header nav.menu-desktop {
+    float: right;
+}
+
+header nav.menu-desktop ul {
+    padding: 45px 0;
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    float: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+
+/*===================================*/
+
+section.monte-fuji-capa{
+    padding:40px 2%;
+}
+
+section.monte-fuji-capa .container{
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.img-fuji-san{
+    display:flex;
+    justify-content:center;
+    
+}
+
+.img-fuji-san img{
+    width:100%;
+    max-width:1000px;
+    display:block;
+    margin:0 auto;
+    border-radius:8px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* seção monte fuji */
+
+.monte-fuji{
+    padding:60px 20px;
+    background-color:#ffffff;
+}
+
+.monte-fuji .container{
+    max-width:900px;
+    margin:0 auto;
+}
+
+
+/* titulo principal */
+
+.monte-fuji h1{
+    font-size:38px;
+    margin-bottom:25px;
+    color:#1f2d3d;
+    font-weight:700;
+    line-height:1.3;
+}
+
+/* subtitulos */
+
+.monte-fuji h2{
+    font-size:26px;
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#2c3e50;
+    font-weight:600;
+}
+
+/* paragrafos */
+
+.monte-fuji p{
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:18px;
+    color:#444;
+}
+
+/* listas */
+
+.monte-fuji ul{
+    margin:20px 0;
+    padding-left:25px;
+}
+
+.monte-fuji li{
+    font-size:16px;
+    margin-bottom:10px;
+    color:#333;
+}
+
+/*  galeria */
+
+.galeria-japao{
+padding:60px 2%;
+}
+
+.galeria-grid{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.galeria-grid img{
+width:100%;
+max-width:320px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.galeria-grid img:hover{
+transform:scale(1.03);
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+.lightbox-img{
+max-width:90%;
+max-height:90%;
+border-radius:6px;
+}
+
+.fechar{
+position:absolute;
+top:30px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+
+/* destaques */
+
+.monte-fuji strong{
+    color:#111;
+    font-weight:600;
+}
+
+.monte-fuji em{
+    color:#555;
+}
+
+/* separação entre blocos */
+
+.monte-fuji h2 + p{
+    margin-top:5px;
+}
+
+.mapa-fuji{
+    padding:60px 20px;
+    background:#f5f7fa;
+}
+
+.mapa-fuji h2{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.mapa-container{
+    margin-top:25px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+#lightbox{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+#lightbox img{
+max-width:90%;
+max-height:90%;
+}
+
+#fechar{
+position:absolute;
+top:30px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+
+
+/* mobile */
+
+@media screen and (max-width:768px){
+
+    .monte-fuji{
+        padding:40px 18px;
+    }
+
+    .monte-fuji h1{
+        font-size:28px;
+    }
+
+    .monte-fuji h2{
+        font-size:22px;
+    }
+
+    .monte-fuji p{
+        font-size:16px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:855px) {
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+}
