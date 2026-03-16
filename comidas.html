@@ -55,9 +55,7 @@
             </nav><!--menu desktop-->
 
             <nav class="menu-mobile">
-                <button class="menu-btn">
-                    <img class="icone" src="images/icon_menu.png" alt="Menu">
-                </button>
+                <button class="menu-btn">☰</button>
 
                 <ul class="menu-list">
                         <li><a href="index.html">Inicio</a></li>
@@ -689,30 +687,8 @@ fetch("/footer.html")
 </script>
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-
-            const menuBtn = document.querySelector(".menu-btn");
-            const menu = document.querySelector(".menu-mobile ul");
-
-            // Abrir / fechar ao clicar no botão
-            menuBtn.addEventListener("click", (e) => {
-                e.stopPropagation(); // impede fechar imediatamente
-                menu.classList.toggle("active");
-            });
-
-            // Impede fechar ao clicar dentro do menu
-            menu.addEventListener("click", (e) => {
-                e.stopPropagation();
-            });
-
-            // Fecha ao clicar fora
-            document.addEventListener("click", () => {
-                menu.classList.remove("active");
-            });
-
-        });
-    </script>
+    <script src="js/menu.js"></script>
+    <script src="js/share.js"></script>
 
 </body>
 

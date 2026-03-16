@@ -7,7 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   menuBtn.addEventListener("click", (e) => {
     e.stopPropagation();
+
     menu.classList.toggle("active");
+
+    if (menu.classList.contains("active")) {
+      menuBtn.textContent = "✖";
+    } else {
+      menuBtn.textContent = "☰";
+    }
   });
 
   menu.addEventListener("click", (e) => {
@@ -16,21 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("click", () => {
     menu.classList.remove("active");
+    menuBtn.textContent = "☰";
   });
 
 });
-
-
-function iniciarMenuMobile() {
-  const btn = document.querySelector(".menu-btn");
-  const menu = document.querySelector(".menu-list");
-
-  if (!btn || !menu) {
-    console.log("Menu não encontrado ainda");
-    return;
-  }
-
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("active");
-  });
-}

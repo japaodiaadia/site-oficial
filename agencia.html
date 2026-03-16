@@ -57,9 +57,7 @@
             </nav><!--menu desktop-->
 
             <nav class="menu-mobile">
-                <button class="menu-btn">
-                    <img class="icone" src="images/icon_menu.png" alt="Menu">
-                </button>
+                <button class="menu-btn">☰</button>
 
                 <ul class="menu-list">
                          <li><a href="index.html">Inicio</a></li>
@@ -464,6 +462,43 @@
         </p>
     </section>
 
+    <section class="card-ver-mais">
+    <div class="container">
+
+        <h2>Explore mais conteúdos</h2>
+
+        <div class="grid-ver-mais">
+
+            <a href="turismo.html" class="card-mini">
+                <img src="images/monte-fuji-jp.jpg" alt="Turismo no Japão">
+                <h3>Turismo no Japão</h3>
+            </a>
+
+          <a href="#" class="card-mini">
+                <img src="images/matsuri-2.jpg" alt="Festivais japoneses">
+                <h3>Festivais</h3>
+            </a>
+
+            <a href="#" class="card-mini">
+                <img src="images/ramen.jpg" alt="Comida japonesa">
+                <h3>Comida japonesa</h3>
+            </a>
+
+            <a href="#" class="card-mini">
+                <img src="images/traba-japao.jpg" alt="Vida no Japão">
+                <h3>O Japão ainda vale a pena?</h3>
+            </a>
+
+              <a href="hanabi.html" class="card-mini">
+                <img src="img/cultura.jpg" alt="Cultura japonesa">
+                <h3>Cultura japonesa</h3>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
     <div id="footer"></div>
 
     <script>
@@ -475,31 +510,8 @@
     </script>
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-
-            const menuBtn = document.querySelector(".menu-btn");
-            const menu = document.querySelector(".menu-mobile ul");
-
-            // Abrir / fechar ao clicar no botão
-            menuBtn.addEventListener("click", (e) => {
-                e.stopPropagation(); // impede fechar imediatamente
-                menu.classList.toggle("active");
-            });
-
-            // Impede fechar ao clicar dentro do menu
-            menu.addEventListener("click", (e) => {
-                e.stopPropagation();
-            });
-
-            // Fecha ao clicar fora
-            document.addEventListener("click", () => {
-                menu.classList.remove("active");
-            });
-
-        });
-    </script>
-
+   <script src="js/menu.js"></script>
+    <script src="js/share.js"></script>
     <a href="#" class="btn-topo">↑</a>   
 
 </body>
