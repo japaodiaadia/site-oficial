@@ -104,9 +104,9 @@ nav.menu-mobile button img.icone {
 nav.menu-mobile ul {
     display: none;
     position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
+    top: 75px;
+    left: 20%;
+    width: 80%;
     background-color: #ebeaea;
     list-style: none;
     padding: 0 2%;
@@ -225,7 +225,59 @@ section.video-curso {
     margin-top: 40px;
 }
 
+/* SECTION PRINCIPAL */
+.cursos-s5 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    line-height: 1.6;
+}
 
+/* TÍTULO PRINCIPAL */
+.cursos-s5 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* PARÁGRAFOS */
+.cursos-s5 p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* LISTA */
+.cursos-s5 ul {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ITENS */
+.cursos-s5 li {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    border-left: 5px solid #e60023;
+}
+
+/* HOVER SUAVE */
+.cursos-s5 li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* SUBTÍTULOS */
+.cursos-s5 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #111;
+}
 
 section.curso {
     padding: 40px 2%;
@@ -250,7 +302,6 @@ section.curso .box-curso {
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
-    /* Isso faz o conteúdo se adaptar em telas pequenas */
     transform: transform 0.3s ease;
     border-radius: 12px;
 }
@@ -260,19 +311,6 @@ section.curso .box-curso:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
-/* uma maneira de fazer e atacar todas class
-html. ex: 
-<div class="curso-img" data-img="1"></div>
-<div class="curso-img" data-img="2"></div>
-section.curso [class^="img-curso"]{
-    border-radius: 5px;
-}*/
-/*
-[class^="img-curso"]{
-    border-radius: 8px;
-}
-    outra maneira de fazer mais nem uma dela deu certo
-*/
 section.curso .container .img-curso {
     flex: 1 1 300px;
     /* flexível, com base mínima */
@@ -455,155 +493,120 @@ section.curso a {
     color: #4b4b4b;
 }
 
-section.videos .container {
-    max-width: 800px;
-    margin: 0 auto;
+/*====================================*/
+
+
+.relacionados-s2 {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 15px;
 }
 
-
-
-section.videos {
-    padding: 50px;
+.grid-relacionados-s2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
 }
 
-section.videos .texto-videos h2 {
-    text-align: center;
-    color: #698293;
-    font-size: 18px;
-    text-transform: uppercase;
+/* =========================
+   CARD BASE
+========================= */
+
+.card-s2 {
+    text-decoration: none;
+    color: inherit;
 }
 
-section.videos .container .texto-videos p {
-    max-width: 650px;
-    margin: 0 auto;
-}
+/* =========================
+   DESTAQUE
+========================= */
 
-
-section.videos .texto-videos p {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #4b4b4b;
-    font-size: 14px;
-    margin-top: 8px;
-    text-align: center;
-}
-
-
-
-section.videos .box-videos {
-    float: left;
-    width: 33.3%;
+.destaque-s2 {
+    grid-row: span 2;
     position: relative;
-    padding-top: calc(33.3% * 0.6);
-
+    overflow: hidden;
+    border-radius: 12px;
 }
 
-section.videos iframe {
-    position: absolute;
-    left: 0;
-    top: 0;
+.destaque-s2 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
+.destaque-s2 h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
 
-section.social {
-    padding: 70px 0;
-}
-
-.instagram-chamada {
-    float: left;
-    width: 100%;
-    text-align: center;
-    padding: 40px 0;
-    background: #98a5ae;
-
-}
-
-.instagram-chamada p {
-    line-height: 23px;
-    color: white;
-    padding: 10px 0;
-    font-size: 13px;
-}
-
-.mosaico-social {
-    float: left;
-    width: 100%;
-}
-
-.img-mosaico-single-social {
-    float: left;
-    width: calc(100% / 9);
-    padding-top: calc(100% / 9);
-    background-color: rgb(210, 210, 210);
-    border: 3px solid white;
-}
-
-.img-mosaico-single-social {
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-.facebook-chamada {
-    float: left;
-    width: 100%;
-    text-align: center;
-    padding: 40px 0;
-    background: #688293;
-}
-
-.facebook-chamada a img {
-    background-size: 25px;
-}
-
-.facebook-chamada p {
-    line-height: 23px;
-    color: white;
-    padding: 10px 0;
-    font-size: 13px;
-}
-
-
-footer {
-    padding: 60px 2%;
-    background-color: #688293;
-    text-align: center;
-}
-
-footer .container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-footer .footer-block {
-    float: left;
-    width: 33.3%;
-}
-
-.footer-block a {
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
-    font-size: 14px;
-}
-
-.footer-block h2 {
-    color: white;
-    font-weight: normal;
+    color: #fff;
     font-size: 18px;
-    margin: 0;
+
+    background: rgba(0,0,0,0.4);
+    padding: 6px 10px;
+    border-radius: 6px;
 }
 
-.footer-block p {
-    margin-top: 8px;
-    color: white;
-    font-size: 14px;
+/* =========================
+   PEQUENOS
+========================= */
+
+.pequeno-s2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+
+    transition: 0.2s;
+}
+
+.pequeno-s2:hover {
+    background: #eaeaea;
+}
+
+.relacionados-s2 h2{
+    text-align: center;
+    color: #698293;
+    padding-bottom: 20px;
+}
+
+.texto-curso h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.texto-curso p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.box-curso {
+    transition: 0.3s;
+}
+
+.box-curso:hover {
+    transform: translateY(-5px);
+}
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    .grid-relacionados-s2 {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-s2 {
+        height: 200px;
+    }
 }
 
 
+/*========================================*/
 
 @media screen and (max-width:855px) {
     nav.menu-desktop {
@@ -895,6 +898,22 @@ footer .footer-block {
         width: 80%;
         margin: 0 auto;
         margin-top: 25px;
+    }
+
+     .cursos-s5 {
+        padding: 40px 15px;
+    }
+
+    .cursos-s5 h2 {
+        font-size: 1.5rem;
+    }
+
+    .cursos-s5 h3 {
+        font-size: 1.1rem;
+    }
+
+    .cursos-s5 li {
+        padding: 20px;
     }
 
 }

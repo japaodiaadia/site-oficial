@@ -108,9 +108,9 @@ nav.menu-mobile button img.icone {
 nav.menu-mobile ul {
     display: none;
     position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
+    top: 75px;
+    left: 20%;
+    width: 80%;
     background-color: #ebeaea;
     list-style: none;
     padding: 0 2%;

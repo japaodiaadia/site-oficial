@@ -104,7 +104,7 @@ nav.menu-mobile button img.icone {
 }
 
 .menu-btn{
-font-size:30px;
+font-size:40px;
 background:none;
 border:none;
 cursor:pointer;
@@ -117,7 +117,7 @@ color:#698293;
 nav.menu-mobile ul {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 75px;
     left: 20%;
     width: 80%;
     background-color: #ebeaea;
@@ -212,8 +212,6 @@ header nav ul li a {
 }
 
 /*  ========== fim do padrao header ========  */
-
-/**     ------     mosaico    -----    **/
 
 .video-capa{
     padding-top: 15px;
@@ -335,7 +333,7 @@ section.videos iframe {
 /* =========== propaganda de empresas =============== */
 
 section.sobre-japao {
-    padding: 40px 0;
+    padding: 40px 2%;
     max-width: 900px;
     margin: 0 auto;
    
@@ -382,9 +380,9 @@ section.sobre-japao .japao-wraper2 {
 }
 
 section.sobre-japao .img-sobrejapao {
-    width: 30%;
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/agenscias5.png');
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    background-image: url('../images/IMG-AGENCIA-2.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 3%;
@@ -396,9 +394,9 @@ section.sobre-japao .img-sobrejapao {
 }
 
 section.sobre-japao .img-sobrejapao1 {
-    width: 30%;
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/empreiteirasjp.png');
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    background-image: url('../images/empreiteira-novo.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 3%;
@@ -406,8 +404,8 @@ section.sobre-japao .img-sobrejapao1 {
 }
 
 section.sobre-japao .img-sobrejapao2 {
-    width: 30%;
-    aspect-ratio: 1 / 1;
+    width: 60%;
+    aspect-ratio: 16 / 9;
     background-image: url('../images/rumoaojapao.png');
     background-size: cover;
     background-position: center;
@@ -415,9 +413,9 @@ section.sobre-japao .img-sobrejapao2 {
 }
 
 section.sobre-japao .img-sobrejapao3 {
-    width: 30%;
-    aspect-ratio: 1 / 1;
-    background-image: url('../images/regras.jpg');
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    background-image: url('../images/sapatos-em-casa.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 3%;
@@ -439,7 +437,7 @@ section.sobre-japao .img-sobrejapao3:hover {
 }
 
 section.sobre-japao .japao-texto {
-    width: 70%;
+    width: 40%;
     padding: 0 30px;
 }
 
@@ -745,7 +743,7 @@ section.card-ver-mais{
 }
 
 /*============== compartilhar---------*/
-
+/*
 .share-site {
     margin: 30px auto;
     max-width: 400px;
@@ -795,7 +793,7 @@ section.card-ver-mais{
     background: #000;
     border-color: #000;
 }
-
+*/
 /*/  ====================== botao topo  =====================*/
 
 .btn-topo{
@@ -819,68 +817,50 @@ section.card-ver-mais{
     background: #4f6676;
 }
 
+/*  ======================== botoes, icones  =============*/
 
-
-/* ----- sessao intagram -------*/
-
-section.social {
-    padding: 70px 0;
-}
-
-.instagram-chamada {
-    float: left;
+.social-bar-s2 {
+    border-top: solid 1px #698293;
+    top: 70px; /* ajusta conforme seu menu */
+    left: 0;
     width: 100%;
-    text-align: center;
-    padding: 40px 0;
-    background: #98a5ae;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
 }
 
-.instagram-chamada p {
-    line-height: 23px;
-    color: white;
-    padding: 10px 0;
+.social-text-s2 {
     font-size: 13px;
+    color: #555;
 }
 
-.mosaico-social {
-    float: left;
-    width: 100%;
+.social-icons-s2 {
+    display: flex;
+    gap: 10px;
 }
 
-.img-mosaico-single-social {
-    float: left;
-    width: calc(100% / 9);
-    padding-top: calc(100% / 9);
-    background-color: rgb(210, 210, 210);
-    border: 3px solid white;
+.social-link-s2 {
+    display: flex;
+    align-items: center;
 }
 
-.img-mosaico-single-social {
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.social-icon-s2 {
+    width: 22px;
+    height: 22px;
     cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
-.facebook-chamada {
-    float: left;
-    width: 100%;
-    text-align: center;
-    padding: 40px 0;
-    background: #688293;
+.social-icon-s2:hover {
+    transform: scale(1.2);
 }
 
-.facebook-chamada a img {
-    background-size: 25px;
-}
+/*========================================*/
 
-.facebook-chamada p {
-    line-height: 23px;
-    color: white;
-    padding: 10px 0;
-    font-size: 13px;
-}
 
 
 footer {
@@ -1064,7 +1044,7 @@ width:100%;
     section.sobre-japao .img-sobrejapao1,
     section.sobre-japao .img-sobrejapao2,
     section.sobre-japao .img-sobrejapao3 {
-        width: 50%;
+        width: 90%;
         display: inline-block;
     }
 

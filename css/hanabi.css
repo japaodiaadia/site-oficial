@@ -100,9 +100,9 @@ nav.menu-mobile button img.icone {
 nav.menu-mobile ul {
   display: none;
   position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
+  top: 75px;
+  left: 20%;
+  width: 80%;
   background-color: #ebeaea;
   list-style: none;
   padding: 0 2%;
@@ -357,103 +357,64 @@ section.videos iframe {
   height: 100%;
 }
 
-/* ----- sessao intagram -------*/
-
-section.social {
-  padding: 70px 0;
-}
-
-.instagram-chamada {
-  float: left;
-  width: 100%;
-  text-align: center;
-  padding: 40px 0;
-  background: #98a5ae;
-
-}
-
-.instagram-chamada p {
-  line-height: 23px;
-  color: white;
-  padding: 10px 0;
-  font-size: 13px;
-}
-
-.mosaico-social {
-  float: left;
-  width: 100%;
-}
-
-.img-mosaico-single-social {
-  float: left;
-  width: calc(100% / 9);
-  padding-top: calc(100% / 9);
-  background-color: rgb(210, 210, 210);
-  border: 3px solid white;
-}
-
-.img-mosaico-single-social {
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.facebook-chamada {
-  float: left;
-  width: 100%;
-  text-align: center;
-  padding: 40px 0;
-  background: #688293;
-}
-
-.facebook-chamada a img {
-  background-size: 25px;
-}
-
-.facebook-chamada p {
-  line-height: 23px;
-  color: white;
-  padding: 10px 0;
-  font-size: 13px;
-}
+/* ----- -------*/
 
 
-footer {
-  padding: 60px 2%;
-  background-color: #688293;
-  text-align: center;
-}
-
-footer .container {
-  max-width: 1100px;
+.destaque-mais{
+  padding: 40px 2%;
   margin: 0 auto;
+  
 }
 
-footer .footer-block {
-  float: left;
-  width: 33.3%;
+
+
+.box-relacionado {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0;
+  padding: 15px;
+  background: #f5f7fa;
+  border-radius: 10px;
+  align-items: center;
 }
 
-.footer-block a {
+.box-relacionado img {
+  width: 120px;
+  border-radius: 8px;
+}
+
+.box-conteudo h3 {
+  margin: 0 0 5px;
+}
+
+.box-conteudo p {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.box-conteudo a {
+  color: #007BFF;
   text-decoration: none;
-  font-weight: normal;
-  color: white;
-  font-size: 14px;
+  font-weight: bold;
 }
 
-.footer-block h2 {
-  color: white;
-  font-weight: normal;
-  font-size: 18px;
-  margin: 0;
+.links-relacionados a{
+  text-decoration: none;
+  color: #698293;
+  transition: 0.3s ease;
+  border-radius: 5px;
+  padding: 2px;
 }
 
-.footer-block p {
-  margin-top: 8px;
-  color: white;
-  font-size: 14px;
+.links-relacionados a:hover{
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transform: translateY(-3px);
 }
+
+
+/*=========================*/
+
+
 
 
 @media screen and (max-width:855px) {
