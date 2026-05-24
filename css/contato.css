@@ -40,15 +40,7 @@ body::-webkit-scrollbar {
 }
 
 
-.logo-do-site{
-    max-width: 470px;
-    padding: 0 2%;
-}
 
-.logo-do-site img.img-site{
-    width: 100%;
-    height: auto;
-}
 
 header {
     height: auto;
