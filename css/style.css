@@ -1,27 +1,4 @@
-/* padrao pra todos os css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    /*outline: 2px solid red;*/
-}
-
-.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
+/* ====================================
 body {
     text-decoration: none;
     overflow: -moz-scrollbars-none;
@@ -37,14 +14,9 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
-
-
-.clear {
-    clear: both;
-}
-
+  ======================================*/
 .logo-do-site{
-    max-width: 470px;
+    max-width: 200px;
     padding: 0 2%;
 }
 
@@ -76,7 +48,6 @@ header .logo img {
 nav.menu-mobile {
 
     display: none;
-    /* aparece só no mobile */
     width: 100%;
     padding: 0 2%;
     text-align: center;
@@ -118,15 +89,16 @@ nav.menu-mobile ul {
     display: none;
     position: absolute;
     top: 75px;
-    left: 20%;
-    width: 80%;
+   /* left: 20%;*/
+   right: 1%;
+    width: 90%;
     background-color: #ebeaea;
     list-style: none;
     padding: 0 2%;
     margin: 0;
     z-index: 999;
     border-radius: 10px;
-    border: 1px solid color #ebeaea;
+    border: 1px solid #ebeaea;
     overflow: hidden;
     /* MUITO IMPORTANTE */
 }
@@ -189,9 +161,10 @@ nav.menu-mobile ul li a:hover::after {
 ========================= */
 
 
-
+/*
 header nav.menu-desktop {
     float: right;
+    
 }
 
 header nav.menu-desktop ul {
@@ -204,11 +177,81 @@ header nav.menu-desktop ul li {
     font-size: 13px;
     text-transform: uppercase;
     padding: 0 20px;
-}
+}*/
+
+
 
 header nav ul li a {
     text-decoration: none;
     color: rgb(124, 124, 124);
+    text-transform: uppercase;
+}
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #eeeeeeea;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    min-width: 180px;
+    border: 1px solid #eee;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+/* ITENS DROPDOWN */
+.dropdown li {
+    padding: 10px 15px;
+}
+
+.dropdown li a {
+    font-size: 14px;
+    text-transform: none;
+}
+
+/* HOVER */
+.has-dropdown:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown li a:hover{
+    transform: scale(1.05);
+    border-bottom: solid 1px #ccc;
 }
 
 /*  ========== fim do padrao header ========  */
@@ -224,7 +267,7 @@ header nav ul li a {
 }
 
 .video-capa{
-    padding-top: 15px;
+    
     max-width:1000px;
     margin:0 auto;
 }
@@ -242,17 +285,13 @@ header nav ul li a {
     padding:70px 20px;
 }
 
-.intro-site h2{
-    font-size:32px;
-    color:#698293;
-    margin-bottom:20px;
-}
+
+
 
 .intro-site p{
     max-width:700px;
     margin:0 auto 50px auto;
-    font-size:18px;
-    line-height:1.6;
+  
 }
 
 /* GRID DOS CARDS */
@@ -284,213 +323,82 @@ header nav ul li a {
 }
 
 
-/*============== videos do youtube =========== */
-
-section.videos {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-section.videos .container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-
-section.videos {
-    padding: 50px;
-}
-
-section.videos .texto-videos h2 {
-    text-align: center;
-    color: #698293;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-section.videos .container .texto-videos p {
-    max-width: 650px;
-    margin: 0 auto;
-}
-
-
-section.videos .texto-videos p {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #4b4b4b;
-    font-size: 14px;
-    margin-top: 8px;
-    text-align: center;
-}
-
-
-
-section.videos .box-videos {
-    float: left;
-    width: calc(33.2%);
-    position: relative;
-    padding-top: calc(33.3% * 0.6); 
-}
-
-section.videos iframe {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
 /* =========== propaganda de empresas =============== */
+/* CONTAINER GERAL */
 
-section.sobre-japao {
-    padding: 40px 2%;
-    max-width: 900px;
+section.sobre-japao{
     margin: 0 auto;
-   
-}
-
-section.sobre-japao .container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-
-section.sobre-japao .container .texto-curiosidade {
-    max-width: 800px;
-    text-align: center;
-    padding: 0 2%;
-}
-
-section.sobre-japao .container .texto-curiosidade h2 {
-    color: #698293;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-section.sobre-japao .container .texto-curiosidade .texto-p {
-    color: #4b4b4b;
-    font-size: 14px;
-    margin-top: 8px;
-
-}
-
-section.sobre-japao .container .japao-wraper {
-    padding-top: 40px;
 }
 
 section.sobre-japao .japao-wraper {
-    position: relative;
-    height: auto;
-}
-
-section.sobre-japao .japao-wraper2 {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    padding: 20px;   
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     display: flex;
+    gap: 20px;
     align-items: center;
+    text-align: left;
+}
+
+/* IMAGEM - 60% */
+section.sobre-japao .img-sobrejapao {
+    flex: 0 0 50%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+section.sobre-japao .img-sobrejapao img {
     width: 100%;
-}
-
-section.sobre-japao .img-sobrejapao {
-    width: 60%;
-    aspect-ratio: 16 / 9;
-    background-image: url('../images/IMG-AGENCIA-2.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 3%;
-    margin-top: 35px;
-}
-
-section.sobre-japao .img-sobrejapao {
+    height: 100%;
+    object-fit: cover;
     display: block;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
 }
 
-section.sobre-japao .img-sobrejapao1 {
-    width: 60%;
-    aspect-ratio: 16 / 9;
-    background-image: url('../images/empreiteira-novo.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 3%;
-
-}
-
-section.sobre-japao .img-sobrejapao2 {
-    width: 60%;
-    aspect-ratio: 16 / 9;
-    background-image: url('../images/rumoaojapao.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 3%;
-}
-
-section.sobre-japao .img-sobrejapao3 {
-    width: 60%;
-    aspect-ratio: 16 / 9;
-    background-image: url('../images/sapatos-em-casa.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 3%;
-}
-
-section.sobre-japao .img-sobrejapao,
-section.sobre-japao .img-sobrejapao1,
-section.sobre-japao .img-sobrejapao2,
-section.sobre-japao .img-sobrejapao3 {
-    transition: transform 1.09s ease;
-}
-
-section.sobre-japao .img-sobrejapao:hover,
-section.sobre-japao .img-sobrejapao1:hover,
-section.sobre-japao .img-sobrejapao2:hover,
-section.sobre-japao .img-sobrejapao3:hover {
+/* HOVER */
+section.sobre-japao .img-sobrejapao:hover img {
     transform: scale(1.03);
-    border: 1px solid #688293;
 }
 
+/* TEXTO - 40% */
 section.sobre-japao .japao-texto {
-    width: 40%;
-    padding: 0 30px;
+    flex: 0 0 50%;
+    padding: 0 10px;
 }
 
 section.sobre-japao .japao-texto h2 {
-    color: #698293;
-    font-size: 18px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 section.sobre-japao .japao-texto p {
-    color: #4b4b4b;
-    font-size: 14px;
-    margin: 0 auto;
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
-section.sobre-japao .texto-curiosidade h2{
-    margin: 0;
-    padding: 0;
-}
-
-
-section.sobre-japao .texto-curiosidade p{
-    color: #4b4b4b;
-    font-size: 16px;
-}
 
 /*=================== secao engajamento ====================*/
 
 section.oferta-trabalho{
-max-width:900px;
-margin:0 auto;
-padding: 40px 2%;
+    margin:0 auto;
+    padding: 40px 2%;
+    
 }
 
 .oferta-container{
+    max-width: 900px;
     padding: 5px 2%;
     display:flex;
     align-items:center;
     gap:40px;
-    margin-bottom:20px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+   /* margin-bottom:20px;*/
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     background:white;
     border-radius: 12px;
+    margin: 0 auto 20px auto;
 }
 
 .img-oferta{
@@ -522,21 +430,7 @@ border:1px solid #688293;
 
 section.oferta-trabalho .texto-oferta h2 a{
     font-size: 20px;
-    color: #688293;
     text-decoration: none;
-}
-
-section.oferta-trabalho .texto-oferta h3{
-    font-size: 18px;
-    color: #4b4b4b;
-    text-align: center;
-    margin: 0 0 10px 0;
-}
-
-section.oferta-trabalho .texto-oferta p {
-    font-size:14px;
-    color:#8d8d8d;
-    line-height:1.6;
 }
 
 .reverse{
@@ -552,7 +446,7 @@ section.turismo{
 }
 
 section.turismo .container{
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     border-bottom: 1px solid #698293;
 }
@@ -560,7 +454,7 @@ section.turismo .container{
 .grid-turismo{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 20px;
 }
 
 .pontos{
@@ -583,6 +477,8 @@ section.turismo .container{
     display: block;
     border-radius: 10px;
 }
+
+
 
 section.turismo h2{
     text-align: center;
@@ -616,33 +512,21 @@ section.turismo .pontos a{
     display:block;
 }
 
-.principal-page{
-    padding: 40px;
-    text-align: center;
-    margin-top: 20px; 
-}
 
-.principal-page a{
-    color: white;
-    text-decoration: none;  
-    cursor: pointer;
-    background-color: #698293;
-    padding: 15px;
-    border-radius: 8px;
-}
 
-/*.principal-page a:hover{
-    text-decoration:underline;
-}*/
+
+
+
+
 
 /*============= videos --==========*/
 
 section.videos-canal{
-    padding: 40px 2%;
+    padding: 0 2%;
 }
 
 section.videos-canal .container{
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -665,14 +549,10 @@ section.videos-canal .container{
     border-radius:8px;
     overflow:hidden;
     background:white;
-    padding: 5px;
-    border-radius: 8px;
+    padding: 10px;
+    border-radius: 12px;
 }
 
-.videos-wrapper:hover {
-    transform: scale(1.02);
-    border: 1px solid #698293;
-}
 
 .grid-videos{
     width:100%;
@@ -682,7 +562,7 @@ section.videos-canal .container{
     width:100%;
     height:180px;
     border:0;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .grid-texto-videos{
@@ -700,13 +580,32 @@ section.videos-canal .container{
     line-height:1.5;
 }
 
+.grid-videos,
+.grid-texto-videos {
+    transition: transform 0.4s ease;
+}
+
+.videos-wrapper:hover .grid-videos,
+.videos-wrapper:hover .grid-texto-videos {
+    transform: scale(1.03);
+}
+
+.videos-wrapper:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
 .btn-chamada{
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
-.btn-youtube{
+.btn-chamada-yb{
+    text-align: center;
+   
+}
+
+.botao-padrao-link{
     display:inline-block;
     padding:10px 20px;
     background:#698293;
@@ -714,7 +613,18 @@ section.videos-canal .container{
     text-decoration:none;
     border-radius:6px;
     text-align: center;
+    margin: 70px;
+    transition: 0.3s ease;
 }
+
+.botao-padrao-link:hover {
+    transform: none; /* remove o scale */
+    color: white; /* mantém cor do botão */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+
 
 
 section.card-ver-mais{
@@ -830,6 +740,7 @@ section.card-ver-mais{
 /*  ======================== botoes, icones  =============*/
 
 .social-bar-s2 {
+   
     border-top: solid 1px #698293;
     top: 70px; /* ajusta conforme seu menu */
     left: 0;
@@ -869,46 +780,1239 @@ section.card-ver-mais{
     transform: scale(1.2);
 }
 
-/*========================================*/
+/*================   comidas japonesas   ========================*/
+
+section.comidas{
+    max-width: var(--container-narrow);
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.img-comidas{
+    max-width: 900px;
+    padding: 0 2%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.img-comidas img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+section.comidas .comidas-texto h2{
+    margin-top: 20px;
+}
+
+/*===========================agencias.html=============*/
+
+section.logo-da-agencias{
+    max-width: var(--container-narrow);
+    margin: 0 auto;
+    
+}
+
+.img-logo-da-agencia{
+    max-width: 1000px;
+    padding: 0 2%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.img-logo-da-agencia img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
 
 
 
+/* ===== SECTION ===== */
+.conteudos {
+    width: 100%;
+    padding: 60px 20px;
+    
+}
+
+.conteudos .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ===== TEXTO ===== */
+.conteudos h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.conteudos h2 {
+    font-size: 24px;
+    margin: 40px 0 15px 0;
+    color: #333;
+}
+
+.conteudos p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* ===== LISTAS ===== */
+.conteudos ul {
+    margin: 15px 0 20px 20px;
+}
+
+.conteudos li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #698293;
+}
+
+/* ===== CAIXAS ===== */
+.destaque5 {
+    background-color: #e8f4ff;
+    border-left: 5px solid #4a90e2;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.alerta5 {
+    background-color: #fff4e5;
+    border-left: 5px solid #ff9800;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.relato5 {
+    background-color: #f1f1f1;
+    border-left: 5px solid #666;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+
+    .conteudos5 {
+        padding: 40px 15px;
+    }
+
+    .conteudos5 h1 {
+        font-size: 24px;
+    }
+
+    .conteudos5 h2 {
+        font-size: 20px;
+    }
+
+    .conteudos5 p {
+        font-size: 15px;
+    }
+
+    .destaque5,
+    .alerta5,
+    .relato5 {
+        font-size: 14px;
+    }
+}
+
+/*==========================*/
+
+.agencias-s4 .container{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+section.relacionados-s2 h2{
+    text-align: center;
+    color: #698293;
+    padding: 20px;
+}
+
+section.video-agencia {
+    max-width: 1000px;
+    margin: 20px auto 0 auto;
+    padding: 0 2%;
+}
+
+section.video-agencia .video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* 🔥 elimina a scrollbar */
+}
+
+section.video-agencia video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+.agencias-links-mais{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.agencias-links-mais ul {
+    list-style-position: inside;
+}
+
+.agencias-links-mais a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.agencias-links-mais a:hover {
+    color: #0077cc;
+    transform: translateX(5px);
+}
+
+
+
+
+/* =========================
+   RELACIONADOS S2
+========================= */
+
+.relacionados-s2 {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+.grid-relacionados-s2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+/* =========================
+   CARD BASE
+========================= */
+
+.card-s2 {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   DESTAQUE
+========================= */
+
+.destaque-s2 {
+    grid-row: span 2;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.destaque-s2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destaque-s2 h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+
+    color: #fff;
+    font-size: 18px;
+
+    background: rgba(0,0,0,0.4);
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* =========================
+   PEQUENOS
+========================= */
+
+.pequeno-s2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+
+    transition: 0.2s;
+}
+
+.pequeno-s2:hover {
+    background: #eaeaea;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+
+
+
+@media (max-width:900px){
+.grid-ver-mais{
+grid-template-columns: repeat(2,1fr);
+}
+}
+
+
+@media screen and (max-width:855px) {
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+      .grid-relacionados-s2 {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-s2 {
+        height: 200px;
+    }
+
+}
+
+
+
+
+
+/*  ================= links interaivos ================*/
+section.links-interativos-jp {
+    padding: 40px 2%;
+}
+
+.links-interativos-jp .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* CARD PRINCIPAL */
+.link-principal-jp {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* IMAGEM */
+.img-link-jp {
+    width: 40%;
+    height: 100%;
+}
+
+.img-link-jp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    
+}
+.img-link-jp img:hover {
+    transform: scale(1.03);
+}
+
+
+
+/* TEXTO */
+.conteudo-link-jp {
+    width: 60%;
+    padding: 20px;
+}
+
+.conteudo-link-jp h2 {
+    margin-bottom: 10px;
+    color: #698293;
+}
+
+.conteudo-link-jp p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* LINKS SECUNDÁRIOS */
+.links-secundarios-jp {
+    display: flex;
+    gap: 15px;
+}
+
+.links-secundarios-jp a {
+    padding: 10px 16px;
+    background: #698293;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.links-secundarios-jp a:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* ===========================  castelo himeji  =====================*/
+
+
+
+section.monte-fuji-capa{
+    padding:40px 2%;
+}
+
+section.monte-fuji-capa .container{
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.img-fuji-san{
+    display:flex;
+    justify-content:center;
+    
+}
+
+.img-fuji-san img{
+    width:100%;
+    max-width:1000px;
+    display:block;
+    margin:0 auto;
+    border-radius:8px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* seção monte fuji */
+
+.monte-fuji{
+    padding:60px 20px;
+    background-color:#ffffff;
+}
+
+.monte-fuji .container{
+    max-width:900px;
+    margin:0 auto;
+}
+
+
+/* titulo principal */
+
+.monte-fuji h1{
+    font-size:38px;
+    margin-bottom:25px;
+    color:#1f2d3d;
+    font-weight:700;
+    line-height:1.3;
+    text-align: center;
+}
+
+/* subtitulos */
+
+.monte-fuji h2{
+    font-size:26px;
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#2c3e50;
+    font-weight:600;
+}
+
+/* paragrafos */
+
+.monte-fuji p{
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:18px;
+    color:#444;
+}
+
+/* listas */
+
+.monte-fuji ul{
+    margin:20px 0;
+    padding-left:25px;
+}
+
+.monte-fuji li{
+    font-size:18px;
+    margin-bottom:10px;
+    color: #696969;;
+}
+
+/*  galeria */
+
+.galeria-japao{
+padding:60px 2%;
+}
+
+.galeria-grid{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.galeria-grid img{
+width:100%;
+max-width:320px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.galeria-grid img:hover{
+transform:scale(1.03);
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+.lightbox-img{
+max-width:90%;
+max-height:90%;
+border-radius:6px;
+}
+
+.fechar{
+position:absolute;
+top:30px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+
+/* destaques */
+
+.monte-fuji strong{
+    color:#111;
+    font-weight:600;
+}
+
+.monte-fuji em{
+    color:#555;
+}
+
+/* separação entre blocos */
+
+.monte-fuji h2 + p{
+    margin-top:5px;
+}
+
+.mapa-fuji{
+    padding:60px 20px;
+    background:#f5f7fa;
+}
+
+.mapa-fuji h2{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.mapa-container{
+    margin-top:25px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+#lightbox{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+#lightbox img{
+max-width:90%;
+max-height:90%;
+}
+
+#fechar{
+position:absolute;
+top:30px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+
+
+/* mobile */
+
+@media screen and (max-width:768px){
+
+    .monte-fuji{
+        padding:40px 18px;
+    }
+
+    .monte-fuji h1{
+        font-size:28px;
+    }
+
+    .monte-fuji h2{
+        font-size:22px;
+    }
+
+    .monte-fuji p{
+        font-size:16px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:855px) {
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+}
+
+
+/*======================== cursos  ======================*/
+
+
+/* =========================
+   VIDEO TOPO
+========================= */
+
+section.video-curso {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.video-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+.cursos-s5 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    line-height: 1.6;
+}
+
+.cursos-s5 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cursos-s5 p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cursos-s5 ul {
+    list-style: none;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cursos-s5 li {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #e60023;
+    transition: 0.3s;
+}
+
+.cursos-s5 li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.cursos-s5 h3 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CURSOS LISTA
+========================= */
+
+section.curso {
+    padding: 40px 2%;
+}
+
+section.curso .container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.box-curso {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.box-curso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGENS USADAS */
+.img-curso6,
+.img-curso7,
+.img-curso8,
+.img-curso9,
+.img-curso10,
+.img-curso11,
+.img-curso12,
+.img-curso13 {
+    flex: 1 1 80px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* imagens específicas */
+.img-curso6 { background-image: url("../images/premium.png"); }
+.img-curso7 { background-image: url("../images/bandeira-japonesa-1.jpg"); }
+.img-curso8 { background-image: url("../images/nhk.jpg"); }
+.img-curso9 { background-image: url("../images/onegiriobenkyo.png"); border-radius: 30%; }
+.img-curso10 { background-image: url("../images/inovate.png"); border-radius: 30%; }
+.img-curso11 { background-image: url("../images/luv.webp"); border-radius: 30%; }
+.img-curso12 { background-image: url("../images/bumpo.webp"); border-radius: 30%; }
+.img-curso13 { background-image: url("../images/leanjaponise.webp"); border-radius: 30%; }
+
+
+.texto-curso {
+    flex: 2 1 400px;
+    color: #4b4b4b;
+}
+
+.texto-curso h2 {
+    color: #698293;
+    margin-bottom: 10px;
+}
+
+.texto-curso p {
+    padding: 3px;
+    line-height: 1.6;
+}
+
+section.curso a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+
+/* =========================
+   RELACIONADOS
+========================= */
+
+.relacionados-s2 {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+.relacionados-s2 h2 {
+    text-align: center;
+    color: #698293;
+    padding-bottom: 20px;
+}
+
+.grid-relacionados-s2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.card-s2 {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* destaque */
+.destaque-s2 {
+    grid-row: span 2;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.destaque-s2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destaque-s2 h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* pequenos */
+.pequeno-s2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.pequeno-s2:hover {
+    background: #eaeaea;
+}
+
+/*
+.agencias-links-mais{
+    max-width: 900px;
+    width: 100%;
+    padding: 0 4%;
+    margin-bottom: 60px;
+}*/
+
+.agencias-links-mais {
+    list-style: none;
+    padding-left: 0;
+    
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.agencias-links-mais ul, h3{
+    padding: 0 4%;
+}
+
+.agencias-links-mais li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* bolinha controlada */
+.agencias-links-mais li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    min-width: 6px;
+    background: #698293;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    .grid-relacionados-s2 {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-s2 {
+        height: 200px;
+    }
+
+    .cursos-s5 {
+        padding: 40px 15px;
+    }
+
+    .cursos-s5 h2 {
+        font-size: 1.5rem;
+    }
+
+    .cursos-s5 li {
+        padding: 20px;
+    }
+
+    .img-curso6,
+    .img-curso7,
+    .img-curso8,
+    .img-curso9,
+    .img-curso10,
+    .img-curso11,
+    .img-curso12,
+    .img-curso13 {
+        width: 70%;
+        height: 200px;
+        margin: 0 auto;
+        background-size: contain;
+    }
+}
+
+
+
+/*  ====================empreiteiras ==================*/
+
+
+/* ===== HERO VIDEO ===== */
+.video-empreiteira {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.video-container {
+    width: 100%;
+    
+}
+
+.video-empreiteira video {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== CONTEÚDO ===== */
+.inf-empreiteiras {
+    padding: 20px 2%;
+    
+}
+
+.inf-empreiteiras .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+}
+
+/* ===== ARTIGO ===== */
+.inf-empreiteiras article {
+    width: 100%;
+}
+
+/* ===== TÍTULOS ===== */
+.inf-empreiteiras h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+    line-height: 1.3;
+}
+
+.inf-empreiteiras h2 {
+    font-size: 22px;
+    margin: 35px 0 15px;
+    color: #2a2a2a;
+    border-left: 4px solid #698293;
+    padding-left: 10px;
+}
+
+.inf-empreiteiras h3 {
+    font-size: 18px;
+    margin: 25px 0 10px;
+    color: #444;
+}
+
+/* ===== TEXTO ===== */
+.inf-empreiteiras p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    color: #555;
+}
+
+/* ===== LISTAS (MELHORADAS) ===== */
+.inf-empreiteiras ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.inf-empreiteiras li {
+    margin-bottom: 15px;
+    color: #698293;
+}
+
+/* resolve problema de <li> com <p> dentro */
+.inf-empreiteiras li p {
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+/* deixa títulos dentro de lista mais bonitos */
+.inf-empreiteiras li strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.atualizacao{
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-style: italic;
+}
+
+/* ===== DESTAQUE ===== */
+.destaque {
+    background: linear-gradient(135deg, #eef5ff, #e6f0ff);
+    border-left: 4px solid #698293;
+    padding: 18px;
+    margin: 25px 0;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ===== ALERTA ===== */
+.alerta {
+    background: linear-gradient(135deg, #fff1f1, #ffe5e5);
+    border-left: 4px solid #ff4d4d;
+    padding: 18px;
+    margin: 25px 0;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ===== DIVISÃO ===== */
+.inf-empreiteiras hr {
+    margin: 50px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+   
+
+    .inf-empreiteiras {
+        padding: 30px 4%;
+    }
+
+    .inf-empreiteiras .container {
+        padding: 25px;
+    }
+
+    .inf-empreiteiras h1 {
+        font-size: 24px;
+    }
+
+    .inf-empreiteiras h2 {
+        font-size: 20px;
+    }
+
+    /*.agencias-links-mais ul{
+    list-style: none;
+}*/
+
+.agencias-links-mais h3{
+    text-align: center;
+}
+
+}
+
+
+/* ============= FOOTER GERAL ============*/
 footer {
     padding: 60px 2%;
     background-color: #688293;
     text-align: center;
 }
 
+/* CONTAINER */
 footer .container {
     max-width: 1100px;
     margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
 }
 
+/* BLOCOS */
 footer .footer-block {
-    float: left;
-    width: 33.3%;
+    flex: 1 1 250px;
+    min-width: 220px;
 }
 
-.footer-block a {
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
-    font-size: 14px;
-}
-
+/* TEXTOS */
 .footer-block h2 {
     color: white;
     font-weight: normal;
     font-size: 18px;
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 .footer-block p {
-    margin-top: 8px;
     color: white;
     font-size: 14px;
-    text-decoration: none;
+    margin-bottom: 8px;
 }
+
+/* LINKS */
+.footer-block a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 6px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-block a:hover {
+    opacity: 0.7;
+}
+
+
+/* =====================  galeria  ==============================*/
+
+/* ===== GALERIA ===== */
+.galeria-3 {
+    padding: 40px 2%;
+}
+
+/* GRID FIXO 3 COLUNAS */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* ITENS */
+.item-galeria {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.item-galeria:hover img {
+    transform: scale(1.05);
+}
+
+/* ===== MODAL ===== */
+.modal-galeria {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0,0,0,0.9);
+}
+
+/* IMAGEM ABERTA */
+.modal-img {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* BOTÃO FECHAR */
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+
+/*===================================================*/
+
 
 
 
@@ -939,7 +2043,7 @@ grid-template-columns: repeat(2,1fr);
 
 
 @media screen and (max-width:855px) {
-    nav.menu-desktop {
+    nav.nav {
         display: none;
     }
 
@@ -949,34 +2053,25 @@ grid-template-columns: repeat(2,1fr);
 
 }
 
+@media screen and (max-width: 850px) {
+
+    section.sobre-japao .japao-wraper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.sobre-japao .img-sobrejapao,
+    section.sobre-japao .japao-texto {
+        flex: 100%;
+    }
+
+}
+
+
 
 @media screen and (max-width:800px) {
 
-    section.curso .container .img-curso6,
-    section.curso .container .img-curso7,
-    section.curso .container .img-curso8,
-    section.curso .container .img-curso9,
-    section.curso .container .img-curso10,
-    section.curso .container .img-curso11,
-    section.curso .container .img-curso12,
-    section.curso .container .img-curso13 {
-        flex: none;
-        display: block;
-        width: 70%;
-        height: 200px;
-        margin: 0 auto 10px auto;
-        background-size: contain;
-    }
 
-    section.curso .texto-curso {
-        flex: 2 1 500px;
-        /* texto ocupa mais espaço */
-        color: #4b4b4b;
-
-        /*background-color: #4b4b4b;*/
-    }
-
-    /*-----      secao engajamento    -----*/
     section.oferta-trabalho .comum {
         width: 50%;
     }
@@ -999,13 +2094,11 @@ width:100%;
 
 @media screen and (max-width:768px) {
 
-    nav.menu-desktop {
-        display: none;
-    }
-
-    nav.menu-mobile {
-        display: block;
-    }
+  
+    .logo-do-site{
+    max-width: 190px;
+    padding: 0 2%;
+}
 
     
 
@@ -1017,64 +2110,28 @@ width:100%;
         border: 3px solid white;
     }
 
+    /*  ============  links corporativo  =========*/
+    .link-principal-jp {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img-link-jp {
+        width: 100%;
+        height: 200px;
+    }
+
+    .conteudo-link-jp {
+        width: 100%;
+    }
+
+    .links-secundarios-jp {
+        flex-direction: column;
+    }
+
    
 
     /*---curiosidade japao---*/
-
-    section.sobre-japao .container .texto-curiosidade {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    section.sobre-japao .japao-wraper .japao-texto {
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 20px;
-
-    }
-
-    section.sobre-japao .container .texto-curiosidade h2 {
-        color: #698293;
-        font-size: 18px;
-        text-transform: uppercase;
-    }
-
-    section.sobre-japao .container .texto-curiosidade p {
-        color: #4b4b4b;
-        font-size: 14px;
-        margin-top: 8px;
-    }
-
-    section.sobre-japao .japao-wraper2 {
-        display: inline-block;
-        text-align: center;
-    }
-
-    section.sobre-japao .img-sobrejapao,
-    section.sobre-japao .img-sobrejapao1,
-    section.sobre-japao .img-sobrejapao2,
-    section.sobre-japao .img-sobrejapao3 {
-        width: 90%;
-        display: inline-block;
-    }
-
-
-
-    section.sobre-japao .japao-texto {
-        width: 80%;
-        margin: 0 20px;
-        margin-top: 25px;
-    }
-
-    .img-mosaico-single-social {
-        width: calc(100% / 6);
-        padding-top: calc(100% / 6);
-    }
-
-    .mosaico-social>div:nth-of-type(1n+7) {
-        display: none;
-    }
-
 
 
     footer {
@@ -1116,27 +2173,23 @@ width:100%;
 
 @media screen and (max-width:700px) {
 
-    section.sobre-japao .japao-wraper .img-sobrejapao,
-    section.sobre-japao .japao-wraper .img-sobrejapao1,
-    section.sobre-japao .japao-wraper .img-sobrejapao2,
-    section.sobre-japao .japao-wraper .img-sobrejapao3 {
-        width: 90%;
-    }
+  .logo-do-site{
+    max-width: 150px;
+    padding: 0 2%;
+}
 
-    section.sobre-japao .japao-texto p {
-        width: 100%;
-        font-size: 16px;
+.grid-turismo{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
 
-    }
+   
 }
 
 
 @media (max-width: 600px) {
 
-    .logo-do-site{
-    max-width: 310px;
-    
-}
+
  
 
     section.empreiteiras-japao .box-empreiteira {
@@ -1165,13 +2218,7 @@ width:100%;
 
     }
 
-    section.sobre-japao .img-sobrejapao,
-    section.sobre-japao .img-sobrejapao1,
-    section.sobre-japao .img-sobrejapao2,
-    section.sobre-japao .img-sobrejapao3 {
-        width: 60%;
-        display: inline-block;
-    }
+    
 
 
 

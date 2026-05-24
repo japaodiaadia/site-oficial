@@ -1,202 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-}
-
-.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    color: #333;
-    background: #fff;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
-
-.clear {
-    clear: both;
-}
-
-.logo-do-site{
-    max-width: 470px;
-    padding: 0 2%;
-}
-
-.logo-do-site img.img-site{
-    width: 100%;
-    height: auto;
-}
-
-header {
-    height: auto;
-    padding: 15px 2%;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 30;
-}
-
-/* =========================
-   MENU MOBILE
-========================= */
-nav.menu-mobile {
-
-    display: none;
-    /* aparece só no mobile */
-    width: 100%;
-    padding: 0 2%;
-    text-align: center;
-}
-
-/* =========================
-   BOTÃO DO MENU
-========================= */
-nav.menu-mobile button {
-    background: none;
-    border: none;
-    padding: 10px;
-    margin-left: auto;
-    /* joga o botão para a direita */
-    display: block;
-    cursor: pointer;
-}
-
-/* ÍCONE */
-nav.menu-mobile button img.icone {
-    width: 28px;
-    height: 28px;
-    display: block;
-    margin-bottom: 15px;
-}
-
-/* =========================
-   LISTA DO MENU (FECHADO)
-========================= */
-nav.menu-mobile ul {
-    display: none;
-    position: absolute;
-    top: 75px;
-    left: 20%;
-    width: 80%;
-    background-color: #ebeaea;
-    list-style: none;
-    padding: 0 2%;
-    margin: 0;
-    z-index: 999;
-    border-radius: 10px;
-    border: 1px solid color #ebeaea;
-    overflow: hidden;
-    /* MUITO IMPORTANTE */
-}
-
-/* =========================
-   MENU ABERTO
-========================= */
-nav.menu-mobile ul.active {
-    display: block;
-}
-
-/* =========================
-   ITENS
-========================= */
-nav.menu-mobile ul li {
-    width: 100%;
-}
-
-/* LINKS */
-nav.menu-mobile ul li a {
-    display: block;
-    white-space: normal;
-    word-break: break-word;
-    padding: 14px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #555;
-    text-align: center;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-/* =========================
-   LINHA CONTÍNUA
-========================= */
-nav.menu-mobile ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #cfcfcf;
-    transition: background-color 0.3s ease;
-}
-
-/* =========================
-   HOVER
-========================= */
-nav.menu-mobile ul li a:hover {
-    color: #698293;
-}
-
-nav.menu-mobile ul li a:hover::after {
-    background-color: #698293;
-}
-
-/* =========================
-   RESPONSIVO (EXEMPLO)
-========================= */
-
-
-
-header nav.menu-desktop {
-    float: right;
-}
-
-header nav.menu-desktop ul {
-    padding: 45px 0;
-    list-style-type: none;
-}
-
-header nav.menu-desktop ul li {
-    float: left;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 0 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: rgb(124, 124, 124);
-}
-
-/*  ========== fim do padrao header ========  */
-
-/* =========================================
-   SECTION: COISAS PROIBIDAS NO JAPÃO
-========================================= */
-
 section.logo-pro {
     width: 100%;
     padding-top: 20px;
@@ -216,19 +17,20 @@ section.logo-pro {
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 12px;
 }
 
 
 section.coisas-proibidas-japao {
     width: 100%;
-    padding: 60px 0;
+    
     background: #ffffff;
 }
 
 section.coisas-proibidas-japao .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 40px 25px;
+    padding: 0 2%;
     background: #f7f8f9;
     border-radius: 14px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -321,104 +123,14 @@ section.coisas-proibidas-japao h3 {
     transform: scale(1.02);
 }
 
-
-
-
-section.social {
-    padding: 70px 0;
-}
-
-.instagram-chamada {
-    float: left;
-    width: 100%;
-    text-align: center;
-    padding: 40px 0;
-    background: #98a5ae;
-
-}
-
-.instagram-chamada p {
-    line-height: 23px;
-    color: white;
-    padding: 10px 0;
+.atualizacao{
     font-size: 13px;
-}
-
-.mosaico-social {
-    float: left;
-    width: 100%;
-}
-
-.img-mosaico-single-social {
-    float: left;
-    width: calc(100% / 9);
-    padding-top: calc(100% / 9);
-    background-color: rgb(210, 210, 210);
-    border: 3px solid white;
-}
-
-.img-mosaico-single-social {
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-.facebook-chamada {
-    float: left;
-    width: 100%;
+    color: #777;
     text-align: center;
-    padding: 40px 0;
-    background: #688293;
+    margin: 40px 0 20px 0;
+    font-style: italic;
 }
 
-.facebook-chamada a img {
-    background-size: 25px;
-}
-
-.facebook-chamada p {
-    line-height: 23px;
-    color: white;
-    padding: 10px 0;
-    font-size: 13px;
-}
-
-
-footer {
-    padding: 60px 2%;
-    background-color: #688293;
-    text-align: center;
-}
-
-footer .container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-footer .footer-block {
-    float: left;
-    width: 33.3%;
-}
-
-.footer-block a {
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
-    font-size: 14px;
-}
-
-.footer-block h2 {
-    color: white;
-    font-weight: normal;
-    font-size: 18px;
-    margin: 0;
-}
-
-.footer-block p {
-    margin-top: 8px;
-    color: white;
-    font-size: 14px;
-}
 
 
 /* RESPONSIVO */

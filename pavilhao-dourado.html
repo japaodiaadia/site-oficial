@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 
-<title>Pavilhão Dourado | Ohaio Japão</title>
+<title>Pavilhão Dourado (Kinkaku-ji) em Kyoto | Ohaio Japão</title>
 
 <meta name="description" content="O Templo do Pavilhão Dourado (Kinkaku-ji) está localizado na parte norte da cidade de Kyoto, no Japão. Veja curiosidades, história, localização e por que ele é um dos pontos turísticos mais visitados do país.">
 
@@ -23,24 +23,24 @@
 
 <!-- Open Graph (Facebook, WhatsApp, etc) -->
 
-<meta property="og:title" content="Monte Fuji: o cartão-postal do Japão">
+<meta property="og:title" content="Pavilhão Dourado (Kinkaku-ji) | Ohaio Japão">
 
-<meta property="og:description" content="Descubra tudo sobre o Monte Fuji, a montanha mais famosa do Japão e um dos lugares mais visitados por turistas.">
+<meta property="og:description" content="Conheça o famoso Templo do Pavilhão Dourado em Kyoto, um dos pontos turísticos mais visitados do Japão.">
 
-<meta property="og:image" content="https://ohaiojp.com/images/monte-fuji-jp.jpg">
+<meta property="og:image" content="https://ohaiojp.com/images/capa-pavilhao.jpg">
 
-<meta property="og:url" content="https://ohaiojp.com/monte-fuji.html">
+<meta property="og:url" content="https://ohaiojp.com/pavilhao-dourado.html">
 
 <meta property="og:type" content="article">
 
 
 <!-- Twitter -->
 
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pavilhão Dourado (Kinkaku-ji) | Ohaio Japão">
 
-<meta name="twitter:title" content="Monte Fuji: o cartão-postal do Japão">
+<meta name="twitter:description" content="Veja curiosidades e a história do famoso templo dourado de Kyoto no Japão.">
 
-<meta name="twitter:description" content="Conheça o Monte Fuji, símbolo do Japão e um dos destinos turísticos mais famosos do país.">
+<meta name="twitter:image" content="https://ohaiojp.com/images/capa-pavilhao.jpg">
 
 <meta name="twitter:image" content="https://ohaiojp.com/images/monte-fuji-jp.jpg">
 
@@ -48,10 +48,10 @@
 <!-- Google Fonts -->
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+<link rel="canonical" href="https://ohaiojp.com/pavilhao-dourado.html">
 
 <!-- CSS -->
-
+<link rel="stylesheet" href="css/global.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" href="css/monte-fuji.css" type="text/css">
 
@@ -60,6 +60,21 @@
 <link rel="shortcut icon" type="image/ico" href="icon-1.png">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Templo do Pavilhão Dourado (Kinkaku-ji)",
+  "description": "Um dos templos mais famosos e visitados de Kyoto, no Japão.",
+  "image": "https://ohaiojp.com/images/capa-pavilhao.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kyoto",
+    "addressCountry": "JP"
+  },
+  "url": "https://ohaiojp.com/pavilhao-dourado.html"
+}
+</script>
 
 <!-- Google AdSense -->
 
@@ -86,45 +101,79 @@ gtag('config', 'G-JNQZ8TE0TE');
 <body>
 
                      
-    <header>
-
-        <div class="logo-do-site">
-            <img class="img-site" src="images/logo-image.png" alt="imagem da logo">
-        </div><!--logo-->
+    <header class="header">
         <div class="container">
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a style="color:#698293;" href="index.html">Inicio</a></li>
-                    <li><a href="sobre.html">Vida no japão</a></li>
+            <div class="header-content">
+            <div class="logo-do-site">
+                <img class="img-site" src="images/logo-site.png" alt="imagem da logo">
+            </div><!--logo-->
+            
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="contato.html">contato</a></li>
-                    <li><a href="agencia.html">agências</a></li>
+                    
+                    <li class="has-dropdown">
+                        <a href="#">Sobre ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="sobre-site.html">Sobre</a></li>
+                            <li><a href="sobre.html">Sobre o criador</a></li>
+                            <li><a href="termos.html">Termos</a></li>
+                            <li><a href="politica.html">Privacidade</a></li>
+                        </ul>
+                    </li>
+
+                     <li class="has-dropdown">
+                        <a href="#">Cultura ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="comidas.html">Culinária local</a></li>
+                            <li><a href="turismo.html">Turismo</a></li>
+                            <li><a href="curiosidade.html">Curiosidades</a></li>
+                            <li><a href="cursos.html">Cursos de japonês</a></li>
+                        </ul>
+                    </li>
+
+                      <li class="has-dropdown">
+                        <a href="#">Empreiteiras ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="custo-de-vida.html">Custo de vida</a></li>
+                            <li><a href="empreiteiras.html">Empreiteiras</a></li>
+                            <li><a href="agencia.html">Agências</a></li>
+                            <li><a href="cursos.html">Cursos de japonês</a></li>
+                        </ul>
+                    </li>
+                    
+                    
                 </ul>
             </nav><!--menu desktop-->
 
             <nav class="menu-mobile">
-                <button class="menu-btn">☰</button>
 
+                <button class="menu-btn">☰</button>
+                
                 <ul class="menu-list">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="sobre-site.html">Quem somos</a></li>
                     <li><a href="custo-de-vida.html">Custo de vida</a></li>
-                    <li><a href="empreiteiras.html">Empreiteiras entenda</a></li>
+                    <li><a href="empreiteiras.html">O que é Empreiteira</a></li>
                     <li><a href="trabalho.html">Trabalho no Japão</a></li>
                     <li><a href="contato.html">Contato</a></li>                   
                     <li><a href="sobre.html" target="_blank">Sobre o criador</a></li>
+                    
                 </ul>
             </nav>
 
 
-
+            </div><!--header-content-->
         </div><!--containner-->
-        <div class="clear"></div>
-    </header>
+        
+    </header><!--header--->
+    
 
     <section class="monte-fuji-capa">
         <div class="container">
         <div class="img-fuji-san">
-            <img src="images/capa-pavilhao.jpg" alt="">
+            <img src="images/capa-pavilhao.jpg" alt="Pavilhão Dourado, castelo japones belissímo">
         </div>
         </div>
     </section>
@@ -133,7 +182,7 @@ gtag('config', 'G-JNQZ8TE0TE');
     <section class="monte-fuji">
         <div class="container">
 
-<h2>Templo do Pavilhão Dourado (Kinkaku-ji)</h2>
+<h1>Templo do Pavilhão Dourado (Kinkaku-ji)</h1>
 
 <p>
 O <strong>Templo do Pavilhão Dourado</strong>, conhecido em japonês como <em>Kinkaku-ji</em>, é um dos templos mais famosos e fotografados do Japão. Localizado na cidade histórica de Kyoto, o templo impressiona visitantes do mundo inteiro por sua estrutura coberta com folhas de ouro que refletem sobre as águas tranquilas do lago ao seu redor. A combinação entre arquitetura tradicional, natureza e história transforma o local em um dos cartões-postais mais conhecidos do país.
@@ -193,9 +242,9 @@ Hoje o Templo do Pavilhão Dourado é considerado Patrimônio Mundial da UNESCO 
 
 <div class="galeria-grid">
 
-<img src="images/pavilhao-dourado (2).jpg" alt="Castelo de Himeji" class="img-galeria">
-<img src="images/pavilhao-dourado (3).jpg" alt="Castelo de Himeji" class="img-galeria">
-<img src="images/pavilhao-dourado (1).jpg" alt="Castelo de Himeji" class="img-galeria">
+<img src="images/pavilhao-dourado(2).jpg" alt="Templo do Pavilhão Dourado em Kyoto" class="img-galeria">
+<img src="images/pavilhao-dourado(3).jpg" alt="Kinkaku-ji refletindo no lago" class="img-galeria">
+<img src="images/pavilhao-dourado(1).jpg" alt="Vista do Pavilhão Dourado no Japão" class="img-galeria">
 
 </div>
 
@@ -246,6 +295,10 @@ loading="lazy">
 </section>
 
 
+<p class="atualizacao">
+    Última atualização: Maio de 2026
+    </p>
+
    
 <div id="footer"></div>
 
@@ -292,7 +345,7 @@ lightbox.style.display = 'none';
 
 
 
-<a href="#" class="btn-topo">↑</a>   
+  
 
 
 </body>

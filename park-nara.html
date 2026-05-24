@@ -4,11 +4,11 @@
 <head>
 <meta charset="utf-8">
 
-<title>Park Nara | Ohaio Japão</title>
+<title>Parque Nara | Ohaio Japão</title>
 
-<meta name="description" content="Conheça o Park nara, o park mais famosa do Japão. Veja curiosidades, história, localização e por que ele é um dos pontos turísticos mais visitados do país.">
+<meta name="description" content="Conheça o Parque de Nara, um dos destinos turísticos mais famosos do Japão. Veja curiosidades, templos, os famosos veados e dicas para visitar o local.">
 
-<meta name="keywords" content="Park Nara, park dos veados, pontos turísticos do Japão, turismo no Japão, montanha Fuji, viajar para o Japão">
+<meta name="keywords" content="Parque de Nara, Nara Park, veados do Japão, turismo em Nara, pontos turísticos do Japão, templo Todai-ji, Japão">
 
 <meta name="author" content="Ohaio Japão">
 
@@ -23,26 +23,28 @@
 
 <!-- Open Graph (Facebook, WhatsApp, etc) -->
 
-<meta property="og:title" content="Monte Fuji: o cartão-postal do Japão">
+<meta property="og:title" content="Parque de Nara: os famosos veados do Japão">
 
-<meta property="og:description" content="Descubra tudo sobre o Monte Fuji, a montanha mais famosa do Japão e um dos lugares mais visitados por turistas.">
+<meta property="og:description" content="Conheça o Parque de Nara, um dos destinos turísticos mais famosos do Japão, conhecido pelos veados que vivem soltos pelo parque.">
 
-<meta property="og:image" content="https://ohaiojp.com/images/monte-fuji-jp.jpg">
+<meta property="og:image" content="https://ohaiojp.com/images/capa-nara-park.jpg">
 
-<meta property="og:url" content="https://ohaiojp.com/monte-fuji.html">
+<meta property="og:url" content="https://ohaiojp.com/park-nara.html">
 
 <meta property="og:type" content="article">
+
+<meta property="og:locale" content="pt_BR">
 
 
 <!-- Twitter -->
 
 <meta name="twitter:card" content="summary_large_image">
 
-<meta name="twitter:title" content="Monte Fuji: o cartão-postal do Japão">
+<meta name="twitter:title" content="Parque de Nara: os famosos veados do Japão">
 
-<meta name="twitter:description" content="Conheça o Monte Fuji, símbolo do Japão e um dos destinos turísticos mais famosos do país.">
+<meta name="twitter:description" content="Conheça o famoso Parque de Nara e os veados que vivem livremente no Japão.">
 
-<meta name="twitter:image" content="https://ohaiojp.com/images/monte-fuji-jp.jpg">
+<meta name="twitter:image" content="https://ohaiojp.com/images/capa-nara-park.jpg">
 
 
 <!-- Google Fonts -->
@@ -51,7 +53,7 @@
 
 
 <!-- CSS -->
-
+<link rel="stylesheet" href="css/global.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" href="css/monte-fuji.css" type="text/css">
 
@@ -59,7 +61,23 @@
 
 <link rel="shortcut icon" type="image/ico" href="icon-1.png">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="canonical" href="https://ohaiojp.com/park-nara.html">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Parque de Nara",
+  "description": "Parque famoso pelos veados que vivem soltos em Nara, Japão.",
+  "image": "https://ohaiojp.com/images/capa-nara-park.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nara",
+    "addressCountry": "JP"
+  },
+  "url": "https://ohaiojp.com/park-nara.html"
+}
+</script>
 
 <!-- Google AdSense -->
 
@@ -86,45 +104,79 @@ gtag('config', 'G-JNQZ8TE0TE');
 <body>
 
                      
-    <header>
-
-        <div class="logo-do-site">
-            <img class="img-site" src="images/logo-image.png" alt="imagem da logo">
-        </div><!--logo-->
+     <header class="header">
         <div class="container">
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a style="color:#698293;" href="index.html">Inicio</a></li>
-                    <li><a href="sobre.html">Vida no japão</a></li>
+            <div class="header-content">
+            <div class="logo-do-site">
+                <img class="img-site" src="images/logo-site.png" alt="imagem da logo">
+            </div><!--logo-->
+            
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="contato.html">contato</a></li>
-                    <li><a href="agencia.html">agências</a></li>
+                    
+                    <li class="has-dropdown">
+                        <a href="#">Sobre ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="sobre-site.html">Sobre</a></li>
+                            <li><a href="sobre.html">Sobre o criador</a></li>
+                            <li><a href="termos.html">Termos</a></li>
+                            <li><a href="politica.html">Privacidade</a></li>
+                        </ul>
+                    </li>
+
+                     <li class="has-dropdown">
+                        <a href="#">Cultura ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="comidas.html">Culinária local</a></li>
+                            <li><a href="turismo.html">Turismo</a></li>
+                            <li><a href="curiosidade.html">Curiosidades</a></li>
+                            <li><a href="cursos.html">Cursos de japonês</a></li>
+                        </ul>
+                    </li>
+
+                      <li class="has-dropdown">
+                        <a href="#">Empreiteiras ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="custo-de-vida.html">Custo de vida</a></li>
+                            <li><a href="empreiteiras.html">Empreiteiras</a></li>
+                            <li><a href="agencia.html">Agências</a></li>
+                            <li><a href="cursos.html">Cursos de japonês</a></li>
+                        </ul>
+                    </li>
+                    
+                    
                 </ul>
             </nav><!--menu desktop-->
 
             <nav class="menu-mobile">
-                <button class="menu-btn">☰</button>
 
+                <button class="menu-btn">☰</button>
+                
                 <ul class="menu-list">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="sobre-site.html">Quem somos</a></li>
                     <li><a href="custo-de-vida.html">Custo de vida</a></li>
-                    <li><a href="empreiteiras.html">Empreiteiras entenda</a></li>
+                    <li><a href="empreiteiras.html">O que é Empreiteira</a></li>
                     <li><a href="trabalho.html">Trabalho no Japão</a></li>
                     <li><a href="contato.html">Contato</a></li>                   
                     <li><a href="sobre.html" target="_blank">Sobre o criador</a></li>
+                    
                 </ul>
             </nav>
 
 
-
+            </div><!--header-content-->
         </div><!--containner-->
-        <div class="clear"></div>
-    </header>
+        
+    </header><!--header--->
+    
 
     <section class="monte-fuji-capa">
         <div class="container">
         <div class="img-fuji-san">
-            <img src="images/capa-nara-park.jpg" alt="">
+            <img src="images/capa-nara-park.jpg" alt="Parque Nara, o famoso parque dos veados do Japão">
         </div>
         </div>
     </section>
@@ -133,7 +185,7 @@ gtag('config', 'G-JNQZ8TE0TE');
     <section class="monte-fuji">
         <div class="container">
 
-<h2>Parque de Nara (Nara Park)</h2>
+<h1>Parque de Nara (Nara Park)</h1>
 
 <p>
 O <strong>Parque de Nara</strong> é um dos destinos turísticos mais famosos do Japão. Localizado na cidade histórica de Nara, o parque é conhecido mundialmente pelos seus veados que vivem soltos e convivem livremente com os visitantes. Além da natureza e dos animais, o local também abriga templos e santuários importantes da cultura japonesa.
@@ -183,9 +235,9 @@ Combinando natureza, cultura, templos históricos e a experiência única de int
 
 <div class="galeria-grid">
 
-<img src="images/nara-park (2).jpg" alt="Castelo de Himeji" class="img-galeria">
-<img src="images/nara-park (3).jpg" alt="Castelo de Himeji" class="img-galeria">
-<img src="images/nara-park (4).jpg" alt="Castelo de Himeji" class="img-galeria">
+<img src="images/nara-park(2).jpg" alt="Parque de Nara, o famoso parque dos veados do Japão" class="img-galeria">
+<img src="images/nara-park(3).jpg" alt="Os famosos veados do Parque de Nara no Japão" class="img-galeria">
+<img src="images/nara-park(4).jpg" alt="Visitantes alimentando os veados em Nara" class="img-galeria">
 
 </div>
 
@@ -235,6 +287,10 @@ loading="lazy">
 </section>
 
 
+<p class="atualizacao">
+    Última atualização: Maio de 2026
+    </p>
+
    
 <div id="footer"></div>
 
@@ -279,10 +335,6 @@ lightbox.style.display = 'none';
     
 
 
-
-
-
-<a href="#" class="btn-topo">↑</a>   
 
 </body>
     </html>

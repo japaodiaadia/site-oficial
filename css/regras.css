@@ -1,79 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-}
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-
-.container {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-        text-decoration: none;
-    overflow-x: hidden;
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
-
-.clear {
-    clear: both;
-}
-
-
-body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    color: #333;
-    background: #fff;
-
-}
-
-
-.logo-do-site{
-    max-width: 470px;
-    padding: 0 2%;
-}
-
-.logo-do-site img.img-site{
-    width: 100%;
-    height: auto;
-}
-
-header {
-    height: auto;
-    padding: 15px 2%;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 30;
-}
 
 section.video-regras {
     width: 100%;
@@ -81,7 +6,7 @@ section.video-regras {
 }
 
 section.video-regras .video-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
     /* mata o overflow */
@@ -95,144 +20,6 @@ section.video-regras video {
     /* mantém proporção */
 }
 
-/* =========================
-   MENU MOBILE
-========================= */
-nav.menu-mobile {
-
-    display: none;
-    /* aparece só no mobile */
-    width: 100%;
-    padding: 0 2%;
-    text-align: center;
-}
-
-/* =========================
-   BOTÃO DO MENU
-========================= */
-nav.menu-mobile button {
-    background: none;
-    border: none;
-    padding: 10px;
-    margin-left: auto;
-    /* joga o botão para a direita */
-    display: block;
-    cursor: pointer;
-}
-
-/* ÍCONE */
-nav.menu-mobile button img.icone {
-    width: 28px;
-    height: 28px;
-    display: block;
-    margin-bottom: 15px;
-}
-
-/* =========================
-   LISTA DO MENU (FECHADO)
-========================= */
-nav.menu-mobile ul {
-    display: none;
-    position: absolute;
-    top: 75px;
-    left: 20%;
-    width: 80%;
-    background-color: #ebeaea;
-    list-style: none;
-    padding: 0 2%;
-    margin: 0;
-    z-index: 999;
-    border-radius: 10px;
-    border: 1px solid color #ebeaea;
-    overflow: hidden;
-    /* MUITO IMPORTANTE */
-}
-
-/* =========================
-   MENU ABERTO
-========================= */
-nav.menu-mobile ul.active {
-    display: block;
-}
-
-/* =========================
-   ITENS
-========================= */
-nav.menu-mobile ul li {
-    width: 100%;
-}
-
-/* LINKS */
-nav.menu-mobile ul li a {
-    display: block;
-    white-space: normal;
-    word-break: break-word;
-    padding: 14px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #555;
-    text-align: center;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-/* =========================
-   LINHA CONTÍNUA
-========================= */
-nav.menu-mobile ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #cfcfcf;
-    transition: background-color 0.3s ease;
-}
-
-/* =========================
-   HOVER
-========================= */
-nav.menu-mobile ul li a:hover {
-    color: #698293;
-}
-
-nav.menu-mobile ul li a:hover::after {
-    background-color: #698293;
-}
-
-
-/* =========================
-   RESPONSIVO (EXEMPLO)
-========================= */
-
-
-header nav.menu-desktop {
-    float: right;
-}
-
-header nav.menu-desktop ul {
-    padding: 45px 0;
-    list-style-type: none;
-}
-
-header nav.menu-desktop ul li {
-    float: left;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 0 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: rgb(124, 124, 124);
-}
-
-/*  ========== fim do padrao header ========  */
-
-
-
-/*  --------------------   regras do japao, seção ----------------   */
 
 
 
@@ -244,7 +31,7 @@ section.video-regras .video-container {
 }
 
 section.japao-regras {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 15px 2%;
 
@@ -254,18 +41,16 @@ section.japao-regras {
 
 section.japao-regras .container {
     padding: 0 2%;
-    transform: tranform 0.3s ease;
-    border-radius: 25px; 
+    border-radius: 12px;
 }
 
-section.japao-regras .container:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+section.japao-regras .container{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 section.japao-regras .img-regras {
     aspect-ratio: 7 / 3;
-    background-image: url("../images/foto-trem-japao.jpg");
+    background-image: url("../images/falar-alto-trem.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -274,7 +59,7 @@ section.japao-regras .img-regras {
 
 section.japao-regras .img-comida-rua {
     aspect-ratio: 7 /3;
-    background-image: url("../images/foto-comida-rua.jpg");
+    background-image: url("../images/nao-coma-andando.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -283,7 +68,7 @@ section.japao-regras .img-comida-rua {
 
 section.japao-regras .img-nao-toque {
     aspect-ratio: 7 / 3.0;
-    background-image: url("../images/foto-nao-toque.jpg");
+    background-image: url("../images/naotoqueempessoas.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -301,7 +86,7 @@ section.japao-regras .img-sapatos {
 
 section.japao-regras .img-furar-fila {
     aspect-ratio: 7 / 3.0;
-    background-image: url("../images/nao-furar-fila.jpg");
+    background-image: url("../images/nao-furi-fila.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -310,7 +95,7 @@ section.japao-regras .img-furar-fila {
 
 section.japao-regras .img-apontar {
     aspect-ratio: 7 / 3.0;
-    background-image: url("../images/apontar-hashi.webp");
+    background-image: url("../images/comida-com-hashi.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -319,7 +104,7 @@ section.japao-regras .img-apontar {
 
 section.japao-regras .img-gorjeta {
     aspect-ratio: 7 / 3.5;
-    background-image: url("../images/nao-dar-gorjeta.jpg");
+    background-image: url("../images/dinheiro-japones.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,7 +113,7 @@ section.japao-regras .img-gorjeta {
 
 section.japao-regras .img-lixo {
     aspect-ratio: 7 / 3.5;
-    background-image: url("../images/lixo-japao.webp");
+    background-image: url("../images/lixeira-japao.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -337,7 +122,7 @@ section.japao-regras .img-lixo {
 
 section.japao-regras .img-transporte {
     aspect-ratio: 7 / 3.5;
-    background-image: url("../images/transporte-japao.jpg");
+    background-image: url("../images/regras-de-transito.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,7 +131,7 @@ section.japao-regras .img-transporte {
 
 section.japao-regras .img-templos-sagrados {
     aspect-ratio: 7 / 3.5;
-    background-image: url("../images/templos-japao.jpg");
+    background-image: url("../images/nao-toque-templos.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -390,16 +175,12 @@ section.japao-regras-fim {
     max-width: 800px;
     margin: 8px auto;
     padding-top: 30px;
-    transform: tranform 0.3s ease;
     border-radius: 12px;
     border: solid 1px #698293;
     background-color: rgba(107, 119, 224, 0.1);
 }
 
-section.japao-regras-fim:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-}
+
 
 
 section.japao-regras-fim .container {
@@ -423,6 +204,14 @@ section.japao-regras-fim .container .texto-regras-fim p {
     color: #4b4b4b;
     padding-top: 5px;
 
+}
+
+.atualizacao{
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-style: italic;
 }
 
 /*=====================  social  =======================*/

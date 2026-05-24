@@ -1,0 +1,1251 @@
+/* ====================================
+body {
+    text-decoration: none;
+    overflow: -moz-scrollbars-none;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: #333;
+    background: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  ======================================*/
+.logo-do-site{
+    max-width: 470px;
+    padding: 0 2%;
+}
+
+.logo-do-site img.img-site{
+    width: 100%;
+    height: auto;
+}
+
+header {
+    height: auto;
+    padding: 15px 2%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+/*
+header .logo img {
+    margin-top: 10px;
+}*/
+
+/* =========================
+   MENU MOBILE
+========================= */
+nav.menu-mobile {
+
+    display: none;
+    width: 100%;
+    padding: 0 2%;
+    text-align: center;
+}
+
+/* =========================
+   BOTÃO DO MENU
+========================= */
+nav.menu-mobile button {
+    background: none;
+    border: none;
+    padding: 10px;
+    margin-left: auto;
+    /* joga o botão para a direita */
+    display: block;
+    cursor: pointer;
+}
+
+/* ÍCONE */
+nav.menu-mobile button img.icone {
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.menu-btn{
+font-size:40px;
+background:none;
+border:none;
+cursor:pointer;
+color:#698293;
+}
+
+/* =========================
+   LISTA DO MENU (FECHADO)
+========================= */
+nav.menu-mobile ul {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 20%;
+    width: 80%;
+    background-color: #ebeaea;
+    list-style: none;
+    padding: 0 2%;
+    margin: 0;
+    z-index: 999;
+    border-radius: 10px;
+    border: 1px solid color #ebeaea;
+    overflow: hidden;
+    /* MUITO IMPORTANTE */
+}
+
+/* =========================
+   MENU ABERTO
+========================= */
+nav.menu-mobile ul.active {
+    display: block;
+}
+
+/* =========================
+   ITENS
+========================= */
+nav.menu-mobile ul li {
+    width: 100%;
+}
+
+/* LINKS */
+nav.menu-mobile ul li a {
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    padding: 14px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    text-align: center;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* =========================
+   LINHA CONTÍNUA
+========================= */
+nav.menu-mobile ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cfcfcf;
+    transition: background-color 0.3s ease;
+}
+
+/* =========================
+   HOVER
+========================= */
+nav.menu-mobile ul li a:hover {
+    color: #698293;
+}
+
+nav.menu-mobile ul li a:hover::after {
+    background-color: #698293;
+}
+
+/* =========================
+   RESPONSIVO (EXEMPLO)
+========================= */
+
+
+
+header nav.menu-desktop {
+    float: right;
+}
+
+header nav.menu-desktop ul {
+    padding: 45px 0;
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    float: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    min-width: 180px;
+    border: 1px solid #eee;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+/* ITENS DROPDOWN */
+.dropdown li {
+    padding: 10px 15px;
+}
+
+.dropdown li a {
+    font-size: 14px;
+}
+
+/* HOVER */
+.has-dropdown:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/*  ========== fim do padrao header ========  */
+
+@supports (-webkit-touch-callout: none)
+{
+    input,
+    textarea,
+    select,
+    label {
+        font-size: 16px;
+    }
+}
+
+.video-capa{
+    padding-top: 15px;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.video-capa video{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:10px;
+}
+/*==============  intro ===========*/
+
+.intro-site{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.intro-site h2{
+    font-size:32px;
+    color:#698293;
+    margin-bottom:20px;
+}
+
+.intro-site p{
+    max-width:700px;
+    margin:0 auto 50px auto;
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* GRID DOS CARDS */
+
+.cards-intro{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card-intro{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card-intro span{
+    font-size:35px;
+}
+
+.card-intro h3{
+    margin:15px 0 10px 0;
+    font-size:20px;
+}
+
+.card-intro p{
+    font-size:15px;
+}
+
+
+/*============== videos do youtube =========== */
+
+section.videos {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section.videos .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+section.videos {
+    padding: 50px;
+}
+
+section.videos .texto-videos h2 {
+    text-align: center;
+    color: #698293;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section.videos .container .texto-videos p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+section.videos .texto-videos p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+
+
+section.videos .box-videos {
+    float: left;
+    width: calc(33.2%);
+    position: relative;
+    padding-top: calc(33.3% * 0.6); 
+}
+
+section.videos iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* =========== propaganda de empresas =============== */
+
+section.sobre-japao {
+    padding: 40px 2%;
+    max-width: 900px;
+    margin: 0 auto;
+   
+}
+
+section.sobre-japao .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+section.sobre-japao .container .texto-curiosidade {
+    max-width: 800px;
+    text-align: center;
+    padding: 0 2%;
+}
+
+section.sobre-japao .container .texto-curiosidade h2 {
+    color: #698293;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section.sobre-japao .container .texto-curiosidade .texto-p {
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 8px;
+
+}
+
+section.sobre-japao .container .japao-wraper {
+    padding-top: 40px;
+}
+
+section.sobre-japao .japao-wraper {
+    position: relative;
+    height: auto;
+}
+
+section.sobre-japao .japao-wraper2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+section.sobre-japao .img-sobrejapao {
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    background-image: url('../images/IMG-AGENCIA-2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+    margin-top: 35px;
+}
+
+section.sobre-japao .img-sobrejapao {
+    display: block;
+}
+
+section.sobre-japao .img-sobrejapao1 {
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    background-image: url('../images/empreiteira-novo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+
+}
+
+section.sobre-japao .img-sobrejapao2 {
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    background-image: url('../images/rumoaojapao.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+}
+
+section.sobre-japao .img-sobrejapao3 {
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    background-image: url('../images/sapatos-em-casa.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 3%;
+}
+
+section.sobre-japao .img-sobrejapao,
+section.sobre-japao .img-sobrejapao1,
+section.sobre-japao .img-sobrejapao2,
+section.sobre-japao .img-sobrejapao3 {
+    transition: transform 1.09s ease;
+}
+
+section.sobre-japao .img-sobrejapao:hover,
+section.sobre-japao .img-sobrejapao1:hover,
+section.sobre-japao .img-sobrejapao2:hover,
+section.sobre-japao .img-sobrejapao3:hover {
+    transform: scale(1.03);
+    border: 1px solid #688293;
+}
+
+section.sobre-japao .japao-texto {
+    width: 40%;
+    padding: 0 30px;
+}
+
+section.sobre-japao .japao-texto h2 {
+    color: #698293;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+section.sobre-japao .japao-texto p {
+    color: #4b4b4b;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+section.sobre-japao .texto-curiosidade h2{
+    margin: 0;
+    padding: 0;
+}
+
+
+section.sobre-japao .texto-curiosidade p{
+    color: #4b4b4b;
+    font-size: 16px;
+}
+
+/*=================== secao engajamento ====================*/
+
+section.oferta-trabalho{
+max-width:900px;
+margin:0 auto;
+padding: 40px 2%;
+}
+
+.oferta-container{
+    padding: 5px 2%;
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-bottom:20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    background:white;
+    border-radius: 12px;
+}
+
+.img-oferta{
+width:50%;
+}
+
+.texto-oferta{
+width:50%;
+}
+
+.img-oferta{
+    overflow:hidden;
+border-radius:8px;
+}
+
+.img-oferta img{
+width:100%;
+height:auto;
+object-fit:cover;
+border-radius:5px;
+transition: transform 1.03s ease;
+}
+
+.img-oferta img:hover{
+transform:scale(1.01);
+border:1px solid #688293;
+}
+
+
+section.oferta-trabalho .texto-oferta h2 a{
+    font-size: 20px;
+    color: #688293;
+    text-decoration: none;
+}
+
+section.oferta-trabalho .texto-oferta h3{
+    font-size: 18px;
+    color: #4b4b4b;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+section.oferta-trabalho .texto-oferta p {
+    font-size:14px;
+    color:#8d8d8d;
+    line-height:1.6;
+}
+
+.reverse{
+flex-direction:row-reverse;
+}
+
+
+/*================================================
+=============   turismo   ======================*/
+
+section.turismo{
+    padding: 40px 2%;
+}
+
+section.turismo .container{
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid #698293;
+}
+
+.grid-turismo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.pontos{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    padding: 5px;
+}
+
+.pontos:hover {
+    transform: scale(1.02);
+     border: 1px solid #698293;
+}
+
+.img-pontos img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+section.turismo h2{
+    text-align: center;
+    padding: 30px;
+    color: #698293;
+}
+
+.texto-pontos{
+    padding: 20px;
+}
+
+.texto-pontos h3{
+    margin-bottom: 10px;
+}
+
+.texto-pontos p{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.btn-turismo{
+    margin-top:10px;
+    color:#698293;
+    font-weight:600;
+    text-align: center;
+ }
+
+section.turismo .pontos a{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+
+.principal-page{
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.principal-page a{
+    color: white;
+    text-decoration: none;  
+    cursor: pointer;
+    background-color: #698293;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/*.principal-page a:hover{
+    text-decoration:underline;
+}*/
+
+/*============= videos --==========*/
+
+section.videos-canal{
+    padding: 40px 2%;
+}
+
+section.videos-canal .container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container h2{
+    text-align: center;
+    color: #698293;
+    padding-bottom: 30px;
+}
+
+.grid-videos-canal{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:25px;
+}
+
+.videos-wrapper{
+    display:block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease;
+    border-radius:8px;
+    overflow:hidden;
+    background:white;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.videos-wrapper:hover {
+    transform: scale(1.02);
+    border: 1px solid #698293;
+}
+
+.grid-videos{
+    width:100%;
+}
+
+.grid-videos iframe{
+    width:100%;
+    height:180px;
+    border:0;
+    border-radius: 8px;
+}
+
+.grid-texto-videos{
+    padding:15px;
+}
+
+.grid-texto-videos h3{
+    font-size:18px;
+    color:#698293;
+    margin-bottom:10px;
+}
+
+.grid-texto-videos p{
+    font-size:14px;
+    line-height:1.5;
+}
+
+.btn-chamada{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-youtube{
+    display:inline-block;
+    padding:10px 20px;
+    background:#698293;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    text-align: center;
+}
+
+
+section.card-ver-mais{
+    padding: 40px 2%;
+}
+
+.grid-ver-mais{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card-mini{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card-mini img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card-mini h3{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.card-mini:hover{
+    transform: translateY(-5px);
+}
+
+/*============== compartilhar---------*/
+/*
+.share-site {
+    margin: 30px auto;
+    max-width: 400px;
+    text-align: center;
+    font-size: 13px;
+    color: #698293;
+    padding-top: 20px;
+}
+
+.share-site span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.share-btn {
+    border: 1px solid #698293;
+    background: transparent;
+    color: #698293;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.share-btn:hover {
+    background: #698293;
+    color: #fff;
+}
+
+.share-btn.fb:hover {
+    background: #1877f2;
+    border-color: #1877f2;
+}
+
+.share-btn.wa:hover {
+    background: #25d366;
+    border-color: #25d366;
+}
+
+.share-btn.line:hover {
+    background: #00c300;
+    border-color: #00c300;
+}
+
+.share-btn.tw:hover {
+    background: #000;
+    border-color: #000;
+}
+*/
+/*/  ====================== botao topo  =====================*/
+
+.btn-topo{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #698293;
+    color: white;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 22px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.btn-topo:hover{
+    background: #4f6676;
+}
+
+/*  ======================== botoes, icones  =============*/
+
+.social-bar-s2 {
+    border-top: solid 1px #698293;
+    top: 70px; /* ajusta conforme seu menu */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+.social-text-s2 {
+    font-size: 13px;
+    color: #555;
+}
+
+.social-icons-s2 {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link-s2 {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon-s2 {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-icon-s2:hover {
+    transform: scale(1.2);
+}
+
+/*========================================*/
+
+
+
+footer {
+    padding: 60px 2%;
+    background-color: #688293;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+footer .footer-block {
+    float: left;
+    width: 33.3%;
+}
+
+.footer-block a {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-block h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer-block p {
+    margin-top: 8px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .oferta-container{
+flex-direction:column;
+gap:20px;
+text-align:center;
+}
+
+.img-oferta,
+.texto-oferta{
+flex:0 0 70%;
+width:100%;
+}
+
+.reverse{
+flex-direction:column;
+}
+
+.grid-ver-mais{
+grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+
+
+@media screen and (max-width:855px) {
+    nav.nav {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width:800px) {
+
+    section.curso .container .img-curso6,
+    section.curso .container .img-curso7,
+    section.curso .container .img-curso8,
+    section.curso .container .img-curso9,
+    section.curso .container .img-curso10,
+    section.curso .container .img-curso11,
+    section.curso .container .img-curso12,
+    section.curso .container .img-curso13 {
+        flex: none;
+        display: block;
+        width: 70%;
+        height: 200px;
+        margin: 0 auto 10px auto;
+        background-size: contain;
+    }
+
+    section.curso .texto-curso {
+        flex: 2 1 500px;
+        /* texto ocupa mais espaço */
+        color: #4b4b4b;
+
+        /*background-color: #4b4b4b;*/
+    }
+
+    /*-----      secao engajamento    -----*/
+    section.oferta-trabalho .comum {
+        width: 50%;
+    }
+
+    body{
+        box-shadow: none;
+    }
+
+    .videos-wrapper{
+flex-direction:column;
+}
+
+.grid-videos,
+.grid-texto-videos{
+width:100%;
+}
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+    
+
+    section.videos .box-videos {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: calc(90% * 0.6);
+        border: 3px solid white;
+    }
+
+   
+
+    /*---curiosidade japao---*/
+
+    section.sobre-japao .container .texto-curiosidade {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section.sobre-japao .japao-wraper .japao-texto {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+
+    }
+
+    section.sobre-japao .container .texto-curiosidade h2 {
+        color: #698293;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    section.sobre-japao .container .texto-curiosidade p {
+        color: #4b4b4b;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    section.sobre-japao .japao-wraper2 {
+        display: inline-block;
+        text-align: center;
+    }
+
+    section.sobre-japao .img-sobrejapao,
+    section.sobre-japao .img-sobrejapao1,
+    section.sobre-japao .img-sobrejapao2,
+    section.sobre-japao .img-sobrejapao3 {
+        width: 90%;
+        display: inline-block;
+    }
+
+
+
+    section.sobre-japao .japao-texto {
+        width: 80%;
+        margin: 0 20px;
+        margin-top: 25px;
+    }
+
+    .img-mosaico-single-social {
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-social>div:nth-of-type(1n+7) {
+        display: none;
+    }
+
+
+
+    footer {
+        text-align: center;
+    }
+
+    footer .footer-block {
+        float: none;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+
+    section.br-container .br-wraper2 {
+        display: inline-block;
+        text-align: center;
+    }
+
+    section.br-container .img-perfil {
+        width: 50%;
+        display: inline-block;
+    }
+
+    section.br-container .texto-perfil-br {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    section.sobre-japao .japao-wraper .img-sobrejapao,
+    section.sobre-japao .japao-wraper .img-sobrejapao1,
+    section.sobre-japao .japao-wraper .img-sobrejapao2,
+    section.sobre-japao .japao-wraper .img-sobrejapao3 {
+        width: 90%;
+    }
+
+    section.sobre-japao .japao-texto p {
+        width: 100%;
+        font-size: 16px;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .logo-do-site{
+    max-width: 310px;
+    
+}
+ 
+
+    section.empreiteiras-japao .box-empreiteira {
+        flex-direction: column;
+
+    }
+
+    section.empreiteiras-japao .img-empreiteira {
+        width: 100%;
+    }
+
+    section.empreiteiras-japao .img-empreiteira1 {
+        width: 100%;
+    }
+
+    [class^="img-empreiteira"] {
+        /* dessa forma é melhor pq já pego todas as class que começa com o nome da mesma*/
+        width: 100%;
+    }
+
+
+    section.empreiteiras-japao .texto-empreiteira {
+        flex: 2 1 200px;
+        color: #4b4b4b;
+
+
+    }
+
+    section.sobre-japao .img-sobrejapao,
+    section.sobre-japao .img-sobrejapao1,
+    section.sobre-japao .img-sobrejapao2,
+    section.sobre-japao .img-sobrejapao3 {
+        width: 60%;
+        display: inline-block;
+    }
+
+
+
+}
+
+@media screen and (max-width:580px) {
+    section.sobre-mim img {
+        max-width: 300px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 548px) {
+
+    section.oferta-trabalho .texto-oferta h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+
+    section.videos .box-videos {
+        width: 100%;
+        padding-top: calc(100% * 0.6);
+    }
+
+    section.sobre-mim img {
+        max-width: 500px;
+        padding: 15px 0;
+
+    }
+
+    .img-mosaico-single-social {
+        width: calc(100% / 4);
+        padding-top: calc(100% / 4);
+    }
+
+    .mosaico-social>div:nth-of-type(1n+5) {
+        display: none;
+    }
+
+
+}

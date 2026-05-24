@@ -1,0 +1,121 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIÁVEIS DO SITE */
+:root {
+    --cor-principal: #698293;
+    --cor-texto: #333;
+    --cor-texto-suave: #666;
+    --cor-fundo: #fff;
+    --cor-borda: #eee;
+
+    --fonte-principal: "Montserrat", sans-serif;
+
+    --container-width: 1200px;
+    --container-narrow: 1000px;
+    
+}
+
+/* BASE */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+    line-height: 1.6;
+    overflow-x: hidden;
+     -webkit-font-smoothing: antialiased;
+}
+
+/* CONTAINER */
+.container {
+    max-width: var(--container-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; /* IMPORTANTE */
+}
+
+/* IMAGENS PADRÃO */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* TÍTULOS */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* TEXTOS */
+p {
+    font-size: 16px;
+    color: var(--cor-texto-suave);
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+/*a:hover {
+    color: var(--cor-principal);
+}*/
+
+/* SEÇÕES PADRÃO */
+section {
+    padding: 40px 0;
+}
+
+/* FLEX PADRÃO */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* GRID PADRÃO */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    position: relative; /* 🔥 ESSENCIAL */
+}
+
+.menu a {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+

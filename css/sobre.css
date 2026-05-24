@@ -1,196 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-body {
-      text-decoration: none;
-    overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  color: #333;
-  background: #fff;
-  overflow: -moz-scrollbars-none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.clear {
-  clear: both;
-}
-
-
-.logo-do-site{
-    max-width: 470px;
-    padding: 0 2%;
-}
-
-.logo-do-site img.img-site{
-    width: 100%;
-    height: auto;
-}
-
-header {
-    height: auto;
-    padding: 15px 2%;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 30;
-}
-
-/* =========================
-   MENU MOBILE
-========================= */
-nav.menu-mobile {
-
-  display: none;
-  /* aparece só no mobile */
-  width: 100%;
-  padding: 0 2%;
-  text-align: center;
-}
-
-/* =========================
-   BOTÃO DO MENU
-========================= */
-nav.menu-mobile button {
-  background: none;
-  border: none;
-  padding: 10px;
-  margin-left: auto;
-  /* joga o botão para a direita */
-  display: block;
-  cursor: pointer;
-}
-
-/* ÍCONE */
-nav.menu-mobile button img.icone {
-  width: 28px;
-  height: 28px;
-  display: block;
-  margin-bottom: 15px;
-}
-
-/* =========================
-   LISTA DO MENU (FECHADO)
-========================= */
-nav.menu-mobile ul {
-  display: none;
-  position: absolute;
-  top: 75px;
-  left: 20%;
-  width: 80%;
-  background-color: #ebeaea;
-  list-style: none;
-  padding: 0 2%;
-  margin: 0;
-  z-index: 999;
-  border-radius: 10px;
-  border: 1px solid color #ebeaea;
-  overflow: hidden;
-  /* MUITO IMPORTANTE */
-}
-
-/* =========================
-   MENU ABERTO
-========================= */
-nav.menu-mobile ul.active {
-  display: block;
-}
-
-/* =========================
-   ITENS
-========================= */
-nav.menu-mobile ul li {
-  width: 100%;
-}
-
-/* LINKS */
-nav.menu-mobile ul li a {
-  display: block;
-  white-space: normal;
-  word-break: break-word;
-  padding: 14px 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #555;
-  text-align: center;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-/* =========================
-   LINHA CONTÍNUA
-========================= */
-nav.menu-mobile ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #cfcfcf;
-  transition: background-color 0.3s ease;
-}
-
-/* =========================
-   HOVER
-========================= */
-nav.menu-mobile ul li a:hover {
-  color: #698293;
-}
-
-nav.menu-mobile ul li a:hover::after {
-  background-color: #698293;
-}
-
-/* =========================
-   RESPONSIVO (EXEMPLO)
-========================= */
-
-
-header nav.menu-desktop {
-  float: right;
-}
-
-header nav.menu-desktop ul {
-  padding: 45px 0;
-  list-style-type: none;
-}
-
-header nav.menu-desktop ul li {
-  float: left;
-  font-size: 13px;
-  text-transform: uppercase;
-  padding: 0 20px;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: rgb(124, 124, 124);
-}
 
 /* ==============================
    VARIÁVEIS GERAIS
@@ -204,6 +12,9 @@ header nav ul li a {
   --max-width: 1100px;
   --radius: 12px;
 }
+
+
+
 
 
 /* ==============================
@@ -320,7 +131,7 @@ section.section-video {
 }
 
 
-.section-video .container a {
+.sobre-criador .section-video .container a {
   color: rgb(124, 124, 124);
   cursor: pointer;
   border-radius: 5px;
@@ -333,8 +144,6 @@ section.section-video {
   color: #145b8a;
   transform: scale(1.05);
 }
-
-
 
 /*========= contato ==========*/
 /*============================*/
@@ -436,7 +245,7 @@ textarea:focus {
 section.sobre-mim {
   padding: 0 2%;
   background: #f7f8f9;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 12px;
   border-radius: 12px;
@@ -471,120 +280,99 @@ section.sobre-mim .container>h2 {
   color: #698293;
   font-size: 20px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 section.sobre-mim .sobre-mim-texto p {
   color: #4b4b4b;
-  font-size: 14px;
-  padding-top: 30px;
+  font-size: 16px;
+  padding-top: 20px;
 }
 
-section.sobre-mim .container a {
+.sobre-criador .sobre-mim .container a {
   text-decoration: none;
+  color: #145b8a;
 }
 
-
-/*=============================================
-==============custo de vida no japao===========*/
-
-.custo-japao {
-  max-width: 900px;
-  font-family: Arial, sans-serif;
-  background: #f7f8f9;
-  padding: 30px 2%;
-  margin: auto;
-  margin-top: 5px;
-  border-radius: 12px;
+.sobre-criador .sobre-mim .container a:hover{
+  text-decoration: underline;
 }
 
-.custo-japao h2 {
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 18px;
-}
-
-.intro {
-  text-align: center;
-  color: #555;
-  margin-bottom: 30px;
+section.sobre-mim ul {
   font-size: 16px;
-}
-
-.bloco {
-  margin-bottom: 35px;
-}
-
-.bloco h3 {
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.bloco ul {
-  padding-left: 20px;
-}
-
-.bloco li {
-  margin-bottom: 8px;
-  font-size: 18px;
-}
-
-.destaque {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.obs {
-  margin-top: 10px;
-  color: #555;
-  font-size: 14px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-table th,
-table td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  font-size: 18px;
-}
-
-table th {
-  background: #f4f4f4;
-  text-align: left;
-}
-
-.total {
-  margin-top: 15px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.alerta {
-  background: #f0f7ff;
-  padding: 20px;
-  border-left: 5px solid #0077cc;
+  color: #4a4a4a;
+  background: #f8fafc;
+  padding: 20px 30px;
+  border-left: 4px solid #698293;
   border-radius: 8px;
-  font-size: 18px;
+  line-height: 1.8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.reflexao {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  font-size: 18px;
+section.sobre-mim ul li {
+  margin-bottom: 12px;
 }
 
-.conclusao {
-  background: #f0f7ff;
-  padding: 20px;
-  border-left: 5px solid #0077cc;
-  border-radius: 8px;
-  font-size: 18px;
+/* ===== GALERIA EM DIV ===== */
+
+/* ===== GALERIA ===== */
+
+.galeria-box{
+  width:100%;
+  padding:40px 2%;
+  margin:0 auto;
+}
+
+.galeria-grid{
+  display:flex;
+  gap:20px; /* espaço entre imagens */
+  justify-content:center;
+  flex-wrap:wrap; /* quebra linha no celular */
+}
+
+.galeria-grid img{
+  width:100%;
+  max-width:260px; /* tamanho máximo */
+  height:180px; /* todas mesma altura */
+  object-fit:cover;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+  flex:1 1 300px;
+}
+
+.galeria-grid img:hover{
+  transform:scale(1.03);
+}
+
+/* ===== LIGHTBOX ===== */
+
+.lightbox{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+.lightbox-img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:6px;
+}
+
+.fechar{
+  position:absolute;
+  top:30px;
+  right:40px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
 }
 
 /*============== videos do youtube =========== */
@@ -599,153 +387,13 @@ section.videos .container {
   margin: 0 auto;
 }
 
-
-
-section.videos {
-  padding: 50px;
+.atualizacao{
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-style: italic;
 }
-
-section.videos .texto-videos h2 {
-  text-align: center;
-  color: #698293;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-section.videos .container .texto-videos p {
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-
-section.videos .texto-videos p {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #4b4b4b;
-  font-size: 14px;
-  margin-top: 8px;
-  text-align: center;
-}
-
-
-
-section.videos .box-videos {
-  float: left;
-  width: 50%;
-  position: relative;
-  padding-top: calc(48% * 0.6);
-  border: solid 2px white;
-}
-
-section.videos iframe {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-
-/*=====================================
-------secao insta face e footer-------*/
-
-section.social {
-  padding: 70px 0;
-}
-
-.instagram-chamada {
-  float: left;
-  width: 100%;
-  text-align: center;
-  padding: 40px 0;
-  background: #98a5ae;
-
-}
-
-.instagram-chamada p {
-  line-height: 23px;
-  color: white;
-  padding: 10px 0;
-  font-size: 13px;
-}
-
-.mosaico-social {
-  float: left;
-  width: 100%;
-}
-
-.img-mosaico-single-social {
-  float: left;
-  width: calc(100% / 9);
-  padding-top: calc(100% / 9);
-  background-color: rgb(210, 210, 210);
-  border: 3px solid white;
-}
-
-.img-mosaico-single-social {
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.facebook-chamada {
-  float: left;
-  width: 100%;
-  text-align: center;
-  padding: 40px 0;
-  background: #688293;
-}
-
-.facebook-chamada a img {
-  background-size: 25px;
-}
-
-.facebook-chamada p {
-  line-height: 23px;
-  color: white;
-  padding: 10px 0;
-  font-size: 13px;
-}
-
-
-footer {
-  padding: 60px 2%;
-  background-color: #688293;
-  text-align: center;
-}
-
-footer .container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-footer .footer-block {
-  float: left;
-  width: 33.3%;
-}
-
-.footer-block a {
-  text-decoration: none;
-  font-weight: normal;
-  color: white;
-  font-size: 14px;
-}
-
-.footer-block h2 {
-  color: white;
-  font-weight: normal;
-  font-size: 18px;
-  margin: 0;
-}
-
-.footer-block p {
-  margin-top: 8px;
-  color: white;
-  font-size: 14px;
-}
-
 
 
 

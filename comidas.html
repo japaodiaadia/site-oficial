@@ -29,9 +29,8 @@
     <!-- Fonte -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- CSS da página -->
+     <link rel="stylesheet" href="css/global.css" type="text/css">
      <link rel="stylesheet" href="/css/style.css">
-     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="css/comidas.css" type="text/css">
     <link rel="shortcut icon" type="image/ico" href="icon-1.png">
     <meta name="google-adsense-account" content="ca-pub-6972546047416852">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6972546047416852"
@@ -39,39 +38,74 @@
 </head>
 
 <body id="sobre">
-    <header>
-
-        <div class="logo-do-site">
-            <img class="img-site" src="images/logo-image.png" alt="imagem da logo">
-        </div><!--logo-->
+    <header class="header">
         <div class="container">
-            <nav class="menu-desktop">
-                <ul>
+            <div class="header-content">
+            <div class="logo-do-site">
+                <img class="img-site" src="images/logo-site.png" alt="imagem da logo">
+            </div><!--logo-->
+            
+            <nav class="nav">
+                <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="sobre.html">vida no japão</a></li>
                     <li><a href="contato.html">contato</a></li>
-                    <li><a style="color:#698293;" href="comidas.html">Sabor do japão</a></li>
+                    
+                    <li class="has-dropdown">
+                        <a href="#">Sobre ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="sobre-site.html">Sobre</a></li>
+                            <li><a href="sobre.html">Sobre o criador</a></li>
+                            <li><a href="termos.html">Termos</a></li>
+                            <li><a href="politica.html">Privacidade</a></li>
+                        </ul>
+                    </li>
+
+                     <li class="has-dropdown">
+                        <a href="#">Cultura ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="comidas.html">Culinária local</a></li>
+                            <li><a href="turismo.html">Turismo</a></li>
+                            <li><a href="curiosidade.html">Curiosidades</a></li>
+                            <li><a href="cursos.html">Cursos de japonês</a></li>
+                        </ul>
+                    </li>
+
+                      <li class="has-dropdown">
+                        <a href="#">Empreiteiras ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="custo-de-vida.html">Custo de vida</a></li>
+                            <li><a href="empreiteiras.html">Empreiteiras</a></li>
+                            <li><a href="agencia.html">Agências</a></li>
+                            <li><a href="cursos.html">Cursos de japonês</a></li>
+                        </ul>
+                    </li>
+                    
+                    
                 </ul>
             </nav><!--menu desktop-->
 
             <nav class="menu-mobile">
-                <button class="menu-btn">☰</button>
 
+                <button class="menu-btn">☰</button>
+                
                 <ul class="menu-list">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="sobre-site.html">Quem somos</a></li>
                     <li><a href="custo-de-vida.html">Custo de vida</a></li>
-                    <li><a href="empreiteiras.html">Empreiteiras entenda</a></li>
+                    <li><a href="empreiteiras.html">O que é Empreiteira</a></li>
                     <li><a href="trabalho.html">Trabalho no Japão</a></li>
                     <li><a href="contato.html">Contato</a></li>                   
                     <li><a href="sobre.html" target="_blank">Sobre o criador</a></li>
                     
                 </ul>
-            </nav><!--menu-mobile-->
+            </nav>
 
+
+            </div><!--header-content-->
         </div><!--containner-->
-        <div class="clear"></div>
-    </header>
+        
+    </header><!--header--->
+    
 
     <section class="logo-wes1">
         <div class="container">
@@ -92,7 +126,10 @@
                 e tempurá, tudo é feito com técnica, paciência e dedicação. Comer no Japão
                 não é apenas saciar a fome é vivenciar um momento cultural, cheio de
                 significado e harmonia.</p>
-            <div class="img-comidas"></div>
+
+        <div class="img-comidas">
+            <img src="images/yakisoba-nihon.jpg" alt="yakisoba prato japones">
+        </div>
             <div class="comidas-texto">
                 <h2> Yakisoba Japonês, Uma Tradição de Sabor e Versatilidade</h2>
                 <p>
@@ -142,6 +179,7 @@
                     de ostra, molho inglês, shoyu, açúcar, ketchup e especiarias, o que resulta em um sabor
                     adocicado, salgado e umami. Também existem versões prontas vendidas em mercados japoneses.
                 </p>
+
                 <p>
                     <b>Como é Preparado</b>
                     <br>
@@ -217,7 +255,9 @@
     <section class="comidas">
         <div class="container">
             <!--<h2>Tradicional sabor Japones</h2>-->
-            <div class="img-comidas1"></div>
+            <div class="img-comidas">
+                <img src="images/sashimi-japones.jpg" alt="sashimi prato japones">
+            </div>
             <div class="comidas-texto">
                 <h2>Sashimi Japonês – A Essência da Culinária Japonesa</h2>
                 <p>
@@ -274,6 +314,7 @@
                     <br>
                     - Hokkigai (molusco) – Crocante e levemente doce.
                 </p>
+
                 <p>
                     <b>Acompanhamentos Tradicionais:</b>
                     <br>
@@ -329,7 +370,9 @@
     <section class="comidas">
         <div class="container">
             <!--<h2>Tradicional sabor Japones</h2>-->
-            <div class="img-comidas2"></div>
+            <div class="img-comidas">
+                <img src="images/sushi-prato-japones.jpg" alt="sushi prato japones">
+            </div>
             <div class="comidas-texto">
                 <h2>Sushi Japonês - Tradição, Arte e Sabor</h2>
                 <p>
@@ -405,6 +448,7 @@
                     <br>
                     Sushi prensado em formas retangulares, típico da região de Kansai (Osaka).
                 </p>
+
                 <p>
                     <b>Acompanhamentos Tradicionais:</b> <br>
                     - Shoyu (molho de soja) – Para mergulhar levemente (de preferência o peixe, não o arroz).
@@ -474,7 +518,9 @@
     <section class="comidas">
         <div class="container">
             <!--<h2>Tradicional sabor Japones</h2>-->
-            <div class="img-comidas3"></div>
+            <div class="img-comidas">
+                <img src="images/miojo-ramen.jpg" alt="ramen prato japones">
+            </div>
             <div class="comidas-texto">
                 <h2> Ramen, O Tradição Sabor Japones</h2>
 
@@ -526,6 +572,7 @@
                     <b>Óleos e temperos:</b><br> como óleo de alho, óleo de pimenta ou óleo de gergelim, que
                     intensificam o aroma e o sabor do caldo.
                 </p>
+
                 <p>
                     <b>Curiosidades:</b><br>
                     Comer lamen fazendo barulho ao sugar o macarrão (slurping) é comum e até bem-visto no Japão, pois
@@ -554,7 +601,9 @@
     <section class="comidas">
         <div class="container">
             <!--<h2>Tradicional sabor Japones</h2>-->
-            <div class="img-comidas4"></div>
+            <div class="img-comidas">
+                <img src="images/tempura-japones.jpg" alt="">
+            </div>
             <div class="comidas-texto">
                 <h2> Tempurá Japonês</h2>
                 <p>
@@ -633,40 +682,84 @@
     </section><!--sobre-mim-->
 
 
-    <section class="videos">
-        <div class="container">
-            <div class="texto-videos">
-                <h2>O melhor sabor do Japão na sua casa</h2>
+
+    <!-- =========================== links interativos  ================-->
+
+    
+<section class="relacionados-s2">
+<h2>Veja mais alguns conteúdo aqui abaixo ⇩</h2>
+    <div class="grid-relacionados-s2">
+      
+        <!-- destaque -->
+        <a href="custo-de-vida.html" class="card-s2 destaque-s2">
+            <img src="images/empresas-japonesas.jpg" alt="">
+            <h3>Quanto custa viver no Japão</h3>
+        </a>
+
+        <!-- menores -->
+        <a href="trabalho.html" class="card-s2 pequeno-s2">
+            <h4>Como é trabalhar no Japão</h4>
+        </a>
+
+        <a href="empreiteiras.html" class="card-s2 pequeno-s2">
+            <h4>Cuidados com empreiteiras</h4>
+        </a>
+
+    </div>
+
+</section>
+
+<section class="agencias-links-mais">
+    <h3>Veja também</h3>
+    <ul>
+        <li><a href="turismo.html">Veja os melhores pontos turísticos do Japão</a></li>
+        <li><a href="comidas.html">Os pratos mais pedidos do Japão</a></li>
+        <li><a href="regras.html">O que você não deve fazer no Japão para não ser mal visto</a></li>
+        <li><a href="hanabi.html">Os festivais mais bonitos do Japão</a></li>
+        <li><a href="sobre.html">Saiba mais sobre os criadores do site</a></li>
+    </ul>
+
+</section>
+
+
+
+
+     <!--<section class="links-interativos-jp">
+    <div class="container">
+
+        <div class="link-principal-jp">
+
+            <div class="img-link-jp">
+                <a href="castelo-himeji.html">
+                    <img src="images/capa-castelo-himeji.jpg" alt="Imagem destaque Japão">
+                </a>
+            </div>
+
+            <div class="conteudo-link-jp">
+                <h2>Descubra mais sobre o Japão</h2>
                 <p>
-                    Faça você mesmo! Aqui a baixo separei uns videos pra você testar e saborear <br>
-                    os melhores pratos japoneses no conforto da sua casa <br>
-                    <strong>Aproveite!</strong>
+                    Explore conteúdos exclusivos sobre a vida no Japão, cultura,
+                    curiosidades e experiências reais do dia a dia.
                 </p>
-            </div>
-            <div class="box-videos">
-                <iframe src="https://www.youtube.com/embed/mm4nT-UoTvU"
-                    title="TONKOTSU LAMEN - Guia completo para fazer Lamen tradicional igual do Japão" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <div class="links-secundarios-jp">
+                    <a href="curiosidades.html">Curiosidades do Japão</a>
+                    <a href="trabalho.html">Trabalho no Japão</a>
+                </div>
+
             </div>
 
-            <div class="box-videos">
-                <iframe src="https://www.youtube.com/embed/cB-lnvJB0KE"
-                    title="Como fazer o famoso TEMPURÁ da FEIRA DA LIBERDADE em São Paulo #comidajaponesa"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+        </div>
 
-            <div class="box-videos">
-                <iframe src="https://www.youtube.com/embed/JzAY-CsPSgM"
-                    title="COMO FAZER YAKISOBA RÁPIDO E FÁCIL | TIA DO JOINHA" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div><!--container-->
-        <div class="clear"></div>
-    </section><!--videos-->
+    </div>
+</section>-->
+
+<p class="atualizacao">
+Última atualização: Maio de 2026
+</p>
+   
+
+    <a href="#" class="btn-topo">↑</a>
 
 
    <div id="footer"></div>
@@ -682,6 +775,9 @@ fetch("/footer.html")
 
     <script src="js/menu.js"></script>
     <script src="js/share.js"></script>
+    <script src="js/galeria.js"></script>
+
+    
 
 </body>
 
