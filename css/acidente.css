@@ -1,0 +1,89 @@
+section.rosai .container{
+    max-width: 1000px;
+}
+
+
+section.rosai .texto-rosai h1{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.texto-rosai ul {
+    list-style-position: inside;
+}
+
+section.rosai img{
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 12);
+}
+
+/* GALERIA */
+
+.imagens-acidente{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.imagens-acidente img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.imagens-acidente img:hover{
+    transform: scale(1.02);
+}
+
+
+/* MODAL */
+
+.modal-imagem{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagem-modal{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+}
+
+.fechar-modal{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+
+/* RESPONSIVO */
+
+@media screen and (max-width:768px){
+
+    .imagens-acidente{
+        grid-template-columns: 1fr;
+    }
+
+    .imagens-acidente img{
+        height: 250px;
+    }
+
+}
