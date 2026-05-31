@@ -14,7 +14,11 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+
+
   ======================================*/
+
+
 .logo-do-site{
     max-width: 200px;
     padding: 0 2%;
