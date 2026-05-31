@@ -282,7 +282,7 @@ header nav ul li a {
 
 .intro-site{
     text-align:center;
-    padding:70px 20px;
+    padding:20px 20px;
 }
 
 
@@ -290,7 +290,7 @@ header nav ul li a {
 
 .intro-site p{
     max-width:700px;
-    margin:0 auto 50px auto;
+    margin:0 auto 1px auto;
   
 }
 
@@ -379,6 +379,63 @@ section.sobre-japao .japao-texto p {
     margin-bottom: 10px;
 }
 
+/*  ================== acidentes  =================   */
+
+section.acidente-no-trabalho{
+    padding: 40px 2%;
+}
+
+section.acidente-no-trabalho .container{
+    max-width: 900px;
+    text-align: center;
+}
+
+section.acidente-no-trabalho img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+    transition: transform 0.3s ease;
+}
+
+section.acidente-no-trabalho a:hover img{
+    transform: scale(1.02);
+}
+
+section.acidente-no-trabalho a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+section.acidente-no-trabalho h2{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+section.acidente-no-trabalho h3{
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+}
+
+section.acidente-no-trabalho p{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+section.acidente-no-trabalho span{
+    display: inline-block;
+    margin-top: 20px;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+section.acidente-no-trabalho span:hover{
+    text-decoration: underline;
+}
 
 /*=================== secao engajamento ====================*/
 
