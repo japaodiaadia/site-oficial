@@ -1,0 +1,138 @@
+section.terremoto-japao{
+    padding: 40px 2%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.texto-terremoto ul{
+    list-style-position: inside;
+    padding: 20px 0;
+}
+
+.texto-terremoto ul li{
+    font-size: 16px;
+    
+}
+
+.texto-terremoto h2{
+    padding-top: 20px;
+}
+
+.texto-terremoto h3{
+    padding: 20px;
+    /*background:#f7fafc;
+    border-left:6px solid #698293;
+    padding:25px;
+    border-radius:12px;
+    margin-top: 30px;*/
+}
+
+
+.img-terremoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-terremoto img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ================== curiosidade-terremoto  =============*/
+.curiosidade-terremoto{
+    margin:40px 0;
+}
+
+.container-curiosidade{
+    background:#f7fafc;
+    border-left:6px solid #698293;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.titulo-curiosidade{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.titulo-curiosidade span{
+    font-size:1.8rem;
+}
+
+.titulo-curiosidade h3{
+    margin:0;
+    color:#2c3e50;
+    font-size:1.4rem;
+}
+
+.container-curiosidade p{
+    margin-bottom:20px;
+    line-height:1.8;
+    color:#444;
+}
+
+.onde-alertas{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid #e5e7eb;
+}
+
+.onde-alertas h4{
+    margin-bottom:15px;
+    color:#2c3e50;
+}
+
+.onde-alertas ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:12px;
+}
+
+.onde-alertas li{
+    background:#f0f4f7;
+    padding:12px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.onde-alertas li:hover{
+    transform:translateY(-3px);
+    background:#e6eef3;
+}
+
+figure.img-terremoto{
+    font-size:0.6rem;
+    color:#666;
+    text-align:center;
+    margin-top:8px;
+    font-style:italic;
+    display: inline-block;
+}
+
+.audio-alerta{
+    display: block;
+    width: 520px;
+    height: 60px;
+    margin: 20px auto;
+    background-color: #e6eef3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    border:1px solid #e5e7eb;
+}
+
+.alerta-terremoto-p{
+    text-align: center;
+    font-size: 16px;
+    padding: 0 2%;
+}
+

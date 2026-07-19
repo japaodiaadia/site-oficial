@@ -1041,7 +1041,65 @@ section.video-agencia video {
     transform: translateX(5px);
 }
 
+/* terremoto  */
 
+
+section.terremoto-pg{
+    padding: 10px 2%;
+}
+
+section.terremoto-pg .container{
+    max-width: 920px;
+    text-align: center;
+}
+
+section.terremoto-pg img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+    transition: transform 0.3s ease;
+}
+
+section.terremoto-pg a:hover img{
+    transform: scale(1.02);
+}
+
+section.terremoto-pg a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+section.terremoto-pg h2{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+section.terremoto-pg h3{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+
+section.terremoto-pg p{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+section.terremoto-pg span{
+    display: inline-block;
+    margin-top: 20px;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+section.terremoto-pg span:hover{
+    text-decoration: underline;
+}
 
 
 /* =========================
