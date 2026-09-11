@@ -2010,6 +2010,21 @@ section.curso a {
 
 }
 
+section.recicle{
+    max-width: 1000px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+section.recicle .img-recicle{
+    width: 100%;
+    padding-top: 60px;
+   
+}
+section.recicle .img-recicle img{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
 
 /* ============= FOOTER GERAL ============*/
 footer {
