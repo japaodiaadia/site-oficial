@@ -271,34 +271,58 @@ header nav ul li a {
 }
 
 .video-capa{
-    
+    background-color: #688293;
     max-width:1000px;
     margin:0 auto;
+    border-radius: 10px;
 }
 
 .video-capa video{
     width:100%;
     height:auto;
     display:block;
-    border-radius:10px;
+    border-radius:10px  10px 0 0;
+}
+
+.ohaio-span{
+    color: #ecb869;
+    font-size: 14px;
+    padding: 0 1%;
+}
+
+.intro-site .tx-h2{
+    margin: 0;
+    padding: 5px 1%;
+}
+
+.intro-site h1{
+    color: white;
+}
+.intro-site h3{
+    color: #ecb869;
+}
+.intro-site p{
+    padding: 5px 1%;
+    color: white;
 }
 /*==============  intro ===========*/
-
-.intro-site{
-    text-align:center;
-    padding:20px 20px;
+/*
+.intro-site-i{
+    padding:8px;
 }
-
-
-
+.intro-site-i h1{
+    color: white;
+}
+.intro-site-i h2{
+    color: #1e1e1e;
+}
 
 .intro-site p{
     max-width:700px;
-    margin:0 auto 1px auto;
-  
+    
+    color: white;
 }
 
-/* GRID DOS CARDS */
 
 .cards-intro{
     display:grid;
@@ -326,61 +350,184 @@ header nav ul li a {
     font-size:15px;
 }
 
-
+*/
 /* =========== propaganda de empresas =============== */
 /* CONTAINER GERAL */
 
-section.sobre-japao{
+/* ========================================
+   DESTAQUES DA PÁGINA INICIAL
+======================================== */
+
+.sobre-japao {
     margin: 0 auto;
+    padding: 20px 0 40px;
 }
 
-section.sobre-japao .japao-wraper {
-    max-width: 900px;
-    margin: 0 auto 50px auto;
-    padding: 20px;   
+.sobre-japao .destaques-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "principal principal"
+        "agencia empreiteiras";
+
+    gap: 20px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.sobre-japao .destaque-principal {
+    grid-area: principal;
+    min-width: 0;
+    overflow: hidden;
+
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
 }
 
-/* IMAGEM - 60% */
-section.sobre-japao .img-sobrejapao {
-    flex: 0 0 50%;
-    border-radius: 12px;
+.sobre-japao .destaque-principal:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.sobre-japao .destaque-principal .destaque-imagem {
+    display: block;
+    width: 100%;
     overflow: hidden;
 }
 
-section.sobre-japao .img-sobrejapao img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.sobre-japao .destaque-principal img {
     display: block;
-    border-radius: 12px;
-    transition: transform 0.5s ease;
+    width: 100%;
+    height: 420px;
+    padding: 3px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 12px 12px 0 0;
 }
 
-/* HOVER */
-section.sobre-japao .img-sobrejapao:hover img {
+.sobre-japao .destaque-principal:hover img {
     transform: scale(1.03);
 }
 
-/* TEXTO - 40% */
-section.sobre-japao .japao-texto {
-    flex: 0 0 50%;
-    padding: 0 10px;
+.sobre-japao .destaque-principal .destaque-texto {
+    padding: 24px;
 }
 
-section.sobre-japao .japao-texto h2 {
-    margin-bottom: 10px;
+.sobre-japao .destaque-principal h2 {
+    margin: 0 0 12px;
+    font-size: 28px;
+    line-height: 1.3;
 }
 
-section.sobre-japao .japao-texto p {
-    line-height: 1.5;
-    margin-bottom: 10px;
+.sobre-japao .destaque-principal p {
+    margin: 0 0 18px;
+    line-height: 1.7;
+}
+
+/* CARDS SECUNDÁRIOS */
+
+.sobre-japao .destaque-card {
+    min-width: 0;
+    overflow: hidden;
+
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.sobre-japao .destaque-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+.sobre-japao .destaque-card .destaque-imagem {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sobre-japao .destaque-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    padding: 4px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.sobre-japao .destaque-card:hover img {
+    transform: scale(1.03);
+}
+
+.sobre-japao .destaque-card .destaque-texto {
+    padding: 18px;
+}
+
+.sobre-japao .destaque-card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.sobre-japao .destaque-card p {
+    margin: 0 0 14px;
+    line-height: 1.6;
+}
+
+/* LINKS */
+
+.sobre-japao .destaque-link {
+    display: inline-block;
+    color: #426879;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sobre-japao .destaque-link:hover {
+    text-decoration: underline;
+}
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+    .sobre-japao .destaques-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "principal"
+            "agencia"
+            "empreiteiras";
+
+        padding: 0 15px;
+        gap: 16px;
+    }
+
+    .sobre-japao .destaque-principal img {
+        height: 230px;
+    }
+
+    .sobre-japao .destaque-principal .destaque-texto {
+        padding: 18px;
+    }
+
+    .sobre-japao .destaque-principal h2 {
+        font-size: 24px;
+    }
+
+    .sobre-japao .destaque-card img {
+        height: 200px;
+    }
 }
 
 /*  ================== acidentes  =================   */
@@ -2014,6 +2161,13 @@ section.recicle{
     max-width: 1000px;
     padding: 0 2%;
     margin: 0 auto;
+}
+
+section.recicle ul{
+    list-style-position: inside;
+}
+section.recicle li{
+    font-size: 18px;
 }
 
 section.recicle .img-recicle{
