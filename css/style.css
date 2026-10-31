@@ -1719,6 +1719,49 @@ section.video-curso {
     margin-top: 40px;
 }
 
+.japones-facil {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.image-hiragana {
+    flex: 1;
+}
+
+.image-hiragana img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.texto-hiragana {
+    flex: 1;
+}
+
+.texto-hiragana h2 {
+    margin: 0 0 12px;
+}
+
+.texto-hiragana p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .japones-facil {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 0 15px;
+    }
+}
 
 /* =========================
    CONTEÚDO PRINCIPAL

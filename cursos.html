@@ -138,15 +138,21 @@
                 além das responsabilidades com a família. Em alguns casos, ainda existe a necessidade de fazer
                 um trabalho extra para manter uma vida mais estável.
             </p>
-        </li>
 
-        <li>
             <h3>O desafio de estudar</h3>
             <p>
                 Com tudo isso, estudar japonês acaba se tornando uma decisão difícil. Depois de um dia cheio de
                 obrigações, sentar para estudar exige esforço. O cansaço pesa e, muitas vezes, a vontade é apenas descansar.
             </p>
         </li>
+
+        <!--<li>
+            <h3>O desafio de estudar</h3>
+            <p>
+                Com tudo isso, estudar japonês acaba se tornando uma decisão difícil. Depois de um dia cheio de
+                obrigações, sentar para estudar exige esforço. O cansaço pesa e, muitas vezes, a vontade é apenas descansar.
+            </p>
+        </li>-->
 
         <li>
             <h3>Mesmo assim, vale a pena</h3>
@@ -155,32 +161,2472 @@
                 mas sempre é possível encontrar um pequeno espaço. Esse esforço constante, mesmo que aos poucos,
                 faz toda a diferença com o passar do tempo.
             </p>
-        </li>
-
-        <li>
             <h3>Escolher um bom curso faz diferença</h3>
             <p>
                 Por isso, escolher um bom curso de japonês é fundamental. Saber onde estudar e entender se a plataforma
                 é confiável pode evitar frustrações e ajudar você a aproveitar melhor o seu tempo.
             </p>
+            
+        </li>
+
+        <!--<li>
+            <h3>Escolher um bom curso faz diferença</h3>
+            <p>
+                Por isso, escolher um bom curso de japonês é fundamental. Saber onde estudar e entender se a plataforma
+                é confiável pode evitar frustrações e ajudar você a aproveitar melhor o seu tempo.
+            </p>-->
         </li>
 
     </ul>
 
-    <p>
-        Abaixo, você encontrará alguns aplicativos e sites que oferecem cursos gratuitos e podem te ajudar a dar
-        o próximo passo no aprendizado do japonês.
-    </p>
+  
 
 </section>
 
 
+    <section class="japones-facil">
+            <div class="image-hiragana">
+                <img src="images/hira-kata.jfif" alt="">
+            </div>
+                <div class="texto-hiragana">
+                    <h2>Use essa tabela para praticar</h2>
+                    <p>Algumas frases e um pequeno teste para iniciar seu aprendizado aqui abaixo</p>
+                </div>
+    </section>
+
+    
+<section class="jp-vocab" id="palavras-japones">
+  <style>
+    .jp-vocab {
+      --jp-red: #c93636;
+      --jp-dark: #202b38;
+      --jp-muted: #687585;
+      --jp-border: #e6eaf0;
+      --jp-soft: #f6f8fb;
+      color: var(--jp-dark);
+      font-family: inherit;
+      line-height: 1.7;
+      width: 100%;
+    }
+
+    .jp-vocab * {
+      box-sizing: border-box;
+    }
+
+    .jp-vocab .jp-container {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .jp-vocab .jp-hero {
+      background: linear-gradient(135deg, #f8eeee, #f5f7fa);
+      border-radius: 18px;
+      padding: 32px;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #eee4e4;
+    }
+
+    .jp-vocab .jp-hero::after {
+      content: "日本語";
+      position: absolute;
+      right: 18px;
+      bottom: -20px;
+      font-size: 100px;
+      font-weight: 900;
+      color: rgba(201,54,54,.07);
+      pointer-events: none;
+    }
+
+    .jp-vocab .jp-tag {
+      display: inline-block;
+      background: #fff;
+      color: var(--jp-red);
+      padding: 5px 13px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .jp-vocab .jp-hero h2 {
+      font-size: clamp(25px, 4vw, 36px);
+      line-height: 1.3;
+      margin: 0 0 14px;
+      color: var(--jp-dark);
+    }
+
+    .jp-vocab .jp-hero p {
+      max-width: 720px;
+      margin: 0;
+      color: #526071;
+      font-size: 15px;
+    }
+
+    .jp-vocab .jp-intro {
+      margin: 0 0 28px;
+      color: var(--jp-muted);
+      font-size: 15px;
+    }
+
+    .jp-vocab .jp-section {
+      margin: 38px 0;
+      scroll-margin-top: 30px;
+    }
+
+    .jp-vocab .jp-heading {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .jp-vocab .jp-number {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--jp-red);
+      color: #fff;
+      font-weight: 800;
+      font-size: 15px;
+    }
+
+    .jp-vocab .jp-heading h3 {
+      font-size: 20px;
+      margin: 0;
+      color: var(--jp-dark);
+    }
+
+    .jp-vocab .jp-heading p {
+      margin: 2px 0 0;
+      font-size: 12px;
+      color: var(--jp-muted);
+    }
+
+    .jp-vocab .jp-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--jp-border);
+      border-radius: 13px;
+      background: #fff;
+    }
+
+    .jp-vocab table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 300px;
+    }
+
+    .jp-vocab th {
+      background: var(--jp-soft);
+      color: #526071;
+      font-size: 13px;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .jp-vocab td {
+      padding: 12px 16px;
+      border-top: 1px solid var(--jp-border);
+      font-size: 14px;
+    }
+
+    .jp-vocab tr:hover td {
+      background: #fcfcfd;
+    }
+
+    .jp-vocab .jp-word {
+      font-size: 19px;
+      font-weight: 700;
+      color: #26394d;
+      white-space: nowrap;
+    }
+
+    .jp-vocab .jp-meaning {
+      color: #526071;
+    }
+
+    .jp-vocab .jp-count {
+      font-size: 11px;
+      color: #8993a0;
+      margin-left: 5px;
+    }
+
+    .jp-vocab .jp-tip {
+      padding: 16px 18px;
+      background: #f6f8fb;
+      border-left: 4px solid var(--jp-red);
+      border-radius: 7px;
+      color: #536174;
+      font-size: 14px;
+      margin-top: 18px;
+    }
+
+    .jp-vocab .jp-examples {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .jp-vocab .jp-example {
+      border: 1px solid var(--jp-border);
+      border-radius: 13px;
+      padding: 18px;
+      background: #fff;
+    }
+
+    .jp-vocab .jp-example small {
+      color: var(--jp-red);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .jp-vocab .jp-example h4 {
+      font-size: 22px;
+      line-height: 1.5;
+      margin: 12px 0 8px;
+      color: var(--jp-dark);
+    }
+
+    .jp-vocab .jp-example p {
+      color: var(--jp-muted);
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .jp-vocab .jp-quiz {
+      background: #f7f8fa;
+      border: 1px solid var(--jp-border);
+      padding: 24px;
+      border-radius: 16px;
+      margin-top: 40px;
+    }
+
+    .jp-vocab .jp-quiz h3 {
+      margin: 0 0 6px;
+      font-size: 22px;
+    }
+
+    .jp-vocab .jp-quiz-intro {
+      color: var(--jp-muted);
+      font-size: 14px;
+      margin: 0 0 20px;
+    }
+
+    .jp-vocab .jp-question {
+      background: #fff;
+      padding: 17px;
+      border-radius: 11px;
+      border: 1px solid var(--jp-border);
+      margin-bottom: 13px;
+    }
+
+    .jp-vocab .jp-question strong {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .jp-vocab .jp-option {
+      display: block;
+      padding: 9px 11px;
+      border: 1px solid #e8ebef;
+      border-radius: 8px;
+      margin: 7px 0;
+      cursor: pointer;
+      font-size: 14px;
+      background: #fff;
+    }
+
+    .jp-vocab .jp-option:hover {
+      border-color: var(--jp-red);
+      background: #fffafa;
+    }
+
+    .jp-vocab .jp-option input {
+      margin-right: 8px;
+      accent-color: var(--jp-red);
+    }
+
+    .jp-vocab .jp-button {
+      background: var(--jp-red);
+      color: #fff;
+      border: 0;
+      padding: 12px 22px;
+      border-radius: 9px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .jp-vocab .jp-button:hover {
+      background: #a92c2c;
+    }
+
+    .jp-vocab .jp-result {
+      display: none;
+      margin-top: 18px;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid var(--jp-border);
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    .jp-vocab .jp-footer {
+      margin-top: 32px;
+      padding: 20px;
+      border-radius: 13px;
+      background: #f8eeee;
+      text-align: center;
+      color: #596575;
+      font-size: 14px;
+    }
+
+    @media(max-width:600px) {
+      .jp-vocab .jp-hero {
+        padding: 23px 19px;
+      }
+
+      .jp-vocab .jp-hero::after {
+        font-size: 65px;
+      }
+
+      .jp-vocab .jp-heading h3 {
+        font-size: 17px;
+      }
+
+      .jp-vocab td,
+      .jp-vocab th {
+        padding: 11px 12px;
+      }
+
+      .jp-vocab .jp-quiz {
+        padding: 16px;
+      }
+    }
+  </style>
+
+  <div class="jp-container">
+
+    <!-- INTRODUÇÃO -->
+    <header class="jp-hero">
+      <span class="jp-tag">JAPONÊS PARA INICIANTES</span>
+      <h2>As primeiras 50 palavras em japonês</h2>
+      <p>
+        Aprenda palavras e expressões que você precisa conhecer
+        para viver no Japão. Vocabulário utilizado em casa,
+        no trabalho, nas lojas e nas situações do cotidiano.
+      </p>
+    </header>
+
+    <p class="jp-intro">
+      Aprender japonês não precisa ser complicado. Para quem
+      acabou de chegar ao Japão ou deseja melhorar sua comunicação
+      no dia a dia, conhecer algumas palavras básicas já pode
+      fazer muita diferença. Neste guia, reunimos 50 palavras
+      e expressões para você começar a praticar.
+      Vamos começar pelo básico!
+    </p>
+
+    <!-- CATEGORIA 1 -->
+    <div class="jp-section">
+      <div class="jp-heading">
+        <span class="jp-number">01</span>
+        <div>
+          <h3>Cumprimentos e expressões comuns</h3>
+          <p>Palavras utilizadas nas conversas do dia a dia.</p>
+        </div>
+      </div>
+
+      <div class="jp-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Japonês</th><th>Significado</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="jp-word">おはよう</td><td>Bom dia</td></tr>
+            <tr><td class="jp-word">こんにちは</td><td>Olá / Boa tarde</td></tr>
+            <tr><td class="jp-word">こんばんは</td><td>Boa noite</td></tr>
+            <tr><td class="jp-word">ありがとう</td><td>Obrigado</td></tr>
+            <tr><td class="jp-word">すみません</td><td>Com licença / Desculpe</td></tr>
+            <tr><td class="jp-word">ごめんなさい</td><td>Me desculpe</td></tr>
+            <tr><td class="jp-word">はい</td><td>Sim</td></tr>
+            <tr><td class="jp-word">いいえ</td><td>Não</td></tr>
+            <tr><td class="jp-word">お願（ねが）いします</td><td>Por favor</td></tr>
+            <tr><td class="jp-word">大丈夫（だいじょうぶ）</td><td>Tudo bem / Está tudo certo</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CATEGORIA 2 -->
+    <div class="jp-section">
+      <div class="jp-heading">
+        <span class="jp-number">02</span>
+        <div>
+          <h3>Palavras utilizadas em casa</h3>
+          <p>Vocabulário básico para situações familiares.</p>
+        </div>
+      </div>
+
+      <div class="jp-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Japonês</th><th>Significado</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="jp-word">家（いえ）</td><td>Casa</td></tr>
+            <tr><td class="jp-word">水（みず）</td><td>Água</td></tr>
+            <tr><td class="jp-word">食（た）べ物（もの）</td><td>Comida</td></tr>
+            <tr><td class="jp-word">ご飯（はん）</td><td>Arroz / Refeição</td></tr>
+            <tr><td class="jp-word">お茶（ちゃ）</td><td>Chá</td></tr>
+            <tr><td class="jp-word">車（くるま）</td><td>Carro</td></tr>
+            <tr><td class="jp-word">電話（でんわ）</td><td>Telefone</td></tr>
+            <tr><td class="jp-word">子供（こども）</td><td>Criança</td></tr>
+            <tr><td class="jp-word">仕事（しごと）</td><td>Trabalho</td></tr>
+            <tr><td class="jp-word">お金（かね）</td><td>Dinheiro</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CATEGORIA 3 -->
+    <div class="jp-section">
+      <div class="jp-heading">
+        <span class="jp-number">03</span>
+        <div>
+          <h3>Palavras utilizadas no trabalho</h3>
+          <p>Termos que você pode escutar nas empresas e fábricas.</p>
+        </div>
+      </div>
+
+      <div class="jp-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Japonês</th><th>Significado</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="jp-word">会社（かいしゃ）</td><td>Empresa</td></tr>
+            <tr><td class="jp-word">工場（こうじょう）</td><td>Fábrica</td></tr>
+            <tr><td class="jp-word">社長（しゃちょう）</td><td>Presidente / Dono da empresa</td></tr>
+            <tr><td class="jp-word">上司（じょうし）</td><td>Superior / Chefe</td></tr>
+            <tr><td class="jp-word">同僚（どうりょう）</td><td>Colega de trabalho</td></tr>
+            <tr><td class="jp-word">部品（ぶひん）</td><td>Peça / Componente</td></tr>
+            <tr><td class="jp-word">材料（ざいりょう）</td><td>Material</td></tr>
+            <tr><td class="jp-word">機械（きかい）</td><td>Máquina</td></tr>
+            <tr><td class="jp-word">確認（かくにん）</td><td>Verificação</td></tr>
+            <tr><td class="jp-word">注意（ちゅうい）</td><td>Atenção / Cuidado</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="jp-tip">
+        <strong>Dica:</strong> Na fábrica, você poderá escutar
+        bastante a palavra 注意（ちゅうい）, utilizada para chamar
+        a atenção sobre algum cuidado ou risco.
+      </div>
+    </div>
+
+    <!-- CATEGORIA 4 -->
+    <div class="jp-section">
+      <div class="jp-heading">
+        <span class="jp-number">04</span>
+        <div>
+          <h3>Palavras utilizadas nas lojas e supermercados</h3>
+          <p>Vocabulário para fazer compras e perguntar preços.</p>
+        </div>
+      </div>
+
+      <div class="jp-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Japonês</th><th>Significado</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="jp-word">店（みせ）</td><td>Loja</td></tr>
+            <tr><td class="jp-word">買（か）う</td><td>Comprar</td></tr>
+            <tr><td class="jp-word">売（う）る</td><td>Vender</td></tr>
+            <tr><td class="jp-word">値段（ねだん）</td><td>Preço</td></tr>
+            <tr><td class="jp-word">安（やす）い</td><td>Barato</td></tr>
+            <tr><td class="jp-word">高（たか）い</td><td>Caro</td></tr>
+            <tr><td class="jp-word">無料（むりょう）</td><td>Grátis</td></tr>
+            <tr><td class="jp-word">必要（ひつよう）</td><td>Necessário</td></tr>
+            <tr><td class="jp-word">袋（ふくろ）</td><td>Sacola</td></tr>
+            <tr><td class="jp-word">レジ</td><td>Caixa / Checkout</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CATEGORIA 5 -->
+    <div class="jp-section">
+      <div class="jp-heading">
+        <span class="jp-number">05</span>
+        <div>
+          <h3>Palavras que você escuta todos os dias</h3>
+          <p>Expressões úteis para entender conversas no Japão.</p>
+        </div>
+      </div>
+
+      <div class="jp-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Japonês</th><th>Significado</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="jp-word">今日（きょう）</td><td>Hoje</td></tr>
+            <tr><td class="jp-word">明日（あした）</td><td>Amanhã</td></tr>
+            <tr><td class="jp-word">昨日（きのう）</td><td>Ontem</td></tr>
+            <tr><td class="jp-word">今（いま）</td><td>Agora</td></tr>
+            <tr><td class="jp-word">後（あと）</td><td>Depois</td></tr>
+            <tr><td class="jp-word">前（まえ）</td><td>Antes / Na frente</td></tr>
+            <tr><td class="jp-word">何（なに）</td><td>O quê</td></tr>
+            <tr><td class="jp-word">どこ</td><td>Onde</td></tr>
+            <tr><td class="jp-word">誰（だれ）</td><td>Quem</td></tr>
+            <tr><td class="jp-word">どうして</td><td>Por quê</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- FRASES -->
+    <div class="jp-section">
+      <div class="jp-heading">
+        <span class="jp-number">06</span>
+        <div>
+          <h3>Aprenda a utilizar essas palavras</h3>
+          <p>Exemplos de frases para situações reais no Japão.</p>
+        </div>
+      </div>
+
+      <p class="jp-intro">
+        Não basta conhecer o significado das palavras.
+        É importante aprender como utilizá-las em frases.
+        Veja alguns exemplos:
+      </p>
+
+      <div class="jp-examples">
+        <article class="jp-example">
+          <small>EXEMPLO 1 · SUPERMERCADO</small>
+          <h4>これ、いくらですか？</h4>
+          <p>Quanto custa isto?</p>
+        </article>
+
+        <article class="jp-example">
+          <small>EXEMPLO 2 · FÁBRICA</small>
+          <h4>部品（ぶひん）を確認（かくにん）します。</h4>
+          <p>Vou verificar a peça.</p>
+        </article>
+
+        <article class="jp-example">
+          <small>EXEMPLO 3 · EM CASA</small>
+          <h4>水（みず）をください。</h4>
+          <p>Me dê água, por favor.</p>
+        </article>
+
+        <article class="jp-example">
+          <small>EXEMPLO 4 · TRABALHO</small>
+          <h4>大丈夫（だいじょうぶ）です。</h4>
+          <p>Está tudo bem.</p>
+        </article>
+
+        <article class="jp-example">
+          <small>EXEMPLO 5 · NA RUA</small>
+          <h4>トイレはどこですか？</h4>
+          <p>Onde fica o banheiro?</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- TESTE -->
+    <div class="jp-quiz">
+      <h3>Teste seus conhecimentos!</h3>
+      <p class="jp-quiz-intro">
+        Agora é sua vez! Responda às cinco perguntas e
+        veja quanto você conseguiu aprender.
+      </p>
+
+      <div id="jp-questions">
+
+        <div class="jp-question">
+          <strong>1. O que significa ありがとう?</strong>
+          <label class="jp-option"><input type="radio" name="jp1" value="0"> Bom dia</label>
+          <label class="jp-option"><input type="radio" name="jp1" value="1"> Obrigado</label>
+          <label class="jp-option"><input type="radio" name="jp1" value="2"> Desculpe</label>
+        </div>
+
+        <div class="jp-question">
+          <strong>2. Como se diz água em japonês?</strong>
+          <label class="jp-option"><input type="radio" name="jp2" value="0"> 水（みず）</label>
+          <label class="jp-option"><input type="radio" name="jp2" value="1"> 車（くるま）</label>
+          <label class="jp-option"><input type="radio" name="jp2" value="2"> 家（いえ）</label>
+        </div>
+
+        <div class="jp-question">
+          <strong>3. O que significa 工場（こうじょう）?</strong>
+          <label class="jp-option"><input type="radio" name="jp3" value="0"> Escola</label>
+          <label class="jp-option"><input type="radio" name="jp3" value="1"> Loja</label>
+          <label class="jp-option"><input type="radio" name="jp3" value="2"> Fábrica</label>
+        </div>
+
+        <div class="jp-question">
+          <strong>4. Como se diz amanhã?</strong>
+          <label class="jp-option"><input type="radio" name="jp4" value="0"> 昨日（きのう）</label>
+          <label class="jp-option"><input type="radio" name="jp4" value="1"> 明日（あした）</label>
+          <label class="jp-option"><input type="radio" name="jp4" value="2"> 今日（きょう）</label>
+        </div>
+
+        <div class="jp-question">
+          <strong>5. O que significa 安（やす）い?</strong>
+          <label class="jp-option"><input type="radio" name="jp5" value="0"> Caro</label>
+          <label class="jp-option"><input type="radio" name="jp5" value="1"> Barato</label>
+          <label class="jp-option"><input type="radio" name="jp5" value="2"> Grátis</label>
+        </div>
+
+      </div>
+
+      <button type="button" class="jp-button" id="jp-check">
+        Conferir minhas respostas
+      </button>
+
+      <div class="jp-result" id="jp-result" aria-live="polite"></div>
+    </div>
+
+    <!-- FINAL -->
+    <div class="jp-footer">
+      <strong>Continue aprendendo japonês!</strong><br>
+      Pratique um pouco todos os dias. Quanto mais você
+      escuta, lê e utiliza as palavras, mais natural fica
+      sua comunicação no Japão.
+    </div>
+
+  </div>
+
+  <script>
+    (function () {
+      const section = document.currentScript.closest(".jp-vocab");
+      if (!section) return;
+
+      const button = section.querySelector("#jp-check");
+      const result = section.querySelector("#jp-result");
+      const answers = [1, 0, 2, 1, 1];
+
+      button.addEventListener("click", function () {
+        let score = 0;
+        let unanswered = 0;
+
+        answers.forEach(function (correct, index) {
+          const selected = section.querySelector(
+            'input[name="jp' + (index + 1) + '"]:checked'
+          );
+
+          if (!selected) {
+            unanswered++;
+          } else if (Number(selected.value) === correct) {
+            score++;
+          }
+        });
+
+        if (unanswered > 0) {
+          result.style.display = "block";
+          result.textContent =
+            "Responda todas as perguntas antes de conferir.";
+          return;
+        }
+
+        let message = "";
+
+        if (score === 5) {
+          message = "Excelente! Você acertou todas as perguntas!";
+        } else if (score >= 3) {
+          message = "Muito bem! Você acertou " + score + " de 5 perguntas.";
+        } else {
+          message = "Você acertou " + score +
+            " de 5. Revise o conteúdo e tente novamente!";
+        }
+
+        result.style.display = "block";
+        result.textContent = message;
+      });
+    })();
+  </script>
+</section>
+
+
+
+<section class="jp-numbers" id="numeros-datas-horarios">
+
+  <style>
+    .jp-numbers {
+      --jp-red: #c62828;
+      --jp-dark: #252525;
+      --jp-muted: #666;
+      --jp-border: #e5e5e5;
+      --jp-soft: #f7f7f7;
+      color: var(--jp-dark);
+      font-family: inherit;
+      line-height: 1.7;
+      width: 100%;
+    }
+
+    .jp-numbers * {
+      box-sizing: border-box;
+    }
+
+    .jp-numbers {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .jp-numbers {
+    padding: 0 15px;
+  }
+}
+
+    .jp-numbers .jp-hero {
+      background: linear-gradient(135deg, #fff5f5, #fff);
+      border: 1px solid #f0dddd;
+      border-left: 5px solid var(--jp-red);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+    }
+
+    .jp-numbers .jp-hero h2 {
+      font-size: clamp(23px, 4vw, 32px);
+      margin: 0 0 12px;
+      line-height: 1.3;
+    }
+
+    .jp-numbers .jp-hero p {
+      margin: 0;
+      color: #555;
+    }
+
+    .jp-numbers .jp-section {
+      margin: 35px 0;
+    }
+
+    .jp-numbers .jp-section h3 {
+      font-size: 21px;
+      margin: 0 0 12px;
+      padding-bottom: 9px;
+      border-bottom: 2px solid var(--jp-border);
+    }
+
+    .jp-numbers p {
+      margin: 10px 0;
+    }
+
+    .jp-numbers .jp-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 18px 0;
+      border: 1px solid var(--jp-border);
+      border-radius: 9px;
+    }
+
+    .jp-numbers table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 300px;
+      font-size: 15px;
+    }
+
+    .jp-numbers th {
+      background: #f3f3f3;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .jp-numbers th,
+    .jp-numbers td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--jp-border);
+    }
+
+    .jp-numbers tr:last-child td {
+      border-bottom: none;
+    }
+
+    .jp-numbers td:first-child {
+      font-weight: 600;
+    }
+
+    .jp-numbers .jp-japanese {
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .jp-numbers .jp-tip {
+      background: #fff8e8;
+      border-left: 4px solid #e5a323;
+      padding: 15px 17px;
+      border-radius: 7px;
+      margin: 18px 0;
+    }
+
+    .jp-numbers .jp-tip strong {
+      color: #8a5b00;
+    }
+
+    .jp-numbers .jp-example {
+      background: var(--jp-soft);
+      border: 1px solid var(--jp-border);
+      border-radius: 9px;
+      padding: 15px;
+      margin: 12px 0;
+    }
+
+    .jp-numbers .jp-example strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--jp-red);
+    }
+
+    .jp-numbers .jp-jp-line {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 5px 0;
+    }
+
+    .jp-numbers .jp-quiz {
+      background: #fafafa;
+      border: 1px solid var(--jp-border);
+      border-radius: 12px;
+      padding: 22px;
+      margin: 25px 0;
+    }
+
+    .jp-numbers .jp-quiz h3 {
+      border: none;
+      padding: 0;
+      margin-bottom: 5px;
+    }
+
+    .jp-numbers .jp-quiz-intro {
+      color: var(--jp-muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .jp-numbers .jp-question {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--jp-border);
+    }
+
+    .jp-numbers .jp-question:last-of-type {
+      border-bottom: none;
+    }
+
+    .jp-numbers .jp-question-title {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .jp-numbers .jp-option {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 9px 11px;
+      margin: 6px 0;
+      background: white;
+      border: 1px solid var(--jp-border);
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .jp-numbers .jp-option:hover {
+      border-color: var(--jp-red);
+    }
+
+    .jp-numbers .jp-option input {
+      accent-color: var(--jp-red);
+      flex-shrink: 0;
+    }
+
+    .jp-numbers .jp-feedback {
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .jp-numbers .jp-correct {
+      color: #198754;
+    }
+
+    .jp-numbers .jp-wrong {
+      color: #c62828;
+    }
+
+    .jp-numbers .jp-button {
+      display: inline-block;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      background: var(--jp-red);
+      color: white;
+      padding: 13px 18px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 18px;
+    }
+
+    .jp-numbers .jp-button:hover {
+      background: #a91e1e;
+    }
+
+    .jp-numbers .jp-button:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+
+    .jp-numbers .jp-result {
+      text-align: center;
+      font-size: 21px;
+      font-weight: 700;
+      margin-top: 18px;
+    }
+
+    .jp-numbers .jp-conclusion {
+      border-top: 2px solid var(--jp-border);
+      padding-top: 20px;
+      margin-top: 35px;
+    }
+
+    @media (max-width: 600px) {
+      .jp-numbers .jp-hero {
+        padding: 19px;
+      }
+
+      .jp-numbers .jp-section h3 {
+        font-size: 19px;
+      }
+
+      .jp-numbers th,
+      .jp-numbers td {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .jp-numbers .jp-quiz {
+        padding: 16px;
+      }
+    }
+  </style>
+
+  <!-- APRESENTAÇÃO -->
+  <div class="jp-hero">
+    <h2>3. Números, datas e horários em japonês</h2>
+    <p>
+      Aprenda a falar números, idade, preços, dias da semana,
+      datas e horários em japonês.
+    </p>
+    <p>
+      Saber contar em japonês é uma das primeiras habilidades
+      que você precisa desenvolver para viver no Japão.
+      Os números aparecem no supermercado, na fábrica, na escola,
+      no hospital e em praticamente todas as situações do cotidiano.
+    </p>
+  </div>
+
+  <!-- 1. NÚMEROS DE 1 A 10 -->
+  <div class="jp-section">
+    <h3>1. Números de 1 a 10</h3>
+    <p>
+      Vamos começar pelos números básicos. Memorizar esses dez
+      números vai ajudar você a aprender todos os outros.
+    </p>
+
+    <div class="jp-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Japonês</th>
+            <th>Leitura</th>
+            <th>Português</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="jp-japanese">一</td><td>いち</td><td>Um</td></tr>
+          <tr><td class="jp-japanese">二</td><td>に</td><td>Dois</td></tr>
+          <tr><td class="jp-japanese">三</td><td>さん</td><td>Três</td></tr>
+          <tr><td class="jp-japanese">四</td><td>よん / し</td><td>Quatro</td></tr>
+          <tr><td class="jp-japanese">五</td><td>ご</td><td>Cinco</td></tr>
+          <tr><td class="jp-japanese">六</td><td>ろく</td><td>Seis</td></tr>
+          <tr><td class="jp-japanese">七</td><td>なな / しち</td><td>Sete</td></tr>
+          <tr><td class="jp-japanese">八</td><td>はち</td><td>Oito</td></tr>
+          <tr><td class="jp-japanese">九</td><td>きゅう / く</td><td>Nove</td></tr>
+          <tr><td class="jp-japanese">十</td><td>じゅう</td><td>Dez</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 2. NÚMEROS MAIORES -->
+  <div class="jp-section">
+    <h3>2. Números maiores</h3>
+    <p>
+      Depois de aprender de 1 a 10, fica mais fácil formar
+      números maiores em japonês.
+    </p>
+
+    <div class="jp-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Japonês</th>
+            <th>Leitura</th>
+            <th>Português</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>十一</td><td>じゅういち</td><td>Onze</td></tr>
+          <tr><td>十二</td><td>じゅうに</td><td>Doze</td></tr>
+          <tr><td>十五</td><td>じゅうご</td><td>Quinze</td></tr>
+          <tr><td>二十</td><td>にじゅう</td><td>Vinte</td></tr>
+          <tr><td>三十</td><td>さんじゅう</td><td>Trinta</td></tr>
+          <tr><td>四十</td><td>よんじゅう</td><td>Quarenta</td></tr>
+          <tr><td>五十</td><td>ごじゅう</td><td>Cinquenta</td></tr>
+          <tr><td>百</td><td>ひゃく</td><td>Cem</td></tr>
+          <tr><td>千</td><td>せん</td><td>Mil</td></tr>
+          <tr><td>万</td><td>まん</td><td>Dez mil</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="jp-tip">
+      <strong>Dica importante:</strong>
+      No Japão, os valores maiores costumam ser organizados
+      usando 万（まん）, que representa dez mil.
+      <p>Exemplos:</p>
+      <ul>
+        <li>10.000 ienes — 一万円（いちまんえん）</li>
+        <li>20.000 ienes — 二万円（にまんえん）</li>
+        <li>50.000 ienes — 五万円（ごまんえん）</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3. IDADE -->
+  <div class="jp-section">
+    <h3>3. Como falar sua idade</h3>
+    <p>
+      Para perguntar a idade de alguém, usamos:
+    </p>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">何歳（なんさい）ですか？</div>
+      Quantos anos você tem?
+    </div>
+
+    <p>Para responder:</p>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">40歳（よんじゅっさい）です。</div>
+      Tenho 40 anos.
+    </div>
+
+    <div class="jp-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Idade</th>
+            <th>Japonês</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>5 anos</td><td>五歳（ごさい）</td></tr>
+          <tr><td>10 anos</td><td>十歳（じゅっさい）</td></tr>
+          <tr><td>18 anos</td><td>十八歳（じゅうはっさい）</td></tr>
+          <tr><td>20 anos</td><td>二十歳（はたち）</td></tr>
+          <tr><td>30 anos</td><td>三十歳（さんじゅっさい）</td></tr>
+          <tr><td>40 anos</td><td>四十歳（よんじゅっさい）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="jp-tip">
+      <strong>Atenção:</strong>
+      A palavra 歳（さい） é usada para indicar idade,
+      mas algumas pronúncias mudam. Por exemplo, 20 anos
+      é 二十歳（はたち）.
+    </div>
+  </div>
+
+  <!-- 4. PREÇOS -->
+  <div class="jp-section">
+    <h3>4. Como perguntar e falar preços</h3>
+    <p>
+      No Japão, a moeda é o iene, representado pelo símbolo ¥.
+      A palavra usada para iene é 円（えん）.
+    </p>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">これはいくらですか？</div>
+      Quanto custa isto?
+    </div>
+
+    <div class="jp-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Preço</th>
+            <th>Japonês</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>100 ienes</td><td>百円（ひゃくえん）</td></tr>
+          <tr><td>300 ienes</td><td>三百円（さんびゃくえん）</td></tr>
+          <tr><td>500 ienes</td><td>五百円（ごひゃくえん）</td></tr>
+          <tr><td>1.000 ienes</td><td>千円（せんえん）</td></tr>
+          <tr><td>1.500 ienes</td><td>千五百円（せんごひゃくえん）</td></tr>
+          <tr><td>5.000 ienes</td><td>五千円（ごせんえん）</td></tr>
+          <tr><td>10.000 ienes</td><td>一万円（いちまんえん）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Exemplos do dia a dia:</strong></p>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">これは千円（せんえん）です。</div>
+      Isto custa mil ienes.
+    </div>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">ちょっと高（たか）いです。</div>
+      É um pouco caro.
+    </div>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">安（やす）いですね。</div>
+      É barato, né?
+    </div>
+  </div>
+
+  <!-- 5. DIAS DA SEMANA -->
+  <div class="jp-section">
+    <h3>5. Dias da semana</h3>
+    <p>
+      No Japão, os dias da semana terminam com 曜日（ようび）.
+    </p>
+
+    <div class="jp-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Japonês</th>
+            <th>Leitura</th>
+            <th>Português</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>月曜日</td><td>げつようび</td><td>Segunda-feira</td></tr>
+          <tr><td>火曜日</td><td>かようび</td><td>Terça-feira</td></tr>
+          <tr><td>水曜日</td><td>すいようび</td><td>Quarta-feira</td></tr>
+          <tr><td>木曜日</td><td>もくようび</td><td>Quinta-feira</td></tr>
+          <tr><td>金曜日</td><td>きんようび</td><td>Sexta-feira</td></tr>
+          <tr><td>土曜日</td><td>どようび</td><td>Sábado</td></tr>
+          <tr><td>日曜日</td><td>にちようび</td><td>Domingo</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">今日（きょう）は何曜日（なんようび）ですか？</div>
+      Que dia da semana é hoje?
+      <hr>
+      <div class="jp-jp-line">月曜日（げつようび）です。</div>
+      É segunda-feira.
+    </div>
+  </div>
+
+  <!-- 6. DATAS -->
+  <div class="jp-section">
+    <h3>6. Como falar as datas</h3>
+    <p>
+      Para falar datas em japonês, usamos o mês seguido de
+      月（がつ） e o dia seguido de 日（にち）.
+    </p>
+
+    <div class="jp-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Mês</th>
+            <th>Japonês</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Janeiro</td><td>一月（いちがつ）</td></tr>
+          <tr><td>Fevereiro</td><td>二月（にがつ）</td></tr>
+          <tr><td>Março</td><td>三月（さんがつ）</td></tr>
+          <tr><td>Abril</td><td>四月（しがつ）</td></tr>
+          <tr><td>Maio</td><td>五月（ごがつ）</td></tr>
+          <tr><td>Junho</td><td>六月（ろくがつ）</td></tr>
+          <tr><td>Julho</td><td>七月（しちがつ）</td></tr>
+          <tr><td>Agosto</td><td>八月（はちがつ）</td></tr>
+          <tr><td>Setembro</td><td>九月（くがつ）</td></tr>
+          <tr><td>Outubro</td><td>十月（じゅうがつ）</td></tr>
+          <tr><td>Novembro</td><td>十一月（じゅういちがつ）</td></tr>
+          <tr><td>Dezembro</td><td>十二月（じゅうにがつ）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="jp-tip">
+      <strong>Atenção:</strong>
+      Alguns meses têm pronúncias especiais, como
+      四月（しがつ）, 七月（しちがつ） e 九月（くがつ）.
+    </div>
+
+    <p>
+      Os dias do mês também têm algumas leituras especiais.
+      Veja os mais importantes para começar:
+    </p>
+
+    <div class="jp-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Japonês</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Dia 1</td><td>一日（ついたち）</td></tr>
+          <tr><td>Dia 2</td><td>二日（ふつか）</td></tr>
+          <tr><td>Dia 3</td><td>三日（みっか）</td></tr>
+          <tr><td>Dia 4</td><td>四日（よっか）</td></tr>
+          <tr><td>Dia 5</td><td>五日（いつか）</td></tr>
+          <tr><td>Dia 6</td><td>六日（むいか）</td></tr>
+          <tr><td>Dia 7</td><td>七日（なのか）</td></tr>
+          <tr><td>Dia 8</td><td>八日（ようか）</td></tr>
+          <tr><td>Dia 9</td><td>九日（ここのか）</td></tr>
+          <tr><td>Dia 10</td><td>十日（とおか）</td></tr>
+          <tr><td>Dia 20</td><td>二十日（はつか）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">10月31日（じゅうがつ さんじゅういちにち）</div>
+      31 de outubro.
+    </div>
+  </div>
+
+  <!-- 7. HORÁRIOS -->
+  <div class="jp-section">
+    <h3>7. Como falar os horários</h3>
+    <p>
+      Para falar as horas, usamos 時（じ）.
+      Para os minutos, usamos 分（ふん／ぷん）.
+    </p>
+
+    <div class="jp-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Horário</th>
+            <th>Japonês</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>6 horas</td><td>六時（ろくじ）</td></tr>
+          <tr><td>7 horas</td><td>七時（しちじ）</td></tr>
+          <tr><td>8 horas</td><td>八時（はちじ）</td></tr>
+          <tr><td>9 horas</td><td>九時（くじ）</td></tr>
+          <tr><td>10 horas</td><td>十時（じゅうじ）</td></tr>
+          <tr><td>12 horas</td><td>十二時（じゅうにじ）</td></tr>
+          <tr><td>6h30</td><td>六時半（ろくじはん）</td></tr>
+          <tr><td>7h15</td><td>七時十五分（しちじじゅうごふん）</td></tr>
+          <tr><td>8h45</td><td>八時四十五分（はちじよんじゅうごふん）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Expressões úteis:</strong></p>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">今（いま）何時（なんじ）ですか？</div>
+      Que horas são agora?
+    </div>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">午前（ごぜん）6時（ろくじ）です。</div>
+      São 6 horas da manhã.
+    </div>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">午後（ごご）8時（はちじ）です。</div>
+      São 8 horas da noite.
+    </div>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">何時（なんじ）からですか？</div>
+      Começa a que horas?
+    </div>
+
+    <div class="jp-example">
+      <div class="jp-jp-line">何時（なんじ）までですか？</div>
+      Vai até que horas?
+    </div>
+  </div>
+
+  <!-- 8. SITUAÇÕES DO COTIDIANO -->
+  <div class="jp-section">
+    <h3>8. Japonês na prática: situações do cotidiano</h3>
+    <p>
+      Agora vamos usar o que aprendemos em situações que
+      acontecem no dia a dia de quem vive no Japão.
+    </p>
+
+    <div class="jp-example">
+      <strong>Na fábrica</strong>
+      <div class="jp-jp-line">A: 何時（なんじ）から仕事（しごと）ですか？</div>
+      A partir de que horas é o trabalho?
+      <div class="jp-jp-line">B: 朝（あさ）6時（ろくじ）からです。</div>
+      A partir das 6 da manhã.
+    </div>
+
+    <div class="jp-example">
+      <strong>No supermercado</strong>
+      <div class="jp-jp-line">A: いくらですか？</div>
+      Quanto custa?
+      <div class="jp-jp-line">B: 500円（ごひゃくえん）です。</div>
+      São 500 ienes.
+    </div>
+
+    <div class="jp-example">
+      <strong>Na escola</strong>
+      <div class="jp-jp-line">A: 誕生日（たんじょうび）はいつですか？</div>
+      Quando é seu aniversário?
+      <div class="jp-jp-line">B: 7月（しちがつ）です。</div>
+      É em julho.
+    </div>
+
+    <div class="jp-example">
+      <strong>No dia a dia</strong>
+      <div class="jp-jp-line">A: 今日（きょう）は何日（なんにち）ですか？</div>
+      Que dia é hoje?
+      <div class="jp-jp-line">B: 31日（さんじゅういちにち）です。</div>
+      É dia 31.
+    </div>
+  </div>
+
+  <!-- 9. QUIZ -->
+  <div class="jp-section">
+    <h3>9. Teste seus conhecimentos</h3>
+    <p>
+      Agora que você aprendeu números, datas e horários,
+      vamos testar o que conseguiu memorizar.
+    </p>
+
+    <div class="jp-quiz" data-jp-quiz>
+      <h3>Mini quiz de japonês</h3>
+      <p class="jp-quiz-intro">
+        Responda às cinco perguntas e confira seu resultado.
+      </p>
+
+      <div class="jp-question" data-answer="1">
+        <div class="jp-question-title">1. Como se fala 5 em japonês?</div>
+        <label class="jp-option"><input type="radio" name="jp-q1" value="0"> さん</label>
+        <label class="jp-option"><input type="radio" name="jp-q1" value="1"> ご</label>
+        <label class="jp-option"><input type="radio" name="jp-q1" value="2"> ろく</label>
+        <div class="jp-feedback"></div>
+      </div>
+
+      <div class="jp-question" data-answer="1">
+        <div class="jp-question-title">2. O que significa 一万円（いちまんえん）?</div>
+        <label class="jp-option"><input type="radio" name="jp-q2" value="0"> Mil ienes</label>
+        <label class="jp-option"><input type="radio" name="jp-q2" value="1"> Dez mil ienes</label>
+        <label class="jp-option"><input type="radio" name="jp-q2" value="2"> Cem ienes</label>
+        <div class="jp-feedback"></div>
+      </div>
+
+      <div class="jp-question" data-answer="0">
+        <div class="jp-question-title">3. Como se fala segunda-feira?</div>
+        <label class="jp-option"><input type="radio" name="jp-q3" value="0"> 月曜日（げつようび）</label>
+        <label class="jp-option"><input type="radio" name="jp-q3" value="1"> 火曜日（かようび）</label>
+        <label class="jp-option"><input type="radio" name="jp-q3" value="2"> 日曜日（にちようび）</label>
+        <div class="jp-feedback"></div>
+      </div>
+
+      <div class="jp-question" data-answer="1">
+        <div class="jp-question-title">4. Como se fala 8 horas?</div>
+        <label class="jp-option"><input type="radio" name="jp-q4" value="0"> 八分（はっぷん）</label>
+        <label class="jp-option"><input type="radio" name="jp-q4" value="1"> 八時（はちじ）</label>
+        <label class="jp-option"><input type="radio" name="jp-q4" value="2"> 八日（ようか）</label>
+        <div class="jp-feedback"></div>
+      </div>
+
+      <div class="jp-question" data-answer="1">
+        <div class="jp-question-title">5. Como se fala dia 3 do mês?</div>
+        <label class="jp-option"><input type="radio" name="jp-q5" value="0"> 三月（さんがつ）</label>
+        <label class="jp-option"><input type="radio" name="jp-q5" value="1"> 三日（みっか）</label>
+        <label class="jp-option"><input type="radio" name="jp-q5" value="2"> 三時（さんじ）</label>
+        <div class="jp-feedback"></div>
+      </div>
+
+      <button type="button" class="jp-button" data-check>
+        Conferir minhas respostas
+      </button>
+
+      <div class="jp-result" data-result aria-live="polite"></div>
+    </div>
+  </div>
+
+  <!-- CONCLUSÃO -->
+  <div class="jp-conclusion">
+    <h3>Conclusão</h3>
+    <p>
+      Aprender números, datas e horários é essencial para conseguir
+      se comunicar melhor no Japão. Comece memorizando os números
+      de 1 a 10 e pratique os preços, horários e dias da semana
+      nas situações reais do seu cotidiano.
+    </p>
+    <p>
+      Não tente decorar tudo de uma vez. O mais importante é
+      conseguir usar essas palavras quando precisar delas.
+    </p>
+
+    <div class="jp-tip">
+      <strong>Dica:</strong>
+      Pratique olhando os preços no supermercado, conferindo
+      a data no calendário e falando em japonês o horário em
+      que começa e termina seu trabalho. Assim, você aprende
+      usando o japonês na vida real!
+    </div>
+  </div>
+
+  <!-- FUNCIONAMENTO DO QUIZ -->
+  <script>
+    (function () {
+      const section = document.currentScript.closest(".jp-numbers");
+      if (!section) return;
+
+      const quiz = section.querySelector("[data-jp-quiz]");
+      if (!quiz) return;
+
+      const button = quiz.querySelector("[data-check]");
+      const result = quiz.querySelector("[data-result]");
+      const questions = Array.from(
+        quiz.querySelectorAll(".jp-question")
+      );
+
+      button.addEventListener("click", function () {
+        let score = 0;
+        let unanswered = 0;
+
+        questions.forEach(function (question) {
+          const correctAnswer = question.dataset.answer;
+          const selected = question.querySelector("input:checked");
+          const feedback = question.querySelector(".jp-feedback");
+
+          feedback.className = "jp-feedback";
+
+          if (!selected) {
+            unanswered++;
+            feedback.textContent = "Escolha uma resposta.";
+            feedback.classList.add("jp-wrong");
+            return;
+          }
+
+          if (selected.value === correctAnswer) {
+            score++;
+            feedback.textContent = "Resposta correta!";
+            feedback.classList.add("jp-correct");
+          } else {
+            feedback.textContent = "Resposta incorreta. Tente novamente!";
+            feedback.classList.add("jp-wrong");
+          }
+        });
+
+        if (unanswered > 0) {
+          result.textContent = "Responda todas as perguntas para concluir o teste.";
+          result.style.color = "#c62828";
+          return;
+        }
+
+        result.textContent = "Você acertou " + score + " de 5 perguntas!";
+        result.style.color = score === 5 ? "#198754" : "#333";
+      });
+    })();
+  </script>
+
+</section>
+
+
+
+<section class="jp-phrases" id="primeiras-frases">
+
+  <style>
+    .jp-phrases {
+      --jp-red: #c62828;
+      --jp-dark: #252525;
+      --jp-muted: #666;
+      --jp-border: #e5e5e5;
+      --jp-soft: #f7f7f7;
+
+      width: 100%;
+      color: var(--jp-dark);
+      font-family: inherit;
+      line-height: 1.7;
+    }
+
+    .jp-phrases * {
+      box-sizing: border-box;
+    }
+
+    .jp-phrases .jp-inner {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .jp-phrases h2,
+    .jp-phrases h3,
+    .jp-phrases h4 {
+      color: var(--jp-dark);
+      line-height: 1.35;
+    }
+
+    .jp-phrases .jp-hero {
+      background: var(--jp-soft);
+      border: 1px solid var(--jp-border);
+      border-left: 5px solid var(--jp-red);
+      border-radius: 12px;
+      padding: 26px;
+      margin-bottom: 32px;
+    }
+
+    .jp-phrases .jp-label {
+      color: var(--jp-red);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-bottom: 8px;
+    }
+
+    .jp-phrases .jp-hero h2 {
+      font-size: clamp(23px, 4vw, 32px);
+      margin: 0 0 12px;
+    }
+
+    .jp-phrases .jp-hero p {
+      margin: 0;
+      color: var(--jp-muted);
+    }
+
+    .jp-phrases .jp-section {
+      margin-bottom: 36px;
+    }
+
+    .jp-phrases .jp-section h3 {
+      font-size: 21px;
+      margin: 0 0 12px;
+      padding-bottom: 9px;
+      border-bottom: 2px solid var(--jp-border);
+    }
+
+    .jp-phrases .jp-section > p {
+      margin: 10px 0 16px;
+    }
+
+    .jp-phrases .jp-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 16px 0;
+      border: 1px solid var(--jp-border);
+      border-radius: 10px;
+    }
+
+    .jp-phrases .jp-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 320px;
+      background: #fff;
+    }
+
+    .jp-phrases .jp-table th {
+      background: var(--jp-soft);
+      text-align: left;
+      font-weight: 700;
+      padding: 12px 15px;
+      border-bottom: 1px solid var(--jp-border);
+    }
+
+    .jp-phrases .jp-table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid var(--jp-border);
+      vertical-align: top;
+    }
+
+    .jp-phrases .jp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .jp-phrases .jp-japanese {
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .jp-phrases .jp-tip {
+      background: #fff8ed;
+      border-left: 4px solid #e6a23c;
+      padding: 15px 18px;
+      border-radius: 7px;
+      margin: 18px 0;
+    }
+
+    .jp-phrases .jp-tip strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .jp-phrases .jp-example {
+      background: var(--jp-soft);
+      border: 1px solid var(--jp-border);
+      border-radius: 9px;
+      padding: 15px 17px;
+      margin: 12px 0;
+    }
+
+    .jp-phrases .jp-example p {
+      margin: 4px 0;
+    }
+
+    .jp-phrases .jp-translation {
+      color: var(--jp-muted);
+      font-size: 14px;
+    }
+
+    .jp-phrases .jp-dialogue {
+      border: 1px solid var(--jp-border);
+      border-radius: 10px;
+      padding: 17px;
+      margin: 15px 0;
+    }
+
+    .jp-phrases .jp-dialogue h4 {
+      font-size: 17px;
+      margin: 0 0 12px;
+      color: var(--jp-red);
+    }
+
+    .jp-phrases .jp-line {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--jp-border);
+    }
+
+    .jp-phrases .jp-line:last-child {
+      border-bottom: none;
+    }
+
+    .jp-phrases .jp-line strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    .jp-phrases .jp-line span {
+      display: block;
+      color: var(--jp-muted);
+      font-size: 14px;
+    }
+
+    .jp-phrases .jp-quiz {
+      background: var(--jp-soft);
+      border: 1px solid var(--jp-border);
+      border-radius: 12px;
+      padding: 22px;
+      margin: 20px 0;
+    }
+
+    .jp-phrases .jp-quiz h3 {
+      border: none;
+      padding: 0;
+      margin: 0 0 8px;
+    }
+
+    .jp-phrases .jp-progress {
+      font-size: 13px;
+      color: var(--jp-muted);
+      margin-bottom: 18px;
+    }
+
+    .jp-phrases .jp-question {
+      background: #fff;
+      border: 1px solid var(--jp-border);
+      border-radius: 9px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+
+    .jp-phrases .jp-question-title {
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .jp-phrases .jp-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      padding: 9px 10px;
+      border: 1px solid var(--jp-border);
+      border-radius: 7px;
+      margin: 7px 0;
+      cursor: pointer;
+      background: #fff;
+      transition: background .2s, border-color .2s;
+    }
+
+    .jp-phrases .jp-option:hover {
+      border-color: var(--jp-red);
+      background: #fffafa;
+    }
+
+    .jp-phrases .jp-option input {
+      margin-top: 5px;
+      accent-color: var(--jp-red);
+    }
+
+    .jp-phrases .jp-option.jp-correct {
+      border-color: #27834a;
+      background: #effaf2;
+    }
+
+    .jp-phrases .jp-option.jp-wrong {
+      border-color: #c62828;
+      background: #fff1f1;
+    }
+
+    .jp-phrases .jp-feedback {
+      font-size: 13px;
+      margin-top: 10px;
+      color: var(--jp-muted);
+    }
+
+    .jp-phrases .jp-button {
+      display: inline-block;
+      background: var(--jp-red);
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      padding: 12px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+
+    .jp-phrases .jp-button:hover {
+      filter: brightness(.92);
+    }
+
+    .jp-phrases .jp-button:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+
+    .jp-phrases .jp-result {
+      margin-top: 16px;
+      padding: 15px;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid var(--jp-border);
+      font-weight: 700;
+    }
+
+    .jp-phrases .jp-conclusion {
+      background: var(--jp-soft);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 24px;
+    }
+
+    @media (max-width: 600px) {
+      .jp-phrases .jp-inner {
+        padding: 0 15px;
+      }
+
+      .jp-phrases .jp-hero {
+        padding: 20px 17px;
+      }
+
+      .jp-phrases .jp-section h3 {
+        font-size: 19px;
+      }
+
+      .jp-phrases .jp-table td,
+      .jp-phrases .jp-table th {
+        padding: 10px 11px;
+      }
+
+      .jp-phrases .jp-quiz {
+        padding: 16px 12px;
+      }
+    }
+  </style>
+
+  <div class="jp-inner">
+
+    <!-- ABERTURA -->
+    <div class="jp-hero">
+      <div class="jp-label">Japonês para o dia a dia · Aula 04</div>
+      <h2>Como montar suas primeiras frases em japonês</h2>
+      <p>
+        Aprenda a construir frases simples para perguntar, responder,
+        negar, pedir alguma coisa e explicar situações do cotidiano.
+        Com exemplos que você pode usar na fábrica, no supermercado,
+        em casa e na escola.
+      </p>
+    </div>
+
+    <!-- 1. FRASE SIMPLES -->
+    <div class="jp-section">
+      <h3>1. Como montar uma frase simples</h3>
+
+      <p>
+        Em japonês, a ordem das palavras costuma ser diferente do português.
+        Uma das principais diferenças é que o verbo geralmente aparece no
+        final da frase.
+      </p>
+
+      <div class="jp-table-wrap">
+        <table class="jp-table">
+          <thead>
+            <tr>
+              <th>Português</th>
+              <th>Japonês</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Eu como arroz.</td>
+              <td class="jp-japanese">私（わたし）はご飯（はん）を食（た）べます。</td>
+            </tr>
+            <tr>
+              <td>Eu bebo água.</td>
+              <td class="jp-japanese">私（わたし）は水（みず）を飲（の）みます。</td>
+            </tr>
+            <tr>
+              <td>Eu vou para casa.</td>
+              <td class="jp-japanese">私（わたし）は家（いえ）に帰（かえ）ります。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="jp-tip">
+        <strong>Uma dica importante</strong>
+        No japonês, muitas vezes não precisamos falar "eu".
+        A pessoa já entende pelo contexto da conversa.
+      </div>
+
+      <p>Por isso, também podemos falar simplesmente:</p>
+
+      <div class="jp-example">
+        <p><strong>ご飯（はん）を食（た）べます。</strong></p>
+        <p class="jp-translation">Como arroz.</p>
+        <p><strong>水（みず）を飲（の）みます。</strong></p>
+        <p class="jp-translation">Bebo água.</p>
+        <p><strong>家（いえ）に帰（かえ）ります。</strong></p>
+        <p class="jp-translation">Vou para casa.</p>
+      </div>
+    </div>
+
+    <!-- 2. PERGUNTAS -->
+    <div class="jp-section">
+      <h3>2. Como fazer perguntas</h3>
+
+      <p>
+        Uma maneira comum de transformar uma frase em pergunta é colocar
+        a partícula <strong>か</strong> no final.
+      </p>
+
+      <div class="jp-table-wrap">
+        <table class="jp-table">
+          <thead>
+            <tr>
+              <th>Japonês</th>
+              <th>Português</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="jp-japanese">食（た）べますか？</td>
+              <td>Você vai comer?</td>
+            </tr>
+            <tr>
+              <td class="jp-japanese">飲（の）みますか？</td>
+              <td>Você vai beber?</td>
+            </tr>
+            <tr>
+              <td class="jp-japanese">行（い）きますか？</td>
+              <td>Você vai?</td>
+            </tr>
+            <tr>
+              <td class="jp-japanese">大丈夫（だいじょうぶ）ですか？</td>
+              <td>Está tudo bem?</td>
+            </tr>
+            <tr>
+              <td class="jp-japanese">仕事（しごと）ですか？</td>
+              <td>É trabalho?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Também existem palavras específicas para fazer perguntas:</p>
+
+      <div class="jp-table-wrap">
+        <table class="jp-table">
+          <thead>
+            <tr>
+              <th>Japonês</th>
+              <th>Significado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="jp-japanese">何（なに）</td><td>O quê?</td></tr>
+            <tr><td class="jp-japanese">どこ</td><td>Onde?</td></tr>
+            <tr><td class="jp-japanese">誰（だれ）</td><td>Quem?</td></tr>
+            <tr><td class="jp-japanese">いつ</td><td>Quando?</td></tr>
+            <tr><td class="jp-japanese">どうして</td><td>Por quê?</td></tr>
+            <tr><td class="jp-japanese">いくら</td><td>Quanto custa?</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Veja como essas palavras aparecem nas frases:</p>
+
+      <div class="jp-example">
+        <p><strong>これは何（なん）ですか？</strong></p>
+        <p class="jp-translation">O que é isto?</p>
+        <p><strong>トイレはどこですか？</strong></p>
+        <p class="jp-translation">Onde fica o banheiro?</p>
+        <p><strong>いつ行（い）きますか？</strong></p>
+        <p class="jp-translation">Quando você vai?</p>
+        <p><strong>これはいくらですか？</strong></p>
+        <p class="jp-translation">Quanto custa isto?</p>
+      </div>
+    </div>
+
+    <!-- 3. RESPOSTAS -->
+    <div class="jp-section">
+      <h3>3. Como responder a uma pergunta</h3>
+
+      <p>
+        Aprender a responder é tão importante quanto aprender a perguntar.
+        Algumas expressões simples já ajudam muito nas conversas do dia a dia.
+      </p>
+
+      <div class="jp-table-wrap">
+        <table class="jp-table">
+          <thead>
+            <tr>
+              <th>Japonês</th>
+              <th>Português</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="jp-japanese">はい、そうです。</td><td>Sim, é isso mesmo.</td></tr>
+            <tr><td class="jp-japanese">いいえ、違（ちが）います。</td><td>Não, não é isso.</td></tr>
+            <tr><td class="jp-japanese">はい、大丈夫（だいじょうぶ）です。</td><td>Sim, está tudo bem.</td></tr>
+            <tr><td class="jp-japanese">まだです。</td><td>Ainda não.</td></tr>
+            <tr><td class="jp-japanese">もう終（お）わりました。</td><td>Já terminei.</td></tr>
+            <tr><td class="jp-japanese">分（わ）かりました。</td><td>Entendi.</td></tr>
+            <tr><td class="jp-japanese">分（わ）かりません。</td><td>Não entendi / Não sei.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="jp-tip">
+        <strong>Uma frase que você precisa aprender!</strong>
+        <p class="jp-japanese">もう一度（いちど）お願（ねが）いします。</p>
+        <p class="jp-translation">Pode repetir, por favor?</p>
+        Use quando alguém falar muito rápido ou você não entender alguma coisa.
+      </div>
+    </div>
+
+    <!-- 4. NEGAR -->
+    <div class="jp-section">
+      <h3>4. Como negar alguma coisa</h3>
+
+      <p>
+        Uma forma muito comum de negar uma ação é trocar o final
+        <strong>ます</strong> por <strong>ません</strong>.
+      </p>
+
+      <div class="jp-table-wrap">
+        <table class="jp-table">
+          <thead>
+            <tr>
+              <th>Afirmativa</th>
+              <th>Negativa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>食（た）べます — Como.</td>
+              <td>食（た）べません — Não como.</td>
+            </tr>
+            <tr>
+              <td>飲（の）みます — Bebo.</td>
+              <td>飲（の）みません — Não bebo.</td>
+            </tr>
+            <tr>
+              <td>行（い）きます — Vou.</td>
+              <td>行（い）きません — Não vou.</td>
+            </tr>
+            <tr>
+              <td>買（か）います — Compro.</td>
+              <td>買（か）いません — Não compro.</td>
+            </tr>
+            <tr>
+              <td>分（わ）かります — Entendo.</td>
+              <td>分（わ）かりません — Não entendo.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Agora veja algumas situações reais:</p>
+
+      <div class="jp-example">
+        <p><strong>今日（きょう）は行（い）きません。</strong></p>
+        <p class="jp-translation">Hoje não vou.</p>
+        <p><strong>これを買（か）いません。</strong></p>
+        <p class="jp-translation">Não vou comprar isto.</p>
+        <p><strong>まだ分（わ）かりません。</strong></p>
+        <p class="jp-translation">Ainda não sei.</p>
+      </div>
+    </div>
+
+    <!-- 5. PEDIDOS -->
+    <div class="jp-section">
+      <h3>5. Como pedir alguma coisa</h3>
+
+      <p>
+        Uma das expressões mais úteis no Japão é
+        <strong>ください</strong>. Ela pode ser usada quando você quer
+        pedir alguma coisa.
+      </p>
+
+      <div class="jp-table-wrap">
+        <table class="jp-table">
+          <thead>
+            <tr>
+              <th>Japonês</th>
+              <th>Português</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="jp-japanese">水（みず）をください。</td><td>Água, por favor.</td></tr>
+            <tr><td class="jp-japanese">これをください。</td><td>Quero este, por favor.</td></tr>
+            <tr><td class="jp-japanese">袋（ふくろ）をください。</td><td>Uma sacola, por favor.</td></tr>
+            <tr><td class="jp-japanese">もう一度（いちど）お願（ねが）いします。</td><td>Mais uma vez, por favor.</td></tr>
+            <tr><td class="jp-japanese">見（み）せてください。</td><td>Mostre para mim, por favor.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="jp-tip">
+        <strong>Outra expressão importante: お願（ねが）いします</strong>
+        Ela aparece bastante em pedidos e situações do cotidiano.
+        É uma expressão que você vai ouvir muitas vezes no Japão.
+      </div>
+    </div>
+
+    <!-- 6. EXPLICAR -->
+    <div class="jp-section">
+      <h3>6. Como explicar alguma coisa</h3>
+
+      <p>
+        Agora vamos aprender frases que ajudam a explicar o que está
+        acontecendo, dizer o que você precisa ou contar uma situação.
+      </p>
+
+      <div class="jp-table-wrap">
+        <table class="jp-table">
+          <thead>
+            <tr>
+              <th>Japonês</th>
+              <th>Português</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="jp-japanese">仕事（しごと）があります。</td><td>Tenho trabalho.</td></tr>
+            <tr><td class="jp-japanese">時間（じかん）がありません。</td><td>Não tenho tempo.</td></tr>
+            <tr><td class="jp-japanese">お金（かね）がありません。</td><td>Não tenho dinheiro.</td></tr>
+            <tr><td class="jp-japanese">ちょっと待（ま）ってください。</td><td>Espere um pouco, por favor.</td></tr>
+            <tr><td class="jp-japanese">今（いま）、忙（いそが）しいです。</td><td>Estou ocupado agora.</td></tr>
+            <tr><td class="jp-japanese">体調（たいちょう）が悪（わる）いです。</td><td>Não estou me sentindo bem.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>Exemplos na fábrica</h4>
+
+      <div class="jp-example">
+        <p><strong>この部品（ぶひん）は違（ちが）います。</strong></p>
+        <p class="jp-translation">Esta peça está diferente.</p>
+        <p><strong>もう一度（いちど）確認（かくにん）します。</strong></p>
+        <p class="jp-translation">Vou verificar mais uma vez.</p>
+        <p><strong>まだ終（お）わっていません。</strong></p>
+        <p class="jp-translation">Ainda não terminei.</p>
+      </div>
+    </div>
+
+    <!-- 7. LIGAR IDEIAS -->
+    <div class="jp-section">
+      <h3>7. Como ligar duas ideias usando けど</h3>
+
+      <p>
+        A palavra <strong>けど</strong> é muito usada nas conversas do dia a dia.
+        Ela pode significar "mas" ou "só que", dependendo da situação.
+      </p>
+
+      <div class="jp-example">
+        <p><strong>行（い）きたいけど、時間（じかん）がありません。</strong></p>
+        <p class="jp-translation">Quero ir, mas não tenho tempo.</p>
+        <p><strong>分（わ）かりますけど、話（はな）せません。</strong></p>
+        <p class="jp-translation">Entendo, mas não consigo falar.</p>
+        <p><strong>買（か）いたいけど、高（たか）いです。</strong></p>
+        <p class="jp-translation">Quero comprar, mas é caro.</p>
+      </div>
+
+      <div class="jp-tip">
+        <strong>Aprenda a usar no dia a dia</strong>
+        Com けど, você começa a juntar duas ideias e consegue explicar
+        situações com frases maiores, sem precisar decorar textos inteiros.
+      </div>
+    </div>
+
+    <!-- 8. DIÁLOGOS -->
+    <div class="jp-section">
+      <h3>8. Treine com situações reais</h3>
+
+      <p>
+        Agora vamos juntar o que aprendemos em pequenas conversas.
+        Leia as frases em voz alta e tente repetir sem olhar a tradução.
+      </p>
+
+      <div class="jp-dialogue">
+        <h4>No supermercado</h4>
+        <div class="jp-line">
+          <strong>A: これはいくらですか？</strong>
+          <span>Quanto custa isto?</span>
+        </div>
+        <div class="jp-line">
+          <strong>B: 五百円（ごひゃくえん）です。</strong>
+          <span>São 500 ienes.</span>
+        </div>
+        <div class="jp-line">
+          <strong>A: じゃあ、これをください。</strong>
+          <span>Então, quero este, por favor.</span>
+        </div>
+      </div>
+
+      <div class="jp-dialogue">
+        <h4>Na fábrica</h4>
+        <div class="jp-line">
+          <strong>A: もう終（お）わりましたか？</strong>
+          <span>Já terminou?</span>
+        </div>
+        <div class="jp-line">
+          <strong>B: いいえ、まだです。</strong>
+          <span>Não, ainda não.</span>
+        </div>
+        <div class="jp-line">
+          <strong>A: 分（わ）かりました。</strong>
+          <span>Entendi.</span>
+        </div>
+      </div>
+
+      <div class="jp-dialogue">
+        <h4>Na escola</h4>
+        <div class="jp-line">
+          <strong>A: 今日（きょう）、学校（がっこう）に行（い）きますか？</strong>
+          <span>Hoje vai à escola?</span>
+        </div>
+        <div class="jp-line">
+          <strong>B: いいえ、行（い）きません。</strong>
+          <span>Não, não vou.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. QUIZ -->
+    <div class="jp-section">
+      <h3>9. Exercício: monte suas primeiras frases</h3>
+
+      <p>
+        Agora é sua vez! Escolha a frase correta em japonês.
+        O objetivo é pensar na estrutura da frase, em vez de apenas decorar palavras.
+      </p>
+
+      <div class="jp-quiz" id="jp-phrases-quiz">
+        <h3>Teste seus conhecimentos</h3>
+        <div class="jp-progress" id="jp-phrases-progress">0/5 respondidas</div>
+
+        <div class="jp-question" data-answer="0"
+             data-explanation="飲（の）みます significa beber.">
+          <div class="jp-question-title">1. Como dizer: Eu bebo água?</div>
+          <label class="jp-option">
+            <input type="radio" name="jp-p1" value="0">
+            水（みず）を飲（の）みます。
+          </label>
+          <label class="jp-option">
+            <input type="radio" name="jp-p1" value="1">
+            水（みず）を食（た）べます。
+          </label>
+          <label class="jp-option">
+            <input type="radio" name="jp-p1" value="2">
+            水（みず）に行（い）きます。
+          </label>
+        </div>
+
+        <div class="jp-question" data-answer="1"
+             data-explanation="A partícula か no final transforma a frase em pergunta.">
+          <div class="jp-question-title">2. Como perguntar: Você vai?</div>
+          <label class="jp-option">
+            <input type="radio" name="jp-p2" value="0">
+            行（い）きません。
+          </label>
+          <label class="jp-option">
+            <input type="radio" name="jp-p2" value="1">
+            行（い）きますか？
+          </label>
+          <label class="jp-option">
+            <input type="radio" name="jp-p2" value="2">
+            行（い）きました。
+          </label>
+        </div>
+
+        <div class="jp-question" data-answer="2"
+             data-explanation="ません é uma forma negativa. 分（わ）かりません significa não entendo ou não sei.">
+          <div class="jp-question-title">3. Como dizer: Não entendo?</div>
+          <label class="jp-option">
+            <input type="radio" name="jp-p3" value="0">
+            分（わ）かります。
+          </label>
+          <label class="jp-option">
+            <input type="radio" name="jp-p3" value="1">
+            分（わ）かりました。
+          </label>
+          <label class="jp-option">
+            <input type="radio" name="jp-p3" value="2">
+            分（わ）かりません。
+          </label>
+        </div>
+
+        <div class="jp-question" data-answer="0"
+             data-explanation="ください é usado para pedir alguma coisa.">
+          <div class="jp-question-title">4. Como pedir: Água, por favor?</div>
+          <label class="jp-option">
+            <input type="radio" name="jp-p4" value="0">
+            水（みず）をください。
+          </label>
+          <label class="jp-option">
+            <input type="radio" name="jp-p4" value="1">
+            水（みず）はどこですか？
+          </label>
+          <label class="jp-option">
+            <input type="radio" name="jp-p4" value="2">
+            水（みず）を飲（の）みません。
+          </label>
+        </div>
+
+        <div class="jp-question" data-answer="1"
+             data-explanation="けど liga duas ideias com sentido de mas.">
+          <div class="jp-question-title">5. Como dizer: Quero ir, mas não tenho tempo?</div>
+          <label class="jp-option">
+            <input type="radio" name="jp-p5" value="0">
+            行（い）きます。時間（じかん）があります。
+          </label>
+          <label class="jp-option">
+            <input type="radio" name="jp-p5" value="1">
+            行（い）きたいけど、時間（じかん）がありません。
+          </label>
+          <label class="jp-option">
+            <input type="radio" name="jp-p5" value="2">
+            行（い）きませんか？
+          </label>
+        </div>
+
+        <button type="button" class="jp-button" id="jp-phrases-check">
+          Conferir respostas
+        </button>
+
+        <div class="jp-result" id="jp-phrases-result" aria-live="polite"
+             style="display:none;"></div>
+
+        <button type="button" class="jp-button" id="jp-phrases-reset"
+                style="display:none;">
+          Refazer exercício
+        </button>
+      </div>
+    </div>
+
+    <!-- 10. CONCLUSÃO -->
+    <div class="jp-section">
+      <h3>10. O mais importante: comece a falar</h3>
+
+      <div class="jp-conclusion">
+        <p>
+          Não tente decorar todas as regras de uma vez. Comece montando
+          frases curtas e use essas estruturas nas situações do seu dia a dia.
+        </p>
+
+        <p>
+          Com o tempo, você vai conseguir juntar palavras, explicar o que
+          precisa e participar de conversas com muito mais segurança.
+        </p>
+
+        <p>
+          <strong>
+            Pratique um pouco todos os dias. O objetivo não é falar japonês
+            perfeito, mas conseguir se comunicar.
+          </strong>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    (function () {
+      const section = document.currentScript.closest(".jp-phrases");
+      if (!section) return;
+
+      const quiz = section.querySelector("#jp-phrases-quiz");
+      const questions = [...quiz.querySelectorAll(".jp-question")];
+      const progress = quiz.querySelector("#jp-phrases-progress");
+      const checkButton = quiz.querySelector("#jp-phrases-check");
+      const resetButton = quiz.querySelector("#jp-phrases-reset");
+      const result = quiz.querySelector("#jp-phrases-result");
+
+      function updateProgress() {
+        const answered = questions.filter(q =>
+          q.querySelector("input:checked")
+        ).length;
+
+        progress.textContent = answered + "/5 respondidas";
+        checkButton.disabled = answered !== questions.length;
+      }
+
+      questions.forEach(question => {
+        question.querySelectorAll("input").forEach(input => {
+          input.addEventListener("change", updateProgress);
+        });
+      });
+
+      checkButton.addEventListener("click", function () {
+        let score = 0;
+
+        questions.forEach(question => {
+          const answer = question.dataset.answer;
+          const explanation = question.dataset.explanation;
+          const selected = question.querySelector("input:checked");
+
+          question.querySelectorAll(".jp-option").forEach(option => {
+            option.classList.remove("jp-correct", "jp-wrong");
+          });
+
+          const correctInput = question.querySelector(
+            'input[value="' + answer + '"]'
+          );
+
+          correctInput.closest(".jp-option").classList.add("jp-correct");
+
+          if (selected) {
+            if (selected.value === answer) {
+              score++;
+            } else {
+              selected.closest(".jp-option").classList.add("jp-wrong");
+            }
+          }
+
+          let feedback = question.querySelector(".jp-feedback");
+
+          if (!feedback) {
+            feedback = document.createElement("div");
+            feedback.className = "jp-feedback";
+            question.appendChild(feedback);
+          }
+
+          feedback.textContent = explanation;
+        });
+
+        result.style.display = "block";
+        result.textContent = "Você acertou " + score +
+          " de 5 perguntas! " +
+          (score === 5
+            ? "Excelente! Você entendeu muito bem a aula."
+            : "Revise as respostas e tente novamente.");
+
+        checkButton.style.display = "none";
+        resetButton.style.display = "inline-block";
+
+        questions.forEach(question => {
+          question.querySelectorAll("input").forEach(input => {
+            input.disabled = true;
+          });
+        });
+      });
+
+      resetButton.addEventListener("click", function () {
+        questions.forEach(question => {
+          question.querySelectorAll("input").forEach(input => {
+            input.checked = false;
+            input.disabled = false;
+          });
+
+          question.querySelectorAll(".jp-option").forEach(option => {
+            option.classList.remove("jp-correct", "jp-wrong");
+          });
+
+          const feedback = question.querySelector(".jp-feedback");
+          if (feedback) feedback.remove();
+        });
+
+        result.style.display = "none";
+        result.textContent = "";
+        checkButton.style.display = "inline-block";
+        resetButton.style.display = "none";
+        updateProgress();
+      });
+
+      updateProgress();
+    })();
+  </script>
+
+</section>
 
 
 
     <!--  =============================================  -->
     
     <div style="text-align: center; color: #698293; " class="texto-h2-curso">
+          <!--<p>
+        Abaixo, você encontrará alguns aplicativos e sites que oferecem cursos gratuitos e podem te ajudar a dar
+        o próximo passo no aprendizado do japonês.
+    </p>-->
         <h2>Cursos de Japonês 100% gratuitos</h2>
     </div>
 
